@@ -70,13 +70,10 @@ public class SonarSweep {
 
     private static void partTwo() {
         logger.info("Possible sums= {}", inputSize - 2);
-        logger.info(Arrays.toString(depths));
         int sumIncreases = 0;
         for (int i = 3; i < inputSize; i++) {
-//              0 1 2 3 4
             int sum1 = depths[i - 3] + depths[i - 2] + depths[i - 1];
             int sum2 = depths[i - 2] + depths[i - 1] + depths[i];
-            logger.info("i= {}, sum1= {}, sum2= {}", i, sum1, sum2);
             if (sum2 > sum1) {
                 sumIncreases++;
             }
