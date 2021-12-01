@@ -1,3 +1,6 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Date;
 
 import static helper.InputLoader.closeInput;
@@ -5,27 +8,28 @@ import static helper.InputLoader.loadInput;
 
 public class Template {
 
+    private static final Logger logger = LoggerFactory.getLogger(Template.class.getSimpleName());
     private static final String INPUT_FILE_NAME = "year_201x/dayXX_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
-    public static void main(String[] args) throws Throwable {
-        System.out.println("----   ADVENT Of code   201x    ----");
+    public static void main(String[] args) {
+        logger.info("----   ADVENT Of code   201x    ----");
         long start = new Date().getTime();
-        System.out.println("\n:::START = " + start);
-        System.out.println("\n                ---=== Day XX ===---     ");
-        System.out.println("                  - XXXXXXXXX -     ");
+        logger.info(":::START = " + start);
+        logger.info("                ---=== Day XX ===---     ");
+        logger.info("                  - XXXXXXXXX -     ");
 
-        System.out.println("\n    ---=== Part 1 ===---     ");
+        logger.info("    ---=== Part 1 ===---     ");
 
         loadInput(INPUT_FILE_NAME, "");
         partOne();
 
 
         long p2Start = new Date().getTime();
-        System.out.println("\nP1 Duration: " + (p2Start - start) + "ms (" + (p2Start - start) / 1000 + "s)");
+        logger.info("P1 Duration: " + (p2Start - start) + "ms (" + (p2Start - start) / 1000 + "s)");
 
-        System.out.println("=========================================================================================");
-        System.out.println("\n    ---=== Part 2 ===---     ");
+        logger.info("=========================================================================================");
+        logger.info("    ---=== Part 2 ===---     ");
 
         partTwo();
 
@@ -33,25 +37,24 @@ public class Template {
 
 
         long end = new Date().getTime();
-        System.out.println("\nP2 Duration: " + (end - p2Start) + "ms (" + (end - p2Start) / 1000 + "s)");
-        System.out.println("==========");
-        System.out.println("\nTotal Duration: " + (end - start) + "ms (" + (end - start) / 1000 + "s)");
+        logger.info("P2 Duration: " + (end - p2Start) + "ms (" + (end - p2Start) / 1000 + "s)");
+        logger.info("==========");
+        logger.info("Total Duration: " + (end - start) + "ms (" + (end - start) / 1000 + "s)");
 
-        System.out.println("\n:::END = " + end);
+        logger.info(":::END = " + end);
     }
 
     private static void partOne() {
 
 
-
-        System.out.println("\n    Part 1 solution:   XXXXXX= [" );
+        logger.info("    Part 1 solution:   XXXXXX= [");
 
     }
 
     private static void partTwo() {
 
 
-        System.out.println("\n    Part 2 solution:   YYYYYYYYYYYY= [");
+        logger.info("    Part 2 solution:   YYYYYYYYYYYY= [");
     }
 
 }
