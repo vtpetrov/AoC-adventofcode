@@ -57,8 +57,6 @@ public class Dive {
     }
 
     private static void partOne() {
-
-        int increases = 0;
         while (getMainIn().hasNextLine()) {
 //            parse line:
             String line = getMainIn().nextLine();
