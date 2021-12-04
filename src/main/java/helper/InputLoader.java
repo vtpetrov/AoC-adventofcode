@@ -7,15 +7,11 @@ import java.util.Scanner;
 
 public class InputLoader {
 
-    private static String INPUT_FILE_NAME = "dummy";
-    private static Path inputFile;
     private static Scanner mainIn;
 
     public static void loadInput(String fileName, String delimiter) {
 
-        INPUT_FILE_NAME = fileName;
-
-        inputFile = FileSystems.getDefault().getPath("src", "main", "resources", INPUT_FILE_NAME);
+        final Path inputFile = FileSystems.getDefault().getPath("src", "main", "resources", fileName);
 
         try {
             mainIn = new Scanner(inputFile).useDelimiter(delimiter);
