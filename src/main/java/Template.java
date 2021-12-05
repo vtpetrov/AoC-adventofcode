@@ -54,14 +54,14 @@ public class Template {
     private static void solvePartOne() {
 
 
-        logger.info("    Part 1 solution:   XXXXXX= [{}]", "<solution_goes_here>");
+        logger.info("    Part 1 solution:\n XXXXXX= [{}]", "<solution_goes_here>");
 
     }
 
     private static void solvePartTwo() {
 
 
-        logger.info("    Part 2 solution:   YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
+        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
     }
 
 }
