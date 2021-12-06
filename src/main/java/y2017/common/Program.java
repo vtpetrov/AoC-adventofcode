@@ -49,15 +49,15 @@ public class Program {
         }
 
         // set programs it communicates to (y2017.day12: <->) OR holding programs (y2017.day7: ->)
+        final String substring = inputFromFile.substring(inputFromFile.indexOf(">") + 2);
         if (inputFromFile.contains("<->")) {
 
-            for (String elem : inputFromFile.substring(inputFromFile.indexOf(">") + 2).split(", ")) {
+            for (String elem : substring.split(", ")) {
                 this.communicatesWithIDs.add(Integer.valueOf(elem));
             }
         } else if (inputFromFile.contains("->")) {
             // holding programs:
-            this.holdingTowersAsStringNames = new ArrayList<>(Arrays.asList(inputFromFile.substring(inputFromFile.indexOf(">") + 2).split
-                    (", ")));
+            this.holdingTowersAsStringNames = new ArrayList<>(Arrays.asList(substring.split(", ")));
 
         }
 
