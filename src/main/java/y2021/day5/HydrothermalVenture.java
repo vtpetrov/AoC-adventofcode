@@ -18,10 +18,10 @@ import static helper.InputLoader.loadInput;
 public class HydrothermalVenture {
 
     private static final Logger logger = LoggerFactory.getLogger(HydrothermalVenture.class.getSimpleName());
-    //        private static final String INPUT_FILE_NAME = "year_2021/day5_input.txt";
-    private static final String INPUT_FILE_NAME = "debug.txt";
+            private static final String INPUT_FILE_NAME = "year_2021/day5_input.txt";
+//    private static final String INPUT_FILE_NAME = "debug.txt";
     private static final List<Line> lines = new ArrayList<>();
-    public static final int MAP_SIZE = 10;
+    public static final int MAP_SIZE = 1000;
 
     public static void main(String[] args) {
         logger.info("----   ADVENT Of code   2021    ----");
@@ -107,6 +107,7 @@ public class HydrothermalVenture {
             int lineLength;
             if (Line.horizontalLine.or(Line.verticalLine).test(line)) {
                 //horizontal or vertical line
+                logger.info("Drawing {} line...", Line.horizontalLine.test(line) ? "horizontal" : "vertical");
                 lineLength = 1 + Math.abs(line.getX1() - line.getX2()) + Math.abs(line.getY1() - line.getY2());
                 for (int i = 0; i < lineLength; i++) {
                     if (Line.horizontalLine.test(line)) {
@@ -116,38 +117,44 @@ public class HydrothermalVenture {
                         //draw vertically:
                         generatedMap[Math.min(line.getY1(), line.getY2()) + i][line.getX1()]++;
                     }
-                    logger.info("map state after line {}::{} being drawn: \n {}", line, i, prettyPrintMapOfLines(generatedMap));
+//                    logger.info("map state after line <{}::{}> being drawn: \n {}", line, i, prettyPrintMapOfLines(generatedMap));
                 }
             } else {
+                logger.info("Drawing diagonal line...");
                 //diagonal line:
-                //[8, 0][0, 8] diagonal
-//                [6, 4][2, 0] diagonal
-//                   ,y1   ,y2
                 lineLength = 1 + Math.abs(line.getX1() - line.getX2());
-                //h ALWAYS increases -> x:
-                for (int h = 0; h < lineLength; h++) {
-                    //v may increase or decrease
-                    int lineIndex, multiplier;
-                    if(line.getY1() > line.getY2()) {
-//                       V => decrease
-                        lineIndex = line.getY2();
+                boolean increaseV;
+                int hStart, vStart, vMultiplier;
+                //h ALWAYS increases -> [y][x= 0...length]:
+                hStart = Math.min(line.getX1(), line.getX2());
+//              v may increase or decrease -> [y= min...max OR max...min][x]
+//              the Y of the min(x) is the starting point for V:
+//              if the Y of min(x) is > the Y of max(X) => decrease (-1), else increase (1)
+                if (line.getX1() < line.getX2()) {
+                    vMultiplier = line.getY1() > line.getY2() ? -1 : 1;
+                } else {
+                    vMultiplier = line.getY2() > line.getY1() ? -1 : 1;
+                }
 
-                    } else {
-//                    if(y1 < y2) v => increase
-                        lineIndex = line.getY1();
-                    }
-                    for (int v = 0; v < lineLength; v++) {
-//                        [y][x]
-                        generatedMap[Math.max(line.getY1(), line.getY2()) + (v*multiplier)]
-                                [Math.min(line.getX1(), line.getX2())+ h]++;
+                // define vStat, if direction is decrease, get max(y), else get min(y)
+                if (vMultiplier == -1) {
+                    vStart = Math.max(line.getY1(), line.getY2());
+                } else {
+                    vStart = Math.min(line.getY1(), line.getY2());
+                }
+//                 x1 y1 x2 y2
+                //[8, 0][0, 8] diagonal -> V decrease, vStart 8
+//                [6, 4][2, 0] diagonal -> V increase, vStart 0
+//                [0, 0][8, 8] diagonal -> V increase, vStart 0
 
-                        logger.info("map state after line {}::{}.{} being drawn: \n {}", line, h, v, prettyPrintMapOfLines(generatedMap));
-                    }
+                for (int i = 0; i < lineLength; i++) {
+                    generatedMap[vStart + (vMultiplier * i)][hStart + i]++;
+//                    logger.info("map state after line <{}::{}.{}> being drawn: \n {}", line, i, vStart, prettyPrintMapOfLines(generatedMap));
                 }
             }
-            logger.info("map state after line {} being drawn: \n {}", line, prettyPrintMapOfLines(generatedMap));
+//            logger.info("map state after WHOLE line <{}> was drawn: \n {}", line, prettyPrintMapOfLines(generatedMap));
         }
-        logger.info("final map state: \n {}", prettyPrintMapOfLines(generatedMap));
+        logger.info("Final map state: \n {}", prettyPrintMapOfLines(generatedMap));
         return generatedMap;
     }
 
