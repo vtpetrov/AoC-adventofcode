@@ -66,7 +66,7 @@ public class HydrothermalVenture {
                 .filter(Line.horizontalLine.or(Line.verticalLine)).collect(Collectors.toList());
 
         final int[][] mapOfHorizontalAndVertical = drawMap(horizontalAndVerticalLines);
-        int solution = countOverlappingPoints(mapOfHorizontalAndVertical, 2);
+        int solution = countOverlappingPoints(mapOfHorizontalAndVertical);
         logger.info("    Part 1 solution:\n Consider only horizontal and vertical lines. " +
                 "At how many points do at least two lines overlap= [{}]", solution);
     }
@@ -78,7 +78,7 @@ public class HydrothermalVenture {
                 .filter(Line.horizontalLine.or(Line.verticalLine).or(Line.diagonalLine)).collect(Collectors.toList());
 
         final int[][] fullMap = drawMap(horizVerticAndDiagLines);
-        int solution2 = countOverlappingPoints(fullMap, 2);
+        int solution2 = countOverlappingPoints(fullMap);
 
         logger.info("    Part 2 solution:\nConsider all of the lines. " +
                 "At how many points do at least two lines overlap?= [{}]", solution2);
@@ -92,9 +92,9 @@ public class HydrothermalVenture {
     /**
      * Draws a map out of the provided lines.
      * <pre>
-     *     In this diagram, the top left corner is 0,0 and the bottom right corner is 9,9.
+     *     In this diagram, the top left corner is 0,0 and the bottom right corner is n,n.
      *     Each position is shown as the number of lines which cover that point
-     *     or 0 if no line covers that point.
+     *     or 0(.) if no line covers that point.
      * </pre>
      *
      * @param lines the lines to be used for drawing the map
@@ -107,7 +107,6 @@ public class HydrothermalVenture {
             int lineLength;
             if (Line.horizontalLine.or(Line.verticalLine).test(line)) {
                 //horizontal or vertical line
-                logger.info("Drawing {} line...", Line.horizontalLine.test(line) ? "horizontal" : "vertical");
                 lineLength = 1 + Math.abs(line.getX1() - line.getX2()) + Math.abs(line.getY1() - line.getY2());
                 for (int i = 0; i < lineLength; i++) {
                     if (Line.horizontalLine.test(line)) {
@@ -123,11 +122,8 @@ public class HydrothermalVenture {
                 logger.info("Drawing diagonal line...");
                 //diagonal line:
                 lineLength = 1 + Math.abs(line.getX1() - line.getX2());
-                boolean increaseV;
                 int hStart, vStart, vMultiplier;
-                //h ALWAYS increases -> [y][x= 0...length]:
                 hStart = Math.min(line.getX1(), line.getX2());
-//              v may increase or decrease -> [y= min...max OR max...min][x]
 //              the Y of the min(x) is the starting point for V:
 //              if the Y of min(x) is > the Y of max(X) => decrease (-1), else increase (1)
                 if (line.getX1() < line.getX2()) {
@@ -136,16 +132,12 @@ public class HydrothermalVenture {
                     vMultiplier = line.getY2() > line.getY1() ? -1 : 1;
                 }
 
-                // define vStat, if direction is decrease, get max(y), else get min(y)
+                // define vStart, if direction is decrease, get max(y), else get min(y)
                 if (vMultiplier == -1) {
                     vStart = Math.max(line.getY1(), line.getY2());
                 } else {
                     vStart = Math.min(line.getY1(), line.getY2());
                 }
-//                 x1 y1 x2 y2
-                //[8, 0][0, 8] diagonal -> V decrease, vStart 8
-//                [6, 4][2, 0] diagonal -> V increase, vStart 0
-//                [0, 0][8, 8] diagonal -> V increase, vStart 0
 
                 for (int i = 0; i < lineLength; i++) {
                     generatedMap[vStart + (vMultiplier * i)][hStart + i]++;
@@ -158,8 +150,8 @@ public class HydrothermalVenture {
         return generatedMap;
     }
 
-    private static int countOverlappingPoints(final int[][] map, final int overlapsMoreThan) {
-        return (int) Arrays.stream(map).flatMapToInt(Arrays::stream).filter(x -> x >= overlapsMoreThan).count();
+    private static int countOverlappingPoints(final int[][] map) {
+        return (int) Arrays.stream(map).flatMapToInt(Arrays::stream).filter(x -> x >= 2).count();
     }
 
 }
