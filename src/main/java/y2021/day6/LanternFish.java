@@ -88,17 +88,14 @@ public class LanternFish {
         } else {
             logger.info("In part 2.... let optimization begin...");
             int totalFishCount = fish.size();
-            int[] fishArray = new int[1000000000];
+            byte[] fishArray = new byte[Integer.MAX_VALUE - 10];
             //initialize array (directly to save memory):
             int i = 0;
             for (Integer curFish : fish) {
-                fishArray[i++] = curFish;
+                fishArray[i++] = curFish.byteValue();
             }
-
+            fish.clear();
             do {
-                System.out.println("Total Memory (in bytes): " + Runtime.getRuntime().totalMemory());
-                System.out.println("Free Memory (in bytes): " + Runtime.getRuntime().freeMemory());
-                System.out.println("Max Memory (in bytes): " + Runtime.getRuntime().maxMemory());
                 // day start
                 int fishCountAtDayStart = totalFishCount;
                 int addedToday = 0;
