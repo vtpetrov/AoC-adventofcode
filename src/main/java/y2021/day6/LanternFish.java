@@ -17,8 +17,10 @@ public class LanternFish {
 
     private static final Logger logger = LoggerFactory.getLogger(LanternFish.class.getSimpleName());
     private static final String INPUT_FILE_NAME = "year_2021/day6_input.txt";
-//        private static final String INPUT_FILE_NAME = "debug.txt";
+    //    private static final String INPUT_FILE_NAME = "debug.txt";
     private static final List<Integer> fish = new ArrayList<>();
+    public static final int ARR_SIZE = 2147483637;
+//    public static final int ARR_SIZE = 15;
 
 
     public static void main(String[] args) {
@@ -49,7 +51,6 @@ public class LanternFish {
         solve(2, 81, 256);
 
 
-
         long end = new Date().getTime();
         logger.info("P2 Duration: " + (end - p2Start) + "ms (" + (end - p2Start) / 1000 + "s)");
         logger.info("==========");
@@ -59,16 +60,16 @@ public class LanternFish {
         logger.info(":::END = " + LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
     }
 
-    private static void solve(final int part, int startDay, final int endDay) {
+    private static void solve(final int part, int day, final int endDay) {
 //        Each day, a 0 becomes a 6 and adds a new 8 to the end of the list, while each other
 //        number decreases by 1 if it was present at the start of the day.
         logger.info("Initial state: {}", fish.size());
-        if(part == 1){
+        if (part == 1) {
             do {
                 final int lenAtDayStart = fish.size();
-                for(int fIndex = 0; fIndex < lenAtDayStart; fIndex++){
+                for (int fIndex = 0; fIndex < lenAtDayStart; fIndex++) {
                     // at the beginning of the day:
-                    if(fish.get(fIndex) == 0){
+                    if (fish.get(fIndex) == 0) {
                         // IF fish life is 0  -=>  reset it to 6 and spawn new fish with life 8 at the end of the list:
 //                    logger.info("{}, spawn", fIndex);
                         fish.set(fIndex, 6);
@@ -79,41 +80,49 @@ public class LanternFish {
                         fish.set(fIndex, fish.get(fIndex) - 1);
                     }
                 }
-                logger.info("After {} days : {}", startDay, fish.size());
-                startDay++;
-            } while ( startDay <= endDay);
+                logger.info("After {} days : {}", day, fish.size());
+                day++;
+            } while (day <= endDay);
 
             logger.info("    Part {} solution:" +
                     "\n How many lanternfish would there be after {} days? = [{}]", part, endDay, fish.size());
         } else {
             logger.info("In part 2.... let optimization begin...");
-            int totalFishCount = fish.size();
-            byte[] fishArray = new byte[Integer.MAX_VALUE - 10];
+            long totalFishCount = fish.size();
+            byte[][] fishArray = new byte[4][ARR_SIZE];
             //initialize array (directly to save memory):
             int i = 0;
             for (Integer curFish : fish) {
-                fishArray[i++] = curFish.byteValue();
+                fishArray[0][i++] = curFish.byteValue();
             }
             fish.clear();
             do {
                 // day start
-                int fishCountAtDayStart = totalFishCount;
                 int addedToday = 0;
-                for(int fIndex = 0; fIndex < fishCountAtDayStart; fIndex++){
-                    // loop through each fish:
-                    if(fishArray[fIndex] == 0){
+                int firstDimensionIndex, secondDimensionIndex;
+                for (long fishLooper = 0; fishLooper < totalFishCount; fishLooper++) {
+                    // build 1st and 2nd dimension indexes [1st][2nd]:
+                    firstDimensionIndex = Math.toIntExact(fishLooper / ARR_SIZE); //modulo
+                    secondDimensionIndex = Math.toIntExact(fishLooper % ARR_SIZE); //reminder
+                    if (fishArray[firstDimensionIndex][secondDimensionIndex] == 0) {
                         // IF fish life is 0  -=>  reset it to 6 and spawn new fish with life 8 at the end of the list:
-                        fishArray[fIndex] = 6;
-                        fishArray[fishCountAtDayStart + addedToday++] = 8;
+                        fishArray[firstDimensionIndex][secondDimensionIndex] = 6;
+                        int addAttX, addAtY;
+                        long totalPlusAddedTillNow = totalFishCount + addedToday;
+                        addAttX = Math.toIntExact(totalPlusAddedTillNow / ARR_SIZE); //modulo
+                        addAtY = Math.toIntExact(totalPlusAddedTillNow % ARR_SIZE); //reminder
+                        fishArray[addAttX][addAtY] = 8;
+                        addedToday++;
                     } else {
                         // ELSE  -=>  decrease fish life by 1:
-                        fishArray[fIndex] -= 1;
+                        fishArray[firstDimensionIndex][secondDimensionIndex] -= 1;
                     }
                 }
-                totalFishCount = fishCountAtDayStart + addedToday;
-                logger.info("After {} days : {}", startDay, totalFishCount);
-                startDay++;
-            } while ( startDay <= endDay);
+                // increase total fish count by those added today:
+                totalFishCount += addedToday;
+                logger.info("After {} days: total= {} , added= {}", day, totalFishCount, addedToday);
+                day++;
+            } while (day <= endDay);
 
             logger.info("    Part {} solution:" +
                     "\n How many lanternfish would there be after {} days? = [{}]", part, endDay, totalFishCount);
