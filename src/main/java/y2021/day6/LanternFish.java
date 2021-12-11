@@ -36,7 +36,7 @@ public class LanternFish {
             fish.add(Integer.parseInt(readFromInput.trim()));
         } while (getMainIn().hasNext());
 
-        solvePartOne();
+        solve(1, 1, 80);
 
         long p2Start = new Date().getTime();
         logger.info("P1 Duration: " + (p2Start - start) + "ms (" + (p2Start - start) / 1000 + "s)");
@@ -44,9 +44,10 @@ public class LanternFish {
         logger.info("=========================================================================================");
         logger.info("    ---=== Part 2 ===---     ");
 
-//        solvePartTwo();
-
         closeInput();
+
+        solve(2, 81, 256);
+
 
 
         long end = new Date().getTime();
@@ -58,38 +59,70 @@ public class LanternFish {
         logger.info(":::END = " + LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
     }
 
-    private static void solvePartOne() {
+    private static void solve(final int part, int startDay, final int endDay) {
 //        Each day, a 0 becomes a 6 and adds a new 8 to the end of the list, while each other
 //        number decreases by 1 if it was present at the start of the day.
-        logger.info("Initial state: {}", fish);
-        int day = 1;
-        do {
-            final int lenAtDayStart = fish.size();
-            for(int fIndex = 0; fIndex < lenAtDayStart; fIndex++){
-                // at the beginning of the day:
-                if(fish.get(fIndex) == 0){
-                    // IF fish life is 0  -=>  reset it to 6 and spawn new fish with life 8 at the end of the list:
+        logger.info("Initial state: {}", fish.size());
+        if(part == 1){
+            do {
+                final int lenAtDayStart = fish.size();
+                for(int fIndex = 0; fIndex < lenAtDayStart; fIndex++){
+                    // at the beginning of the day:
+                    if(fish.get(fIndex) == 0){
+                        // IF fish life is 0  -=>  reset it to 6 and spawn new fish with life 8 at the end of the list:
 //                    logger.info("{}, spawn", fIndex);
-                    fish.set(fIndex, 6);
-                    fish.add(8);
-                } else {
-                    // ELSE  -=>  decrease fish life by 1:
+                        fish.set(fIndex, 6);
+                        fish.add(8);
+                    } else {
+                        // ELSE  -=>  decrease fish life by 1:
 //                    logger.info("{}, decrease life", fIndex);
-                    fish.set(fIndex, fish.get(fIndex) - 1);
+                        fish.set(fIndex, fish.get(fIndex) - 1);
+                    }
                 }
+                logger.info("After {} days : {}", startDay, fish.size());
+                startDay++;
+            } while ( startDay <= endDay);
+
+            logger.info("    Part {} solution:" +
+                    "\n How many lanternfish would there be after {} days? = [{}]", part, endDay, fish.size());
+        } else {
+            logger.info("In part 2.... let optimization begin...");
+            int totalFishCount = fish.size();
+            int[] fishArray = new int[1000000000];
+            //initialize array (directly to save memory):
+            int i = 0;
+            for (Integer curFish : fish) {
+                fishArray[i++] = curFish;
             }
-            logger.info("After {} days : {}", day, fish.size());
-            day++;
-        } while ( day <= 80);
 
-        logger.info("    Part 1 solution:\n How many lanternfish would there be after 80 days= [{}]", fish.size());
+            do {
+                System.out.println("Total Memory (in bytes): " + Runtime.getRuntime().totalMemory());
+                System.out.println("Free Memory (in bytes): " + Runtime.getRuntime().freeMemory());
+                System.out.println("Max Memory (in bytes): " + Runtime.getRuntime().maxMemory());
+                // day start
+                int fishCountAtDayStart = totalFishCount;
+                int addedToday = 0;
+                for(int fIndex = 0; fIndex < fishCountAtDayStart; fIndex++){
+                    // loop through each fish:
+                    if(fishArray[fIndex] == 0){
+                        // IF fish life is 0  -=>  reset it to 6 and spawn new fish with life 8 at the end of the list:
+                        fishArray[fIndex] = 6;
+                        fishArray[fishCountAtDayStart + addedToday++] = 8;
+                    } else {
+                        // ELSE  -=>  decrease fish life by 1:
+                        fishArray[fIndex] -= 1;
+                    }
+                }
+                totalFishCount = fishCountAtDayStart + addedToday;
+                logger.info("After {} days : {}", startDay, totalFishCount);
+                startDay++;
+            } while ( startDay <= endDay);
 
-    }
+            logger.info("    Part {} solution:" +
+                    "\n How many lanternfish would there be after {} days? = [{}]", part, endDay, totalFishCount);
 
-    private static void solvePartTwo() {
+        }
 
-
-        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
     }
 
 }
