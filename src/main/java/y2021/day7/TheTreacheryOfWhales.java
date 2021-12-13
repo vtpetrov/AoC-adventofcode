@@ -7,9 +7,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static helper.InputLoader.closeInput;
 import static helper.InputLoader.getMainIn;
@@ -19,7 +17,7 @@ public class TheTreacheryOfWhales {
 
     private static final Logger logger = LoggerFactory.getLogger(TheTreacheryOfWhales.class.getSimpleName());
     private static final String INPUT_FILE_NAME = "year_2021/day7_input.txt";
-//        private static final String INPUT_FILE_NAME = "debug.txt";
+//            private static final String INPUT_FILE_NAME = "debug.txt";
     private static final List<Integer> crabs = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -36,10 +34,6 @@ public class TheTreacheryOfWhales {
             final String readFromInput = getMainIn().next();
             crabs.add(Integer.parseInt(readFromInput.trim()));
         } while (getMainIn().hasNext());
-//        Integer.MAX_VALUE = 2147483647
-//        Short.MAX_VALUE = 32767
-//        Byte.MAX_VALUE = 127
-//        crabs.sort(Integer::compareTo);
 
         solvePartOne();
 
@@ -64,17 +58,15 @@ public class TheTreacheryOfWhales {
     }
 
     private static void solvePartOne() {
-
-        Map<Integer, Integer> sumsToPositionX = new HashMap<>();
         int currPos = 0;
         int minSum = Integer.MAX_VALUE, minPosIndex = -1;
         do {
 //            for each pos index, loop the whole list and sum the distances
-//            store distances, finally find the smallest
+//            store the smallest sum.
             final Integer finalCurrPos = currPos;
+//            Each change of 1 step in horizontal position of a single crab costs 1 fuel.
             int sumForThisPos = crabs.stream().map(crab -> Math.abs(crab - finalCurrPos)).mapToInt(Integer::valueOf).sum();
-            sumsToPositionX.put(currPos, sumForThisPos);
-            if(sumForThisPos < minSum){
+            if (sumForThisPos < minSum) {
                 minSum = sumForThisPos;
                 minPosIndex = currPos;
             }
@@ -88,8 +80,28 @@ public class TheTreacheryOfWhales {
     }
 
     private static void solvePartTwo() {
+        int currPos = 0;
+        int minSum = Integer.MAX_VALUE, minPosIndex = -1;
+        do {
+//            for each pos index, loop the whole list and sum the distances
+//            store the smallest sum.
+            final Integer finalCurrPos = currPos;
+//            each change of 1 step in horizontal position costs 1 more unit of fuel than the last: the first step costs 1,
+//            the second step costs 2, the third step costs 3, and so on.
+            int sumForThisPos = crabs.stream().map(crab -> {
+                int moves = Math.abs(crab - finalCurrPos);
+                return (moves * (moves + 1)) / 2;
+            }).mapToInt(Integer::valueOf).sum();
+            if (sumForThisPos < minSum) {
+                minSum = sumForThisPos;
+                minPosIndex = currPos;
+            }
+            currPos++;
+        } while (currPos < 1000);
 
-        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
+        logger.info("    Part 2 solution:" +
+                "\n Best position= [{}] " +
+                "\n How much fuel must they spend to align to that position?= [{}]", minPosIndex, minSum);
     }
 
 }
