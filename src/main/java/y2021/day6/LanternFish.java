@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 import static helper.InputLoader.closeInput;
 import static helper.InputLoader.getMainIn;
@@ -89,7 +88,7 @@ public class LanternFish {
             accumulators.put(6, accumulators.get(6) + toSpawn);
             accumulators.put(8, toSpawn);
 
-            fishCount = accumulators.values().stream().flatMap(Stream::of).reduce(0L, Long::sum);
+            fishCount = accumulators.values().stream().reduce(0L, Long::sum);
             logger.info("After {} days: total= {} , added= {}", day, fishCount, toSpawn);
             if (day == 80) {
                 logger.info("    Part 1 solution:" +
