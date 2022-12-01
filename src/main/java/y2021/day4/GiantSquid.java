@@ -113,7 +113,7 @@ public class GiantSquid {
 
     public static void readInputAndBingoBoards() {
         loadInput(INPUT_FILE_NAME, ",");
-        numbers = Arrays.stream(getMainIn().nextLine().split(",")).map(Integer::new).collect(Collectors.toList());
+        numbers = Arrays.stream(getMainIn().nextLine().split(",")).map(Integer::valueOf).collect(Collectors.toList());
         while (getMainIn().hasNextLine()) {
             //    private static final String INPUT_FILE_NAME = "debug.txt";
             String line = getMainIn().nextLine();
