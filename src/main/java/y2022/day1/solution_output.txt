@@ -1,0 +1,19 @@
+[main] INFO CalorieCounting - ----   ADVENT Of code   2022    ----
+[main] INFO CalorieCounting - :::START = 2022-12-01T09:22:08
+[main] INFO CalorieCounting -                 ---=== Day 01 ===---
+[main] INFO CalorieCounting -                 - Calorie Counting -
+[main] INFO CalorieCounting -     ---=== Part 1 ===---
+[main] INFO CalorieCounting -     Part 1 solution:
+ the most calories Elf is caring= [69883]
+
+[main] INFO CalorieCounting - P1 Duration: 40ms (0s)
+[main] INFO CalorieCounting - ================================
+[main] INFO CalorieCounting -     ---=== Part 2 ===---
+[main] INFO CalorieCounting -     Part 2 solution:
+ the SUM of calories top three Elves are carrying= [207576]
+
+[main] INFO CalorieCounting - P2 Duration: 1ms (0s)
+[main] INFO CalorieCounting - ==========----------------==============
+[main] INFO CalorieCounting - Total Duration: 41ms (0s)
+[main] INFO CalorieCounting - :::END = 1669879328430
+[main] INFO CalorieCounting - :::END = 2022-12-01T09:22:08
