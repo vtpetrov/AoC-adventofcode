@@ -11,7 +11,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
 import static helper.InputLoader.closeInput;
@@ -21,7 +20,7 @@ import static helper.InputLoader.loadInput;
 public class RucksackReorganization {
 
     private static final Logger logger = LoggerFactory.getLogger(RucksackReorganization.class.getSimpleName());
-            private static final String INPUT_FILE_NAME = "year_2022/day03_input.txt";
+    private static final String INPUT_FILE_NAME = "year_2022/day03_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
@@ -72,8 +71,6 @@ public class RucksackReorganization {
 
     private static void solvePartOne() {
 
-        AtomicInteger counter = new AtomicInteger(0);
-
         String[] pocket1;
         String[] pocket2;
 
@@ -117,6 +114,18 @@ public class RucksackReorganization {
         logger.info("    Part 2 solution:\n the sum of badge items= [{}]\n", totalBadgeSum);
     }
 
+    /**
+     * Return priority value for a letter based on the requirements:
+     * <li/>Lowercase item types a through z have priorities 1 through 26.
+     * <li/>Uppercase item types A through Z have priorities 27 through 52.
+     * <br/>
+     * This is done by calculating the numeric value for the ascii code of this letter:
+     * <br/>{@code (int) letter.charAt(0) }
+     * <br/>then subtracting a predefined constant (96 or 28) to calc the final value.
+     *
+     * @param letter the item to calculate priority for
+     * @return the calculated priority (a number between 1-52)
+     */
     private static int calcPriority(String letter) {
 
         int val = 0;
