@@ -1,0 +1,21 @@
+[main] INFO CampCleanup - ----   ADVENT Of code   2022    ----
+[main] INFO CampCleanup - :::START = 2022-12-04T07:53:20
+[main] INFO CampCleanup -                 ---=== Day 04 ===---
+[main] INFO CampCleanup -                   - Camp Cleanup -
+[main] INFO CampCleanup -     ---=== Part 1 ===---
+[main] INFO CampCleanup -     Part 1 solution:
+ FullOverlapsCount= [456]
+
+[main] INFO CampCleanup - P1 Duration: 41ms (0s)
+[main] INFO CampCleanup - ================================
+[main] INFO CampCleanup -     ---=== Part 2 ===---
+[main] INFO CampCleanup -     Part 2 solution:
+ how many assignment pairs do the ranges overlap= [808]
+
+[main] INFO CampCleanup - P2 Duration: 0ms (0s)
+[main] INFO CampCleanup - ==========----------------==============
+[main] INFO CampCleanup - Total Duration: 41ms (0s)
+[main] INFO CampCleanup - :::END = 1670133200163
+[main] INFO CampCleanup - :::END = 2022-12-04T07:53:20
+
+Process finished with exit code 0
