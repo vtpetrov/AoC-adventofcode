@@ -1,0 +1,29 @@
+[main] INFO SupplyStacks - ----   ADVENT Of code   2022    ----
+[main] INFO SupplyStacks - :::START = 2022-12-05T16:43:16
+[main] INFO SupplyStacks -                 ---=== Day 05 ===---     
+[main] INFO SupplyStacks -                   - Supply Stacks -     
+[main] INFO SupplyStacks -     ---=== Part 1 ===---     
+[main] INFO SupplyStacks - Initializing stacks....
+[main] INFO SupplyStacks - Initial Stacks state (before moving)        : [[D, T, R, B, J, L, W, G], [S, W, C], [R, Z, T, M], [D, T, C, H, S, P, V], [G, P, T, L, D, Z], [F, B, R, Z, J, Q, C, D], [S, B, D, J, M, F, T, R], [L, H, R, B, T, V, M], [Q, P, D, S, V]]
+[main] INFO SupplyStacks - Start moving crates P1 ..................
+[main] INFO SupplyStacks - Final Stacks state (after moving per Part 1): [[B, S], [H], [D, D, M], [S], [T, M, H, Z, T, D], [R, S, P, M, G], [Z], [T, J, Q, G, W, C, R, V], [Q, V, V, D, D, S, P, L, R, R, J, T, T, C, J, F, Z, P, R, B, B, W, L, B, F, L, D, T, C]]
+[main] INFO SupplyStacks - --------------------------------------------------------------------
+[main] INFO SupplyStacks -     Part 1 solution:
+ What crate ends up on top of each stack? => [SHMSDGZVC]
+
+[main] INFO SupplyStacks - P1 Duration: 32ms (0s)
+[main] INFO SupplyStacks - ================================
+[main] INFO SupplyStacks -     ---=== Part 2 ===---     
+[main] INFO SupplyStacks - Initializing stacks....
+[main] INFO SupplyStacks - Initial Stacks state (before moving)        : [[D, T, R, B, J, L, W, G], [S, W, C], [R, Z, T, M], [D, T, C, H, S, P, V], [G, P, T, L, D, Z], [F, B, R, Z, J, Q, C, D], [S, B, D, J, M, F, T, R], [L, H, R, B, T, V, M], [Q, P, D, S, V]]
+[main] INFO SupplyStacks - Start moving crates P2 ..................
+[main] INFO SupplyStacks - Final Stacks state (after moving per Part 2): [[F, V], [R], [G, D, Z], [G], [W, V, P, D, S, H], [B, T, T, C, D], [F], [S, P, Z, C, M, C, Z, B], [D, H, Q, S, V, L, M, T, R, T, R, J, T, L, B, R, S, L, D, T, P, J, R, M, D, J, W, B, Q]]
+[main] INFO SupplyStacks - --------------------------------------------------------------------
+[main] INFO SupplyStacks -     Part 2 solution:
+ What crate ends up on top of each stack? ==> [VRZGHDFBQ]
+
+[main] INFO SupplyStacks - P2 Duration: 4ms (0s)
+[main] INFO SupplyStacks - ==========----------------==============
+[main] INFO SupplyStacks - Total Duration: 36ms (0s)
+[main] INFO SupplyStacks - :::END = 1670251397010
+[main] INFO SupplyStacks - :::END = 2022-12-05T16:43:17
