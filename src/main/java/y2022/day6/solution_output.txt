@@ -1,0 +1,23 @@
+[main] INFO TuningTrouble - ----   ADVENT Of code   2022    ----
+[main] INFO TuningTrouble - :::START = 2022-12-06T08:14:22
+[main] INFO TuningTrouble -                 ---=== Day 06 ===---     
+[main] INFO TuningTrouble -                  - Tuning Trouble -     
+[main] INFO TuningTrouble -     ---=== Part 1 ===---     
+[main] INFO TuningTrouble - Processing line 1
+[main] INFO TuningTrouble - Solution for line 1 is 1093 => [b, v, t, g]
+[main] INFO TuningTrouble -     Part 4 solution:
+ How many characters need to be processed before the first start marker is detected?= [1093]
+
+[main] INFO TuningTrouble - P1 Duration: 26ms (0s)
+[main] INFO TuningTrouble - ================================
+[main] INFO TuningTrouble -     ---=== Part 2 ===---     
+[main] INFO TuningTrouble - Processing line 1
+[main] INFO TuningTrouble - Solution for line 1 is 3534 => [c, h, f, t, r, z, l, m, n, d, p, w, q, g]
+[main] INFO TuningTrouble -     Part 14 solution:
+ How many characters need to be processed before the first start marker is detected?= [3534]
+
+[main] INFO TuningTrouble - P2 Duration: 4ms (0s)
+[main] INFO TuningTrouble - ==========----------------==============
+[main] INFO TuningTrouble - Total Duration: 30ms (0s)
+[main] INFO TuningTrouble - :::END = 1670307262420
+[main] INFO TuningTrouble - :::END = 2022-12-06T08:14:22

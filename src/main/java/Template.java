@@ -3,7 +3,9 @@ import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import static helper.InputLoader.closeInput;
 import static helper.InputLoader.getMainIn;
@@ -14,6 +16,10 @@ public class Template {
     private static final Logger logger = LoggerFactory.getLogger(Template.class.getSimpleName());
     private static final String INPUT_FILE_NAME = "year_202x/dayXX_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
+
+    static List<String> inputLines = new ArrayList<>();
+    private static String solution;
+
 
     public static void main(String[] args) {
         logger.info("----   ADVENT Of code   202x    ----");
@@ -27,6 +33,7 @@ public class Template {
         loadInput(INPUT_FILE_NAME, "");
         while (getMainIn().hasNextLine()) {
             String line = getMainIn().nextLine();
+            inputLines.add(line);
         }
 
         solvePartOne();
