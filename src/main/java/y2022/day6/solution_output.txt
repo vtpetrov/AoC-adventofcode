@@ -5,7 +5,7 @@
 [main] INFO TuningTrouble -     ---=== Part 1 ===---     
 [main] INFO TuningTrouble - Processing line 1
 [main] INFO TuningTrouble - Solution for line 1 is 1093 => [b, v, t, g]
-[main] INFO TuningTrouble -     Part 4 solution:
+[main] INFO TuningTrouble -     Part 1 solution:
  How many characters need to be processed before the first start marker is detected?= [1093]
 
 [main] INFO TuningTrouble - P1 Duration: 26ms (0s)
@@ -13,7 +13,7 @@
 [main] INFO TuningTrouble -     ---=== Part 2 ===---     
 [main] INFO TuningTrouble - Processing line 1
 [main] INFO TuningTrouble - Solution for line 1 is 3534 => [c, h, f, t, r, z, l, m, n, d, p, w, q, g]
-[main] INFO TuningTrouble -     Part 14 solution:
+[main] INFO TuningTrouble -     Part 2 solution:
  How many characters need to be processed before the first start marker is detected?= [3534]
 
 [main] INFO TuningTrouble - P2 Duration: 4ms (0s)
