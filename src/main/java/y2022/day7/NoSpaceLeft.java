@@ -23,36 +23,17 @@ import static helper.InputLoader.loadInput;
 public class NoSpaceLeft {
 
     private static final Logger logger = LoggerFactory.getLogger(NoSpaceLeft.class.getSimpleName());
-    //    private static final String INPUT_FILE_NAME = "year_202x/day07_input.txt";
-    private static final String INPUT_FILE_NAME = "debug.txt";
+    private static final String INPUT_FILE_NAME = "year_2022/day07_input.txt";
+//    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static final List<String> inputLines = new ArrayList<>();
     static final List<String> shortInput = new ArrayList<>();
     private static String solution;
-    public static final Integer DIR_BOUNDARY_SIZE = 100_000;
-    private static List<MyDirectory> dirList = new ArrayList<>();
+    public static final Integer DIR_BOUNDARY_SIZE_P1 = 100_000;
+    private static final List<MyDirectory> dirList = new ArrayList<>();
     private static int currDirIdxKeeper = -1; //start, before any elems added to dirList
     static AtomicInteger cntr = new AtomicInteger(-1);
 
-
-    /**
-     * - / (dir)
-     * - a (dir)
-     * - e (dir)
-     * - i (file, size=584)
-     * - f (file, size=29116)
-     * - g (file, size=2557)
-     * - h.lst (file, size=62596)
-     * - b.txt (file, size=14848514)
-     * - c.dat (file, size=8504156)
-     * - d (dir)
-     * - j (file, size=4060174)
-     * - d.log (file, size=8033020)
-     * - d.ext (file, size=5626152)
-     * - k (file, size=7214296)
-     *
-     * @param args
-     */
     public static void main(String[] args) {
         logger.info("----   ADVENT Of code   2022    ----");
         long start = new Date().getTime();
@@ -67,8 +48,6 @@ public class NoSpaceLeft {
             String line = getMainIn().nextLine();
             inputLines.add(line);
         }
-
-        parseInput();
 
         solvePartOne();
 
@@ -92,13 +71,24 @@ public class NoSpaceLeft {
         logger.info(":::END = " + LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
     }
 
-    private static void parseInput() {
-//        Collections.copy(shortInput, inputLines);
-        
-        traverseInput(currDirIdxKeeper);
+
+    private static void solvePartOne() {
+
+        traverseInput(-1);
         populateChildren();
         calcAndSetDirSizes();
+        int sum = dirList.stream().filter(d -> d.getSize() <= DIR_BOUNDARY_SIZE_P1).mapToInt(MyDirectory::getSize).sum();
 
+        logger.info("    Part 1 solution:\n The sum of the TOTAL sizes of directories with size at most {} is => [{}]"
+                , DIR_BOUNDARY_SIZE_P1, sum);
+
+    }
+
+
+    private static void solvePartTwo() {
+
+
+        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
     }
 
     public static final Pattern PTRN_CD_TO_ROOT_DIR_RGX = Pattern.compile("\\$ cd \\/");
@@ -134,106 +124,96 @@ public class NoSpaceLeft {
      * 5626152 d.ext
      * 7214296 k
      */
-    private static void traverseInput(int parentIdx) {
-        //        // add node to list:
-//        MyNode parentToAdd;
-//        if (nodes.size() == 0) {
-//            parentToAdd = null; // this is the root
-//        } else {
-//            parentToAdd = nodes.get(parentIndex);
-//        }
-//
-//        nodes.add(new MyNode(parentToAdd, quantityOfChildNodes, quantityOfMetadataEntries));
-//        int indexOfLastAdded = nodes.size() - 1;
-//        nodes.get(indexOfLastAdded).setId(indexOfLastAdded);
-//
-//        // read child nodes
-//        for (int n = 0; n < quantityOfChildNodes; n++) {
-//            parseDataP2(indexOfLastAdded);
-//
-//        }
+    private static void traverseInput(int iMHereParentIdx) {
         Matcher myRegexMatcher;
         String errMsg;
         int currLineIdx = cntr.incrementAndGet();
-        while (currLineIdx < inputLines.size() && cntr.get() < inputLines.size()) {
+//        while (currLineIdx < inputLines.size() && cntr.get() < inputLines.size()) {
+        while (cntr.get() < inputLines.size()) {
             String line = inputLines.get(currLineIdx);
+            int goThereNewParentIdx;
+            MyDirectory justAddedDir;
 
             // set root dir, add it to list of dirs:
             if (line.matches(PTRN_CD_TO_ROOT_DIR_RGX.toString())) {
-                logger.info("encountered go to root dir command...");
-                addDirToList("root", null);
+                logger.info("{} encountered go to root dir command...", cntr.get());
+                justAddedDir = addDirToList("root", null);
                 // parent idx is the idx of this(target):
-                currDirIdxKeeper = dirList.size() - 1;
-                traverseInput(currDirIdxKeeper);
-            }
+//                currDirIdxKeeper = dirList.size() - 1;
+                goThereNewParentIdx = dirList.indexOf(justAddedDir);
+//                traverseInput(currDirIdxKeeper);
+                traverseInput(goThereNewParentIdx);
+            } else {
+                // list dir content:
+                if (line.matches(PTRN_LIST_DIR_CONTENT_RGX.toString())) { // basically do nothing
+                    logger.info("{} encountered command to list current dir content... = > {}", cntr.get(), line);
+                    // leave parent index as is:
+                    traverseInput(iMHereParentIdx);
+                } else {           // dir appears in a list of current folder:
+                    if (line.matches(PTRN_DIR_WITH_NAME_RGX.toString())) { // basically do nothing
+                        logger.info("{} encountered DIR name listed in current folder => {} in {}", cntr.get(), line, dirList.get(iMHereParentIdx).getName());
+                        // leave parent index as is:
+                        traverseInput(iMHereParentIdx);
+                    } else {
 
-            // list dir content:
-            if (line.matches(PTRN_LIST_DIR_CONTENT_RGX.toString())) { // basically do nothing
-                logger.info("encountered command to list current dir content... = > {}", line);
-                // leave parent index as is:
-                traverseInput(currDirIdxKeeper);
-            }
+                        // // FILE appears in a list of current folder::
+                        if (line.matches(PTRN_FILE_WITH_SIZE_AND_NAME_RGX.toString())) {
+                            logger.info("{} encountered FILE info => {}", cntr.get(), line);
+                            myRegexMatcher = PTRN_FILE_WITH_SIZE_AND_NAME_RGX.matcher(line);
+                            if (!myRegexMatcher.find()) {
+                                errMsg = String.format("Problem occurred trying to obtain file info from [%s] via [%s]"
+                                        , line, PTRN_FILE_WITH_SIZE_AND_NAME_RGX);
+                                throw new Error(errMsg);
+                            }
 
-            // dir appears in a list of current folder:
-            if (line.matches(PTRN_DIR_WITH_NAME_RGX.toString())) { // basically do nothing
-                logger.info("encountered DIR name listed in current folder => {} in {}", line, dirList.get(currDirIdxKeeper).getName());
-                // leave parent index as is:
-                traverseInput(currDirIdxKeeper);
-            }
+                            // create new file obj, set properties:
+                            MyFile tmpFile = new MyFile(myRegexMatcher.group(2), Integer.parseInt(myRegexMatcher.group(1)));
+                            dirList.get(iMHereParentIdx).getFiles().add(tmpFile);
+                            // leave parent index as is:
+                            traverseInput(iMHereParentIdx);
+                        } else {
+                            // go to DIR
+                            if (line.matches(PTRN_CD_TO_DIR_WITH_NAME_RGX.toString())) { // $ cd ([a-z]+)";
+                                logger.info("{} encountered command to go to directory => {}", cntr.get(), line);
+                                myRegexMatcher = PTRN_CD_TO_DIR_WITH_NAME_RGX.matcher(line);
+                                if (!myRegexMatcher.find()) {
+                                    errMsg = String.format("Problem occurred trying to obtain dir name from [%s] via [%s]"
+                                            , line, PTRN_CD_TO_DIR_WITH_NAME_RGX);
+                                    throw new Error(errMsg);
+                                }
 
-            // // FILE appears in a list of current folder::
-            if (line.matches(PTRN_FILE_WITH_SIZE_AND_NAME_RGX.toString())) {
-                logger.info("encountered FILE info => {}", line);
-                myRegexMatcher = PTRN_FILE_WITH_SIZE_AND_NAME_RGX.matcher(line);
-                if (!myRegexMatcher.find()) {
-                    errMsg = String.format("Problem occurred trying to obtain file info from [%s] via [%s]"
-                            , line, PTRN_FILE_WITH_SIZE_AND_NAME_RGX);
-                    throw new Error(errMsg);
+                                //add dir
+                                String dirName = myRegexMatcher.group(1);// set the name coming from the command
+                                // the parent of this(target) dir is the current(source) dir
+//                addDirToList(dirName, dirList.get(iMHereParentIdx));
+                                justAddedDir = addDirToList(dirName, dirList.get(iMHereParentIdx));
+                                // parent idx is the idx of this(target):
+//                currDirIdxKeeper = dirList.size() - 1;
+                                goThereNewParentIdx = dirList.indexOf(justAddedDir);
+//                traverseInput(currDirIdxKeeper);
+                                traverseInput(goThereNewParentIdx);
+                            } else {
+
+                                // go back 1 level (to parent dir):
+                                if (line.matches(PTRN_GO_TO_PARENT_DIR_RGX.toString())) {
+                                    goThereNewParentIdx = iMHereParentIdx - 1;
+                                    logger.info("{} encountered command to go 1 level UP: from current dir [{}] to parent dir [{}] ?!?"
+                                            , cntr.get(), dirList.get(iMHereParentIdx).getName(), dirList.get(goThereNewParentIdx).getName());
+                                    // set CURR dir to the parent of this one:
+                                    // decrement currDirIdxKeeper by 1 and call recursion:
+                                    traverseInput(goThereNewParentIdx);
+                                }
+                            }
+                        }
+                    }
                 }
-
-                // create new file obj, set properties:
-                MyFile tmpFile = new MyFile(myRegexMatcher.group(2), Integer.parseInt(myRegexMatcher.group(1)));
-                dirList.get(parentIdx).getFiles().add(tmpFile);
-                // leave parent index as is:
-                traverseInput(currDirIdxKeeper);
             }
-
-            // go to DIR
-            if (line.matches(PTRN_CD_TO_DIR_WITH_NAME_RGX.toString())) { // $ cd ([a-z]+)";
-                logger.info("encountered command to go to directory => {}", line);
-                myRegexMatcher = PTRN_CD_TO_DIR_WITH_NAME_RGX.matcher(line);
-                if (!myRegexMatcher.find()) {
-                    errMsg = String.format("Problem occurred trying to obtain dir name from [%s] via [%s]"
-                            , line, PTRN_CD_TO_DIR_WITH_NAME_RGX);
-                    throw new Error(errMsg);
-                }
-
-                //add dir
-                String dirName = myRegexMatcher.group(1);// set the name coming from the command
-                // the parent of this(target) dir is the current(source) dir
-                addDirToList(dirName, dirList.get(parentIdx));
-                // parent idx is the idx of this(target):
-                currDirIdxKeeper = dirList.size() - 1;
-                traverseInput(currDirIdxKeeper);
-            }
-
-            // go back 1 level (to parent dir):
-            if (line.matches(PTRN_GO_TO_PARENT_DIR_RGX.toString())) {
-                logger.info("encountered command to go 1 level UP: from current dir [{}] to parent dir [{}] ?!?",
-                        dirList.get(currDirIdxKeeper).getName(), dirList.get(currDirIdxKeeper - 1).getName());
-                // set CURR dir to the parent of this one:
-                // decrement currDirIdxKeeper by 1 and call recursion:
-                traverseInput(--currDirIdxKeeper);
-            }
-
-//            logger.info("END traversing command lines;");
-            // call recursion 1 last time to increment counter correctly and end the while loop:
-//            traverseInput(currDirIdxKeeper);
         }
     }
 
-    private static void addDirToList(String dirName, MyDirectory parent) {
+    private static MyDirectory addDirToList(String dirName, MyDirectory parent) {
         dirList.add(new MyDirectory(dirName, parent));
+        return dirList.get(dirList.size() - 1);
     }
 
     static void populateChildren() {
@@ -248,33 +228,10 @@ public class NoSpaceLeft {
                 }
             }
         }
-
-//        for (MemoryManeuver.MyNode currentNode : nodes) {
-//            if (currentNode.getParent() != null) {
-//                if (currentNode.getParent().getId() == this.getId()) {
-//                    // "this" is parent of "current"
-//                    this.getChildNodes().add(currentNode);
-//                }
-//            }
-//
-//        }
     }
 
     private static void calcAndSetDirSizes() {
-
-    }
-
-    private static void solvePartOne() {
-
-
-        logger.info("    Part 1 solution:\n XXXXXX= [{}]", "<solution_goes_here>");
-
-    }
-
-    private static void solvePartTwo() {
-
-
-        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
+        dirList.forEach(MyDirectory::calculateSize);
     }
 
     @Data
@@ -283,7 +240,7 @@ public class NoSpaceLeft {
         private MyDirectory parent;
         private List<MyDirectory> children = new ArrayList<>();
         private List<MyFile> files = new ArrayList<>();
-        private int size; // the sum of sizes of its files and subdirectories' files
+        private int size = -1; // the sum of sizes of its files and subdirectories' files
 
         public MyDirectory(String name, MyDirectory parent) {
             this.name = name;
@@ -301,6 +258,27 @@ public class NoSpaceLeft {
                     "};\n";
         }
 
+        public int calculateSize() {
+            if (this.size == -1) { // size not yet calculated, calculated it and return it
+                int sizeValue = 0;
+                // first sum the size of FILES in this. dir:
+                for (MyFile currFile : this.getFiles()) {
+                    sizeValue += currFile.getSize();
+                }
+
+                // then travers the contained folders the same way, then come back of the recursion:
+                for (MyDirectory childDir : this.getChildren()) {
+                    sizeValue += childDir.calculateSize();
+                }
+
+                this.size = sizeValue;
+                logger.info("Setting size of dir '{}' => to [{}] and return it", this.getName(), this.getSize());
+                return sizeValue;
+            } else { // size was already calculated, just return it
+                logger.info("Just returning the size of dir '{}'= [{}]", this.getName(), this.getSize());
+                return this.size;
+            }
+        }
     }
 
     @Data
