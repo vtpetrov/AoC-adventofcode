@@ -1,10 +1,12 @@
 package y2022.day7;
 
+import helper.Misc;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.NumberFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
@@ -23,15 +25,16 @@ import static helper.InputLoader.loadInput;
 public class NoSpaceLeft {
 
     private static final Logger logger = LoggerFactory.getLogger(NoSpaceLeft.class.getSimpleName());
-    private static final String INPUT_FILE_NAME = "year_2022/day07_input.txt";
-//    private static final String INPUT_FILE_NAME = "debug.txt";
+//    private static final String INPUT_FILE_NAME = "year_2022/day07_input.txt";
+    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static final List<String> inputLines = new ArrayList<>();
     static final List<String> shortInput = new ArrayList<>();
     private static String solution;
     public static final Integer DIR_BOUNDARY_SIZE_P1 = 100_000;
     private static final List<MyDirectory> dirList = new ArrayList<>();
-    private static int currDirIdxKeeper = -1; //start, before any elems added to dirList
+    private static List<MyDirectory> smallDirs = new ArrayList<>();
+//    private static int currDirIdxKeeper = -1; //start, before any elems added to dirList
     static AtomicInteger cntr = new AtomicInteger(-1);
 
     public static void main(String[] args) {
@@ -77,10 +80,22 @@ public class NoSpaceLeft {
         traverseInput(-1);
         populateChildren();
         calcAndSetDirSizes();
-        int sum = dirList.stream().filter(d -> d.getSize() <= DIR_BOUNDARY_SIZE_P1).mapToInt(MyDirectory::getSize).sum();
 
+        NumberFormat numFormatter = NumberFormat.getInstance();
+
+
+        logger.info("List of ALL DIRs :\n{}", Misc.prettyPrintList(dirList));
+        logger.info("---------------------------------------------===================================----------------------------------");
+        logger.info("---------------------------------------------===================================----------------------------------");
+        logger.info("List of DIRs with size < 100'000 :\n{}", Misc.prettyPrintList(smallDirs));
+        
+        String average = numFormatter.format(smallDirs.stream().mapToInt(MyDirectory::getSize)
+                .average().orElse(0));
+        solution = numFormatter.format(smallDirs.stream().mapToInt(MyDirectory::getSize).sum());
+
+        logger.info("avg= {}", average);
         logger.info("    Part 1 solution:\n The sum of the TOTAL sizes of directories with size at most {} is => [{}]"
-                , DIR_BOUNDARY_SIZE_P1, sum);
+                , DIR_BOUNDARY_SIZE_P1, solution);
 
     }
 
@@ -211,13 +226,20 @@ public class NoSpaceLeft {
         }
     }
 
+    /**
+     * append index to the dir name to make it unique
+     *
+     * @param dirName the dir name
+     * @param parent  the parent
+     * @return
+     */
     private static MyDirectory addDirToList(String dirName, MyDirectory parent) {
-        dirList.add(new MyDirectory(dirName, parent));
+        int append = dirList.size();
+        dirList.add(new MyDirectory(dirName + append, parent));
         return dirList.get(dirList.size() - 1);
     }
 
     static void populateChildren() {
-
         for (MyDirectory thisDir : dirList) {
             for (MyDirectory currentDir : dirList) {
                 if (currentDir.getParent() != null) {
@@ -273,6 +295,9 @@ public class NoSpaceLeft {
 
                 this.size = sizeValue;
                 logger.info("Setting size of dir '{}' => to [{}] and return it", this.getName(), this.getSize());
+                if(this.size <= DIR_BOUNDARY_SIZE_P1) {
+                    smallDirs.add(this);
+                }
                 return sizeValue;
             } else { // size was already calculated, just return it
                 logger.info("Just returning the size of dir '{}'= [{}]", this.getName(), this.getSize());
