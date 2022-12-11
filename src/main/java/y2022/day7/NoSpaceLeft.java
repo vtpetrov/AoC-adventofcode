@@ -25,8 +25,8 @@ import static helper.InputLoader.loadInput;
 public class NoSpaceLeft {
 
     private static final Logger logger = LoggerFactory.getLogger(NoSpaceLeft.class.getSimpleName());
-//    private static final String INPUT_FILE_NAME = "year_2022/day07_input.txt";
-    private static final String INPUT_FILE_NAME = "debug.txt";
+    private static final String INPUT_FILE_NAME = "year_2022/day07_input.txt";
+//    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static final List<String> inputLines = new ArrayList<>();
     static final List<String> shortInput = new ArrayList<>();
@@ -94,6 +94,13 @@ public class NoSpaceLeft {
         solution = numFormatter.format(smallDirs.stream().mapToInt(MyDirectory::getSize).sum());
 
         logger.info("avg= {}", average);
+        logger.info("    Part 1 solution:\n The sum of the TOTAL sizes of directories with size at most {} is => [{}]"
+                , DIR_BOUNDARY_SIZE_P1, solution);
+        
+        calcAndSetDirSizes();
+        solution = numFormatter.format(smallDirs.stream().mapToInt(MyDirectory::getSize).sum());
+
+        logger.info("2nd calc ---------------                                    2nd ==========================     :");
         logger.info("    Part 1 solution:\n The sum of the TOTAL sizes of directories with size at most {} is => [{}]"
                 , DIR_BOUNDARY_SIZE_P1, solution);
 

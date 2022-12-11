@@ -1,0 +1,1867 @@
+[main] INFO TreetopTreeHouse - ----   ADVENT Of code   2022    ----
+[main] INFO TreetopTreeHouse - :::START = 2022-12-12T00:48:11
+[main] INFO TreetopTreeHouse -                 ---=== Day 08 ===---     
+[main] INFO TreetopTreeHouse -                - Treetop Tree House -     
+[main] INFO TreetopTreeHouse -     ---=== Part 1 ===---     
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][0] = 2; visible trees so far= 1
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][1] = 2; visible trees so far= 2
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][2] = 2; visible trees so far= 3
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][3] = 1; visible trees so far= 4
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][4] = 1; visible trees so far= 5
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][5] = 1; visible trees so far= 6
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][6] = 1; visible trees so far= 7
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][7] = 2; visible trees so far= 8
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][8] = 1; visible trees so far= 9
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][9] = 3; visible trees so far= 10
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][10] = 1; visible trees so far= 11
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][11] = 1; visible trees so far= 12
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][12] = 0; visible trees so far= 13
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][13] = 3; visible trees so far= 14
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][14] = 3; visible trees so far= 15
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][15] = 0; visible trees so far= 16
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][16] = 1; visible trees so far= 17
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][17] = 0; visible trees so far= 18
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][18] = 3; visible trees so far= 19
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][19] = 2; visible trees so far= 20
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][20] = 0; visible trees so far= 21
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][21] = 1; visible trees so far= 22
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][22] = 3; visible trees so far= 23
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][23] = 1; visible trees so far= 24
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][24] = 2; visible trees so far= 25
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][25] = 3; visible trees so far= 26
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][26] = 2; visible trees so far= 27
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][27] = 0; visible trees so far= 28
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][28] = 3; visible trees so far= 29
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][29] = 1; visible trees so far= 30
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][30] = 3; visible trees so far= 31
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][31] = 0; visible trees so far= 32
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][32] = 1; visible trees so far= 33
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][33] = 0; visible trees so far= 34
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][34] = 0; visible trees so far= 35
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][35] = 0; visible trees so far= 36
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][36] = 0; visible trees so far= 37
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][37] = 4; visible trees so far= 38
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][38] = 3; visible trees so far= 39
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][39] = 3; visible trees so far= 40
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][40] = 3; visible trees so far= 41
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][41] = 2; visible trees so far= 42
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][42] = 0; visible trees so far= 43
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][43] = 1; visible trees so far= 44
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][44] = 2; visible trees so far= 45
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][45] = 1; visible trees so far= 46
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][46] = 5; visible trees so far= 47
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][47] = 4; visible trees so far= 48
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][48] = 4; visible trees so far= 49
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][49] = 3; visible trees so far= 50
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][50] = 5; visible trees so far= 51
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][51] = 1; visible trees so far= 52
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][52] = 1; visible trees so far= 53
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][53] = 4; visible trees so far= 54
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][54] = 4; visible trees so far= 55
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][55] = 1; visible trees so far= 56
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][56] = 4; visible trees so far= 57
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][57] = 3; visible trees so far= 58
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][58] = 3; visible trees so far= 59
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][59] = 2; visible trees so far= 60
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][60] = 2; visible trees so far= 61
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][61] = 3; visible trees so far= 62
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][62] = 1; visible trees so far= 63
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][63] = 3; visible trees so far= 64
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][64] = 4; visible trees so far= 65
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][65] = 3; visible trees so far= 66
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][66] = 2; visible trees so far= 67
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][67] = 1; visible trees so far= 68
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][68] = 4; visible trees so far= 69
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][69] = 4; visible trees so far= 70
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][70] = 1; visible trees so far= 71
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][71] = 2; visible trees so far= 72
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][72] = 2; visible trees so far= 73
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][73] = 4; visible trees so far= 74
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][74] = 3; visible trees so far= 75
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][75] = 2; visible trees so far= 76
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][76] = 3; visible trees so far= 77
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][77] = 3; visible trees so far= 78
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][78] = 4; visible trees so far= 79
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][79] = 0; visible trees so far= 80
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][80] = 1; visible trees so far= 81
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][81] = 3; visible trees so far= 82
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][82] = 1; visible trees so far= 83
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][83] = 0; visible trees so far= 84
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][84] = 3; visible trees so far= 85
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][85] = 2; visible trees so far= 86
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][86] = 0; visible trees so far= 87
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][87] = 3; visible trees so far= 88
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][88] = 3; visible trees so far= 89
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][89] = 0; visible trees so far= 90
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][90] = 0; visible trees so far= 91
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][91] = 1; visible trees so far= 92
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][92] = 1; visible trees so far= 93
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][93] = 1; visible trees so far= 94
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][94] = 1; visible trees so far= 95
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][95] = 0; visible trees so far= 96
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][96] = 1; visible trees so far= 97
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][97] = 1; visible trees so far= 98
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[0][98] = 0; visible trees so far= 99
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[1][0] = 1; visible trees so far= 100
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[1][1] = 2; visible trees so far= 101
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][3] = 2; visible trees so far= 102
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][5] = 2; visible trees so far= 103
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][6] = 2; visible trees so far= 104
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][12] = 2; visible trees so far= 105
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[1][15] = 3; visible trees so far= 106
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][16] = 2; visible trees so far= 107
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][17] = 1; visible trees so far= 108
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][20] = 2; visible trees so far= 109
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][21] = 2; visible trees so far= 110
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][24] = 3; visible trees so far= 111
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][27] = 3; visible trees so far= 112
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][29] = 2; visible trees so far= 113
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[1][31] = 4; visible trees so far= 114
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][32] = 4; visible trees so far= 115
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][33] = 2; visible trees so far= 116
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][34] = 2; visible trees so far= 117
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][35] = 3; visible trees so far= 118
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][41] = 3; visible trees so far= 119
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][42] = 3; visible trees so far= 120
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][43] = 4; visible trees so far= 121
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][45] = 3; visible trees so far= 122
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[1][51] = 5; visible trees so far= 123
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][52] = 2; visible trees so far= 124
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][54] = 5; visible trees so far= 125
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][55] = 2; visible trees so far= 126
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][57] = 4; visible trees so far= 127
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][58] = 5; visible trees so far= 128
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][60] = 3; visible trees so far= 129
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[1][62] = 5; visible trees so far= 130
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][67] = 4; visible trees so far= 131
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][70] = 2; visible trees so far= 132
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][79] = 1; visible trees so far= 133
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[1][80] = 4; visible trees so far= 134
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][83] = 2; visible trees so far= 135
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][89] = 1; visible trees so far= 136
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][91] = 3; visible trees so far= 137
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[1][92] = 3; visible trees so far= 138
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][94] = 2; visible trees so far= 139
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[1][95] = 2; visible trees so far= 140
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[1][98] = 2; visible trees so far= 141
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[2][0] = 0; visible trees so far= 142
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[2][1] = 1; visible trees so far= 143
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[2][2] = 2; visible trees so far= 144
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[2][9] = 3; visible trees so far= 145
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][10] = 3; visible trees so far= 146
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][11] = 3; visible trees so far= 147
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][16] = 3; visible trees so far= 148
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][17] = 2; visible trees so far= 149
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[2][23] = 4; visible trees so far= 150
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][26] = 4; visible trees so far= 151
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][29] = 4; visible trees so far= 152
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][33] = 3; visible trees so far= 153
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][36] = 2; visible trees so far= 154
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[2][37] = 5; visible trees so far= 155
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][38] = 5; visible trees so far= 156
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][41] = 4; visible trees so far= 157
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][48] = 5; visible trees so far= 158
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][49] = 4; visible trees so far= 159
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][52] = 5; visible trees so far= 160
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][53] = 5; visible trees so far= 161
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][55] = 3; visible trees so far= 162
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][56] = 5; visible trees so far= 163
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][57] = 5; visible trees so far= 164
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][59] = 3; visible trees so far= 165
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][61] = 4; visible trees so far= 166
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[2][62] = 5; visible trees so far= 167
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][66] = 4; visible trees so far= 168
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[2][72] = 4; visible trees so far= 169
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][82] = 2; visible trees so far= 170
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][83] = 3; visible trees so far= 171
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[2][86] = 1; visible trees so far= 172
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[2][91] = 3; visible trees so far= 173
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[2][92] = 2; visible trees so far= 174
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[2][96] = 1; visible trees so far= 175
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[2][98] = 0; visible trees so far= 176
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[3][0] = 2; visible trees so far= 177
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[3][14] = 3; visible trees so far= 178
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][17] = 3; visible trees so far= 179
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[3][20] = 4; visible trees so far= 180
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][24] = 4; visible trees so far= 181
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][33] = 4; visible trees so far= 182
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][36] = 3; visible trees so far= 183
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[3][40] = 5; visible trees so far= 184
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][44] = 3; visible trees so far= 185
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][45] = 4; visible trees so far= 186
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][55] = 4; visible trees so far= 187
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][60] = 5; visible trees so far= 188
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[3][62] = 5; visible trees so far= 189
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][71] = 3; visible trees so far= 190
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][79] = 2; visible trees so far= 191
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[3][82] = 4; visible trees so far= 192
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][86] = 3; visible trees so far= 193
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][89] = 2; visible trees so far= 194
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[3][90] = 3; visible trees so far= 195
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[3][93] = 3; visible trees so far= 196
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[3][96] = 2; visible trees so far= 197
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[3][98] = 0; visible trees so far= 198
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[4][0] = 2; visible trees so far= 199
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[4][7] = 3; visible trees so far= 200
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[4][18] = 4; visible trees so far= 201
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][25] = 4; visible trees so far= 202
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[4][30] = 5; visible trees so far= 203
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][31] = 5; visible trees so far= 204
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][41] = 5; visible trees so far= 205
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][47] = 5; visible trees so far= 206
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][61] = 5; visible trees so far= 207
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][63] = 4; visible trees so far= 208
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][65] = 5; visible trees so far= 209
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][66] = 5; visible trees so far= 210
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][68] = 5; visible trees so far= 211
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[4][69] = 5; visible trees so far= 212
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][70] = 4; visible trees so far= 213
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[4][75] = 4; visible trees so far= 214
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[4][77] = 4; visible trees so far= 215
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[4][83] = 3; visible trees so far= 216
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[4][98] = 2; visible trees so far= 217
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[5][0] = 1; visible trees so far= 218
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[5][2] = 2; visible trees so far= 219
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][8] = 2; visible trees so far= 220
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[5][11] = 3; visible trees so far= 221
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[5][20] = 4; visible trees so far= 222
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][22] = 4; visible trees so far= 223
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][27] = 4; visible trees so far= 224
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[5][30] = 5; visible trees so far= 225
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][33] = 5; visible trees so far= 226
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][34] = 4; visible trees so far= 227
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][35] = 5; visible trees so far= 228
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][42] = 5; visible trees so far= 229
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][44] = 4; visible trees so far= 230
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][49] = 5; visible trees so far= 231
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][55] = 5; visible trees so far= 232
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][59] = 4; visible trees so far= 233
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[5][64] = 5; visible trees so far= 234
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[5][65] = 5; visible trees so far= 235
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[5][85] = 4; visible trees so far= 236
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[5][96] = 3; visible trees so far= 237
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[5][98] = 0; visible trees so far= 238
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[6][0] = 0; visible trees so far= 239
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[6][1] = 1; visible trees so far= 240
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[6][8] = 3; visible trees so far= 241
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[6][17] = 4; visible trees so far= 242
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[6][19] = 4; visible trees so far= 243
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[6][28] = 5; visible trees so far= 244
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[6][69] = 5; visible trees so far= 245
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[6][85] = 4; visible trees so far= 246
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[6][94] = 3; visible trees so far= 247
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[6][96] = 2; visible trees so far= 248
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[6][97] = 1; visible trees so far= 249
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[6][98] = 0; visible trees so far= 250
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[7][0] = 1; visible trees so far= 251
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[7][1] = 2; visible trees so far= 252
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[7][4] = 3; visible trees so far= 253
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[7][12] = 4; visible trees so far= 254
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][13] = 4; visible trees so far= 255
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][14] = 4; visible trees so far= 256
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][21] = 4; visible trees so far= 257
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[7][29] = 5; visible trees so far= 258
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[7][46] = 6; visible trees so far= 259
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][47] = 6; visible trees so far= 260
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][48] = 6; visible trees so far= 261
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[7][51] = 6; visible trees so far= 262
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][71] = 5; visible trees so far= 263
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[7][74] = 5; visible trees so far= 264
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[7][84] = 4; visible trees so far= 265
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[7][86] = 4; visible trees so far= 266
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[7][91] = 3; visible trees so far= 267
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[7][98] = 2; visible trees so far= 268
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[8][0] = 2; visible trees so far= 269
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[8][1] = 3; visible trees so far= 270
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[8][11] = 4; visible trees so far= 271
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[8][23] = 5; visible trees so far= 272
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[8][39] = 4; visible trees so far= 273
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[8][44] = 6; visible trees so far= 274
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[8][59] = 6; visible trees so far= 275
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[8][68] = 5; visible trees so far= 276
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[8][76] = 4; visible trees so far= 277
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[8][87] = 4; visible trees so far= 278
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[8][89] = 4; visible trees so far= 279
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[8][95] = 3; visible trees so far= 280
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[8][97] = 2; visible trees so far= 281
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[8][98] = 3; visible trees so far= 282
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[9][0] = 0; visible trees so far= 283
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[9][1] = 3; visible trees so far= 284
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][3] = 3; visible trees so far= 285
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][6] = 3; visible trees so far= 286
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[9][10] = 4; visible trees so far= 287
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[9][22] = 5; visible trees so far= 288
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][26] = 5; visible trees so far= 289
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][27] = 5; visible trees so far= 290
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[9][37] = 6; visible trees so far= 291
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][42] = 6; visible trees so far= 292
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[9][48] = 6; visible trees so far= 293
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][63] = 5; visible trees so far= 294
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[9][67] = 5; visible trees so far= 295
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[9][79] = 4; visible trees so far= 296
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[9][84] = 4; visible trees so far= 297
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[9][95] = 3; visible trees so far= 298
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[9][98] = 1; visible trees so far= 299
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[10][0] = 0; visible trees so far= 300
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[10][1] = 3; visible trees so far= 301
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[10][2] = 3; visible trees so far= 302
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[10][5] = 3; visible trees so far= 303
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[10][9] = 4; visible trees so far= 304
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[10][26] = 5; visible trees so far= 305
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[10][36] = 4; visible trees so far= 306
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[10][42] = 6; visible trees so far= 307
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[10][61] = 6; visible trees so far= 308
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[10][72] = 5; visible trees so far= 309
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[10][83] = 4; visible trees so far= 310
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[10][89] = 4; visible trees so far= 311
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[10][97] = 3; visible trees so far= 312
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[10][98] = 3; visible trees so far= 313
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[11][0] = 2; visible trees so far= 314
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[11][7] = 3; visible trees so far= 315
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[11][8] = 4; visible trees so far= 316
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[11][28] = 5; visible trees so far= 317
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[11][34] = 5; visible trees so far= 318
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[11][35] = 6; visible trees so far= 319
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[11][36] = 5; visible trees so far= 320
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[11][41] = 6; visible trees so far= 321
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[11][53] = 6; visible trees so far= 322
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[11][60] = 6; visible trees so far= 323
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[11][66] = 6; visible trees so far= 324
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[11][71] = 5; visible trees so far= 325
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[11][86] = 4; visible trees so far= 326
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[11][95] = 3; visible trees so far= 327
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[11][96] = 2; visible trees so far= 328
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[11][98] = 1; visible trees so far= 329
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[12][0] = 3; visible trees so far= 330
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[12][13] = 4; visible trees so far= 331
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[12][17] = 5; visible trees so far= 332
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[12][24] = 5; visible trees so far= 333
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[12][25] = 5; visible trees so far= 334
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[12][31] = 6; visible trees so far= 335
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[12][45] = 6; visible trees so far= 336
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[12][70] = 6; visible trees so far= 337
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[12][76] = 5; visible trees so far= 338
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[12][77] = 5; visible trees so far= 339
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[12][89] = 4; visible trees so far= 340
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[12][98] = 2; visible trees so far= 341
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[13][0] = 3; visible trees so far= 342
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[13][13] = 4; visible trees so far= 343
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[13][20] = 5; visible trees so far= 344
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[13][30] = 6; visible trees so far= 345
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[13][36] = 6; visible trees so far= 346
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[13][39] = 5; visible trees so far= 347
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[13][49] = 6; visible trees so far= 348
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[13][55] = 6; visible trees so far= 349
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[13][70] = 6; visible trees so far= 350
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[13][73] = 5; visible trees so far= 351
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[13][84] = 5; visible trees so far= 352
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[13][89] = 4; visible trees so far= 353
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[13][94] = 3; visible trees so far= 354
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[13][97] = 2; visible trees so far= 355
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[13][98] = 1; visible trees so far= 356
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[14][0] = 0; visible trees so far= 357
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[14][1] = 1; visible trees so far= 358
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[14][3] = 3; visible trees so far= 359
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[14][9] = 4; visible trees so far= 360
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[14][21] = 5; visible trees so far= 361
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[14][29] = 6; visible trees so far= 362
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][32] = 6; visible trees so far= 363
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][33] = 6; visible trees so far= 364
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][39] = 6; visible trees so far= 365
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][57] = 6; visible trees so far= 366
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][62] = 6; visible trees so far= 367
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][64] = 6; visible trees so far= 368
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][65] = 6; visible trees so far= 369
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][69] = 6; visible trees so far= 370
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][73] = 6; visible trees so far= 371
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[14][74] = 6; visible trees so far= 372
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][78] = 5; visible trees so far= 373
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][79] = 5; visible trees so far= 374
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[14][81] = 5; visible trees so far= 375
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[14][85] = 5; visible trees so far= 376
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[14][98] = 3; visible trees so far= 377
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[15][0] = 0; visible trees so far= 378
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[15][2] = 3; visible trees so far= 379
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[15][7] = 4; visible trees so far= 380
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[15][16] = 5; visible trees so far= 381
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][18] = 5; visible trees so far= 382
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[15][27] = 6; visible trees so far= 383
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][28] = 6; visible trees so far= 384
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][43] = 6; visible trees so far= 385
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][56] = 6; visible trees so far= 386
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][58] = 6; visible trees so far= 387
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][63] = 6; visible trees so far= 388
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[15][72] = 6; visible trees so far= 389
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[15][83] = 5; visible trees so far= 390
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][88] = 4; visible trees so far= 391
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[15][90] = 4; visible trees so far= 392
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[15][93] = 4; visible trees so far= 393
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[15][98] = 3; visible trees so far= 394
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[16][0] = 3; visible trees so far= 395
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[16][4] = 4; visible trees so far= 396
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[16][19] = 5; visible trees so far= 397
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[16][26] = 6; visible trees so far= 398
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][40] = 6; visible trees so far= 399
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[16][46] = 7; visible trees so far= 400
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][48] = 7; visible trees so far= 401
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][50] = 7; visible trees so far= 402
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][51] = 7; visible trees so far= 403
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][52] = 7; visible trees so far= 404
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[16][53] = 7; visible trees so far= 405
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[16][75] = 6; visible trees so far= 406
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[16][76] = 6; visible trees so far= 407
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[16][93] = 4; visible trees so far= 408
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[16][98] = 3; visible trees so far= 409
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[17][0] = 3; visible trees so far= 410
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[17][4] = 4; visible trees so far= 411
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[17][12] = 5; visible trees so far= 412
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[17][15] = 4; visible trees so far= 413
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[17][37] = 6; visible trees so far= 414
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[17][41] = 7; visible trees so far= 415
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[17][47] = 7; visible trees so far= 416
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][52] = 7; visible trees so far= 417
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][67] = 6; visible trees so far= 418
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[17][80] = 5; visible trees so far= 419
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][81] = 5; visible trees so far= 420
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][91] = 4; visible trees so far= 421
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][95] = 3; visible trees so far= 422
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[17][97] = 1; visible trees so far= 423
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[17][98] = 0; visible trees so far= 424
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[18][0] = 1; visible trees so far= 425
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[18][2] = 4; visible trees so far= 426
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[18][11] = 5; visible trees so far= 427
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][15] = 5; visible trees so far= 428
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[18][21] = 6; visible trees so far= 429
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][23] = 6; visible trees so far= 430
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][24] = 6; visible trees so far= 431
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][34] = 6; visible trees so far= 432
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][38] = 6; visible trees so far= 433
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[18][39] = 7; visible trees so far= 434
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][43] = 7; visible trees so far= 435
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][55] = 7; visible trees so far= 436
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][56] = 7; visible trees so far= 437
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[18][63] = 7; visible trees so far= 438
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][77] = 6; visible trees so far= 439
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[18][79] = 6; visible trees so far= 440
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[18][82] = 5; visible trees so far= 441
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[18][89] = 5; visible trees so far= 442
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[18][91] = 4; visible trees so far= 443
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[18][98] = 3; visible trees so far= 444
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[19][0] = 1; visible trees so far= 445
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[19][3] = 3; visible trees so far= 446
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[19][11] = 4; visible trees so far= 447
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[19][13] = 5; visible trees so far= 448
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[19][20] = 6; visible trees so far= 449
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][22] = 6; visible trees so far= 450
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[19][34] = 7; visible trees so far= 451
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][38] = 7; visible trees so far= 452
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][42] = 7; visible trees so far= 453
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][45] = 7; visible trees so far= 454
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][49] = 7; visible trees so far= 455
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][60] = 7; visible trees so far= 456
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[19][64] = 7; visible trees so far= 457
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[19][68] = 6; visible trees so far= 458
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[19][75] = 6; visible trees so far= 459
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[19][84] = 5; visible trees so far= 460
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[19][94] = 4; visible trees so far= 461
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[19][96] = 3; visible trees so far= 462
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[19][98] = 1; visible trees so far= 463
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[20][0] = 1; visible trees so far= 464
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[20][1] = 4; visible trees so far= 465
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[20][6] = 4; visible trees so far= 466
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[20][13] = 5; visible trees so far= 467
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[20][19] = 6; visible trees so far= 468
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[20][31] = 7; visible trees so far= 469
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[20][54] = 6; visible trees so far= 470
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[20][57] = 7; visible trees so far= 471
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[20][62] = 7; visible trees so far= 472
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[20][71] = 6; visible trees so far= 473
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[20][79] = 6; visible trees so far= 474
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[20][92] = 4; visible trees so far= 475
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[20][94] = 3; visible trees so far= 476
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[20][97] = 2; visible trees so far= 477
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[20][98] = 1; visible trees so far= 478
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[21][0] = 2; visible trees so far= 479
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[21][3] = 4; visible trees so far= 480
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[21][15] = 5; visible trees so far= 481
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[21][18] = 6; visible trees so far= 482
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[21][46] = 7; visible trees so far= 483
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[21][54] = 7; visible trees so far= 484
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[21][58] = 7; visible trees so far= 485
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[21][59] = 7; visible trees so far= 486
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[21][65] = 7; visible trees so far= 487
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][68] = 7; visible trees so far= 488
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][79] = 6; visible trees so far= 489
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][81] = 5; visible trees so far= 490
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][89] = 4; visible trees so far= 491
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][96] = 3; visible trees so far= 492
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[21][97] = 1; visible trees so far= 493
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[21][98] = 0; visible trees so far= 494
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[22][0] = 3; visible trees so far= 495
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[22][1] = 4; visible trees so far= 496
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[22][5] = 4; visible trees so far= 497
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[22][8] = 5; visible trees so far= 498
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[22][10] = 5; visible trees so far= 499
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[22][30] = 7; visible trees so far= 500
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[22][50] = 8; visible trees so far= 501
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[22][54] = 8; visible trees so far= 502
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[22][61] = 7; visible trees so far= 503
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[22][71] = 7; visible trees so far= 504
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[22][74] = 6; visible trees so far= 505
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[22][85] = 5; visible trees so far= 506
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[22][98] = 4; visible trees so far= 507
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[23][0] = 1; visible trees so far= 508
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[23][1] = 3; visible trees so far= 509
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[23][10] = 5; visible trees so far= 510
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[23][27] = 6; visible trees so far= 511
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[23][32] = 7; visible trees so far= 512
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][40] = 7; visible trees so far= 513
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[23][41] = 8; visible trees so far= 514
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][44] = 7; visible trees so far= 515
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][49] = 8; visible trees so far= 516
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][56] = 8; visible trees so far= 517
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[23][60] = 8; visible trees so far= 518
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][67] = 7; visible trees so far= 519
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][70] = 7; visible trees so far= 520
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[23][73] = 7; visible trees so far= 521
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[23][82] = 6; visible trees so far= 522
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[23][83] = 6; visible trees so far= 523
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[23][91] = 5; visible trees so far= 524
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[23][97] = 2; visible trees so far= 525
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[23][98] = 0; visible trees so far= 526
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[24][0] = 2; visible trees so far= 527
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][2] = 3; visible trees so far= 528
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][5] = 4; visible trees so far= 529
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][10] = 5; visible trees so far= 530
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][22] = 6; visible trees so far= 531
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[24][25] = 6; visible trees so far= 532
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][29] = 7; visible trees so far= 533
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[24][36] = 7; visible trees so far= 534
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[24][45] = 8; visible trees so far= 535
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[24][47] = 8; visible trees so far= 536
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[24][62] = 8; visible trees so far= 537
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[24][67] = 7; visible trees so far= 538
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[24][83] = 6; visible trees so far= 539
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[24][90] = 5; visible trees so far= 540
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[24][92] = 5; visible trees so far= 541
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[24][94] = 3; visible trees so far= 542
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[24][98] = 1; visible trees so far= 543
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[25][0] = 4; visible trees so far= 544
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[25][8] = 5; visible trees so far= 545
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[25][17] = 6; visible trees so far= 546
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[25][26] = 7; visible trees so far= 547
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[25][37] = 8; visible trees so far= 548
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[25][38] = 8; visible trees so far= 549
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[25][62] = 8; visible trees so far= 550
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[25][72] = 7; visible trees so far= 551
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[25][83] = 6; visible trees so far= 552
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[25][93] = 5; visible trees so far= 553
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[25][95] = 4; visible trees so far= 554
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[25][97] = 4; visible trees so far= 555
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[25][98] = 0; visible trees so far= 556
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[26][0] = 2; visible trees so far= 557
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[26][6] = 3; visible trees so far= 558
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[26][11] = 5; visible trees so far= 559
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[26][15] = 6; visible trees so far= 560
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[26][30] = 7; visible trees so far= 561
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[26][37] = 8; visible trees so far= 562
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][44] = 8; visible trees so far= 563
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][46] = 8; visible trees so far= 564
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][48] = 8; visible trees so far= 565
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][52] = 8; visible trees so far= 566
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][53] = 8; visible trees so far= 567
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][61] = 8; visible trees so far= 568
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[26][64] = 8; visible trees so far= 569
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[26][70] = 7; visible trees so far= 570
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[26][75] = 6; visible trees so far= 571
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[26][86] = 5; visible trees so far= 572
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[26][90] = 5; visible trees so far= 573
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[26][93] = 4; visible trees so far= 574
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[26][98] = 2; visible trees so far= 575
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[27][0] = 4; visible trees so far= 576
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[27][12] = 5; visible trees so far= 577
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[27][17] = 6; visible trees so far= 578
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[27][28] = 7; visible trees so far= 579
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[27][33] = 8; visible trees so far= 580
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[27][34] = 8; visible trees so far= 581
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[27][36] = 8; visible trees so far= 582
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[27][40] = 8; visible trees so far= 583
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[27][42] = 8; visible trees so far= 584
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[27][54] = 8; visible trees so far= 585
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[27][74] = 7; visible trees so far= 586
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[27][77] = 7; visible trees so far= 587
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[27][85] = 6; visible trees so far= 588
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[27][91] = 4; visible trees so far= 589
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[27][98] = 3; visible trees so far= 590
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[28][0] = 1; visible trees so far= 591
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][1] = 2; visible trees so far= 592
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][2] = 3; visible trees so far= 593
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][4] = 4; visible trees so far= 594
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][13] = 6; visible trees so far= 595
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][35] = 7; visible trees so far= 596
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[28][36] = 8; visible trees so far= 597
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[28][39] = 8; visible trees so far= 598
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[28][51] = 8; visible trees so far= 599
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][58] = 8; visible trees so far= 600
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[28][66] = 7; visible trees so far= 601
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][68] = 7; visible trees so far= 602
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][85] = 6; visible trees so far= 603
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[28][87] = 5; visible trees so far= 604
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][92] = 5; visible trees so far= 605
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][94] = 4; visible trees so far= 606
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[28][95] = 3; visible trees so far= 607
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[28][98] = 1; visible trees so far= 608
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[29][0] = 0; visible trees so far= 609
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][2] = 1; visible trees so far= 610
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][3] = 2; visible trees so far= 611
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][6] = 5; visible trees so far= 612
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][7] = 5; visible trees so far= 613
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][14] = 6; visible trees so far= 614
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][16] = 6; visible trees so far= 615
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][27] = 7; visible trees so far= 616
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][31] = 8; visible trees so far= 617
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[29][46] = 9; visible trees so far= 618
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][48] = 9; visible trees so far= 619
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][49] = 9; visible trees so far= 620
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][50] = 9; visible trees so far= 621
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][54] = 9; visible trees so far= 622
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][68] = 8; visible trees so far= 623
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][75] = 7; visible trees so far= 624
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][85] = 6; visible trees so far= 625
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[29][88] = 5; visible trees so far= 626
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][93] = 5; visible trees so far= 627
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[29][97] = 4; visible trees so far= 628
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[29][98] = 0; visible trees so far= 629
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[30][0] = 1; visible trees so far= 630
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][1] = 2; visible trees so far= 631
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][3] = 4; visible trees so far= 632
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][4] = 5; visible trees so far= 633
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[30][5] = 5; visible trees so far= 634
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][13] = 6; visible trees so far= 635
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][20] = 7; visible trees so far= 636
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][30] = 8; visible trees so far= 637
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[30][49] = 9; visible trees so far= 638
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[30][53] = 9; visible trees so far= 639
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[30][57] = 8; visible trees so far= 640
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[30][59] = 8; visible trees so far= 641
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[30][79] = 7; visible trees so far= 642
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[30][84] = 6; visible trees so far= 643
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[30][90] = 5; visible trees so far= 644
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[30][98] = 4; visible trees so far= 645
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[31][0] = 4; visible trees so far= 646
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[31][12] = 6; visible trees so far= 647
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[31][21] = 7; visible trees so far= 648
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[31][22] = 7; visible trees so far= 649
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[31][34] = 8; visible trees so far= 650
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[31][35] = 8; visible trees so far= 651
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[31][41] = 9; visible trees so far= 652
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[31][59] = 9; visible trees so far= 653
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[31][71] = 8; visible trees so far= 654
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[31][74] = 7; visible trees so far= 655
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[31][78] = 6; visible trees so far= 656
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[31][84] = 6; visible trees so far= 657
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[31][96] = 5; visible trees so far= 658
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[31][98] = 1; visible trees so far= 659
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[32][0] = 1; visible trees so far= 660
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][3] = 4; visible trees so far= 661
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][4] = 5; visible trees so far= 662
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][16] = 6; visible trees so far= 663
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][19] = 7; visible trees so far= 664
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][33] = 8; visible trees so far= 665
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[32][42] = 9; visible trees so far= 666
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][43] = 9; visible trees so far= 667
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][51] = 9; visible trees so far= 668
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][55] = 8; visible trees so far= 669
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[32][61] = 9; visible trees so far= 670
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][66] = 8; visible trees so far= 671
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][69] = 7; visible trees so far= 672
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[32][72] = 8; visible trees so far= 673
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[32][74] = 7; visible trees so far= 674
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][80] = 6; visible trees so far= 675
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][81] = 6; visible trees so far= 676
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[32][86] = 6; visible trees so far= 677
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[32][89] = 6; visible trees so far= 678
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[32][93] = 4; visible trees so far= 679
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[32][98] = 2; visible trees so far= 680
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[33][0] = 3; visible trees so far= 681
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[33][6] = 5; visible trees so far= 682
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[33][12] = 6; visible trees so far= 683
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[33][20] = 7; visible trees so far= 684
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[33][25] = 7; visible trees so far= 685
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[33][32] = 8; visible trees so far= 686
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[33][40] = 9; visible trees so far= 687
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[33][42] = 9; visible trees so far= 688
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[33][63] = 8; visible trees so far= 689
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[33][71] = 8; visible trees so far= 690
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[33][80] = 7; visible trees so far= 691
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[33][81] = 7; visible trees so far= 692
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[33][88] = 6; visible trees so far= 693
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[33][89] = 6; visible trees so far= 694
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[33][92] = 5; visible trees so far= 695
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[33][98] = 4; visible trees so far= 696
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[34][0] = 3; visible trees so far= 697
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][1] = 4; visible trees so far= 698
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][6] = 5; visible trees so far= 699
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][11] = 6; visible trees so far= 700
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][20] = 7; visible trees so far= 701
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][33] = 8; visible trees so far= 702
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[34][51] = 9; visible trees so far= 703
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[34][64] = 9; visible trees so far= 704
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[34][69] = 8; visible trees so far= 705
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[34][71] = 8; visible trees so far= 706
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[34][78] = 7; visible trees so far= 707
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[34][82] = 7; visible trees so far= 708
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[34][90] = 5; visible trees so far= 709
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[34][97] = 4; visible trees so far= 710
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[34][98] = 2; visible trees so far= 711
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[35][0] = 1; visible trees so far= 712
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][2] = 4; visible trees so far= 713
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][3] = 5; visible trees so far= 714
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][9] = 5; visible trees so far= 715
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][10] = 6; visible trees so far= 716
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][18] = 7; visible trees so far= 717
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][26] = 8; visible trees so far= 718
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][28] = 8; visible trees so far= 719
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[35][35] = 9; visible trees so far= 720
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][37] = 9; visible trees so far= 721
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][45] = 9; visible trees so far= 722
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][58] = 9; visible trees so far= 723
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][62] = 9; visible trees so far= 724
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[35][63] = 9; visible trees so far= 725
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][70] = 8; visible trees so far= 726
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[35][72] = 8; visible trees so far= 727
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[35][76] = 7; visible trees so far= 728
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[35][82] = 7; visible trees so far= 729
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[35][87] = 6; visible trees so far= 730
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[35][94] = 5; visible trees so far= 731
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[35][98] = 2; visible trees so far= 732
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[36][0] = 3; visible trees so far= 733
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[36][2] = 5; visible trees so far= 734
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[36][13] = 6; visible trees so far= 735
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[36][19] = 7; visible trees so far= 736
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[36][23] = 7; visible trees so far= 737
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[36][26] = 8; visible trees so far= 738
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[36][36] = 9; visible trees so far= 739
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[36][55] = 9; visible trees so far= 740
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[36][65] = 8; visible trees so far= 741
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[36][67] = 8; visible trees so far= 742
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[36][73] = 8; visible trees so far= 743
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[36][74] = 8; visible trees so far= 744
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[36][83] = 7; visible trees so far= 745
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[36][97] = 5; visible trees so far= 746
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[36][98] = 5; visible trees so far= 747
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[37][0] = 0; visible trees so far= 748
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[37][2] = 5; visible trees so far= 749
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[37][9] = 6; visible trees so far= 750
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[37][25] = 8; visible trees so far= 751
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[37][34] = 9; visible trees so far= 752
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[37][52] = 9; visible trees so far= 753
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[37][56] = 9; visible trees so far= 754
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[37][61] = 9; visible trees so far= 755
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[37][73] = 8; visible trees so far= 756
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[37][82] = 7; visible trees so far= 757
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[37][84] = 6; visible trees so far= 758
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[37][87] = 5; visible trees so far= 759
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[37][98] = 4; visible trees so far= 760
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[38][0] = 3; visible trees so far= 761
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[38][5] = 5; visible trees so far= 762
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[38][12] = 6; visible trees so far= 763
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[38][24] = 7; visible trees so far= 764
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[38][25] = 8; visible trees so far= 765
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[38][35] = 9; visible trees so far= 766
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[38][57] = 9; visible trees so far= 767
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[38][58] = 9; visible trees so far= 768
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[38][71] = 8; visible trees so far= 769
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[38][79] = 7; visible trees so far= 770
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[38][83] = 6; visible trees so far= 771
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[38][95] = 5; visible trees so far= 772
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[38][98] = 4; visible trees so far= 773
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[39][0] = 4; visible trees so far= 774
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[39][1] = 5; visible trees so far= 775
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[39][13] = 6; visible trees so far= 776
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[39][23] = 7; visible trees so far= 777
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[39][25] = 8; visible trees so far= 778
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[39][33] = 9; visible trees so far= 779
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[39][38] = 9; visible trees so far= 780
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[39][68] = 9; visible trees so far= 781
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[39][72] = 8; visible trees so far= 782
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[39][81] = 7; visible trees so far= 783
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[39][85] = 6; visible trees so far= 784
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[39][98] = 5; visible trees so far= 785
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[40][0] = 0; visible trees so far= 786
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[40][1] = 5; visible trees so far= 787
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[40][18] = 6; visible trees so far= 788
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[40][20] = 7; visible trees so far= 789
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[40][30] = 8; visible trees so far= 790
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[40][31] = 9; visible trees so far= 791
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[40][44] = 9; visible trees so far= 792
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[40][47] = 9; visible trees so far= 793
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[40][69] = 9; visible trees so far= 794
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[40][84] = 7; visible trees so far= 795
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[40][91] = 6; visible trees so far= 796
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[40][98] = 5; visible trees so far= 797
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[41][0] = 0; visible trees so far= 798
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[41][1] = 5; visible trees so far= 799
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[41][10] = 6; visible trees so far= 800
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[41][18] = 7; visible trees so far= 801
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[41][23] = 8; visible trees so far= 802
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[41][24] = 8; visible trees so far= 803
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[41][38] = 9; visible trees so far= 804
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[41][68] = 9; visible trees so far= 805
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[41][75] = 8; visible trees so far= 806
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[41][76] = 8; visible trees so far= 807
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[41][81] = 7; visible trees so far= 808
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[41][86] = 6; visible trees so far= 809
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[41][97] = 5; visible trees so far= 810
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[41][98] = 3; visible trees so far= 811
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[42][0] = 3; visible trees so far= 812
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][2] = 4; visible trees so far= 813
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][8] = 5; visible trees so far= 814
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][12] = 6; visible trees so far= 815
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][15] = 7; visible trees so far= 816
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][24] = 8; visible trees so far= 817
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[42][40] = 9; visible trees so far= 818
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[42][65] = 9; visible trees so far= 819
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[42][70] = 9; visible trees so far= 820
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[42][71] = 7; visible trees so far= 821
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[42][90] = 6; visible trees so far= 822
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[42][95] = 5; visible trees so far= 823
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[42][96] = 3; visible trees so far= 824
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[42][98] = 2; visible trees so far= 825
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[43][0] = 3; visible trees so far= 826
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[43][4] = 4; visible trees so far= 827
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[43][13] = 5; visible trees so far= 828
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[43][17] = 7; visible trees so far= 829
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[43][23] = 8; visible trees so far= 830
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[43][33] = 9; visible trees so far= 831
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[43][66] = 9; visible trees so far= 832
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[43][70] = 9; visible trees so far= 833
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[43][73] = 8; visible trees so far= 834
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[43][80] = 7; visible trees so far= 835
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[43][91] = 6; visible trees so far= 836
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[43][97] = 5; visible trees so far= 837
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[43][98] = 1; visible trees so far= 838
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[44][0] = 1; visible trees so far= 839
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][1] = 4; visible trees so far= 840
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][3] = 5; visible trees so far= 841
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][8] = 6; visible trees so far= 842
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][18] = 7; visible trees so far= 843
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][27] = 8; visible trees so far= 844
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[44][33] = 9; visible trees so far= 845
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[44][39] = 9; visible trees so far= 846
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[44][58] = 9; visible trees so far= 847
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[44][72] = 8; visible trees so far= 848
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[44][81] = 7; visible trees so far= 849
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[44][90] = 6; visible trees so far= 850
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[44][98] = 5; visible trees so far= 851
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[45][0] = 5; visible trees so far= 852
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[45][15] = 6; visible trees so far= 853
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[45][17] = 7; visible trees so far= 854
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[45][27] = 8; visible trees so far= 855
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[45][31] = 9; visible trees so far= 856
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[45][32] = 9; visible trees so far= 857
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[45][71] = 9; visible trees so far= 858
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[45][78] = 8; visible trees so far= 859
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[45][80] = 7; visible trees so far= 860
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[45][86] = 6; visible trees so far= 861
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[45][97] = 5; visible trees so far= 862
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[45][98] = 3; visible trees so far= 863
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[46][0] = 3; visible trees so far= 864
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][1] = 4; visible trees so far= 865
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][3] = 5; visible trees so far= 866
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][8] = 6; visible trees so far= 867
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][15] = 7; visible trees so far= 868
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][29] = 8; visible trees so far= 869
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[46][34] = 9; visible trees so far= 870
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[46][64] = 9; visible trees so far= 871
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[46][77] = 8; visible trees so far= 872
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[46][84] = 7; visible trees so far= 873
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[46][87] = 6; visible trees so far= 874
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[46][95] = 5; visible trees so far= 875
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[46][98] = 4; visible trees so far= 876
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[47][0] = 2; visible trees so far= 877
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[47][1] = 5; visible trees so far= 878
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[47][15] = 7; visible trees so far= 879
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[47][23] = 8; visible trees so far= 880
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[47][34] = 9; visible trees so far= 881
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[47][71] = 9; visible trees so far= 882
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[47][81] = 7; visible trees so far= 883
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[47][88] = 6; visible trees so far= 884
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[47][96] = 5; visible trees so far= 885
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[47][98] = 2; visible trees so far= 886
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[48][0] = 1; visible trees so far= 887
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][1] = 2; visible trees so far= 888
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][5] = 3; visible trees so far= 889
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][6] = 4; visible trees so far= 890
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][8] = 5; visible trees so far= 891
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][13] = 6; visible trees so far= 892
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][14] = 7; visible trees so far= 893
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][23] = 8; visible trees so far= 894
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[48][30] = 9; visible trees so far= 895
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[48][67] = 9; visible trees so far= 896
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[48][69] = 8; visible trees so far= 897
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[48][79] = 7; visible trees so far= 898
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[48][92] = 6; visible trees so far= 899
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[48][97] = 3; visible trees so far= 900
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[48][98] = 2; visible trees so far= 901
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[49][0] = 5; visible trees so far= 902
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[49][3] = 5; visible trees so far= 903
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[49][15] = 6; visible trees so far= 904
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[49][20] = 7; visible trees so far= 905
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[49][27] = 8; visible trees so far= 906
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[49][33] = 9; visible trees so far= 907
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[49][68] = 9; visible trees so far= 908
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[49][77] = 8; visible trees so far= 909
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[49][84] = 7; visible trees so far= 910
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[49][94] = 5; visible trees so far= 911
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[49][98] = 4; visible trees so far= 912
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[50][0] = 3; visible trees so far= 913
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][1] = 4; visible trees so far= 914
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][9] = 5; visible trees so far= 915
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][20] = 6; visible trees so far= 916
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][22] = 7; visible trees so far= 917
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][24] = 8; visible trees so far= 918
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[50][31] = 9; visible trees so far= 919
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][71] = 9; visible trees so far= 920
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][75] = 8; visible trees so far= 921
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][85] = 7; visible trees so far= 922
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][88] = 6; visible trees so far= 923
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][96] = 5; visible trees so far= 924
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[50][97] = 2; visible trees so far= 925
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[50][98] = 1; visible trees so far= 926
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[51][0] = 1; visible trees so far= 927
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[51][1] = 5; visible trees so far= 928
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[51][8] = 6; visible trees so far= 929
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[51][16] = 7; visible trees so far= 930
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[51][22] = 8; visible trees so far= 931
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[51][30] = 9; visible trees so far= 932
+[main] INFO TreetopTreeHouse - Visible tree from UP; trees[51][60] = 9; visible trees so far= 933
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[51][67] = 9; visible trees so far= 934
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[51][74] = 8; visible trees so far= 935
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[51][84] = 7; visible trees so far= 936
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[51][95] = 5; visible trees so far= 937
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[51][96] = 2; visible trees so far= 938
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[51][98] = 1; visible trees so far= 939
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[52][0] = 3; visible trees so far= 940
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][3] = 4; visible trees so far= 941
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][5] = 5; visible trees so far= 942
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][7] = 6; visible trees so far= 943
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][17] = 7; visible trees so far= 944
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][24] = 8; visible trees so far= 945
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[52][30] = 9; visible trees so far= 946
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][65] = 9; visible trees so far= 947
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][76] = 8; visible trees so far= 948
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][84] = 7; visible trees so far= 949
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][89] = 6; visible trees so far= 950
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][92] = 5; visible trees so far= 951
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][96] = 4; visible trees so far= 952
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[52][97] = 3; visible trees so far= 953
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[52][98] = 2; visible trees so far= 954
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[53][0] = 1; visible trees so far= 955
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][2] = 2; visible trees so far= 956
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][4] = 4; visible trees so far= 957
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][8] = 6; visible trees so far= 958
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][22] = 7; visible trees so far= 959
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][23] = 8; visible trees so far= 960
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[53][29] = 9; visible trees so far= 961
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[53][32] = 9; visible trees so far= 962
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[53][68] = 9; visible trees so far= 963
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[53][77] = 8; visible trees so far= 964
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[53][85] = 7; visible trees so far= 965
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[53][93] = 6; visible trees so far= 966
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[53][97] = 5; visible trees so far= 967
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[53][98] = 3; visible trees so far= 968
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[54][0] = 1; visible trees so far= 969
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][2] = 2; visible trees so far= 970
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][3] = 3; visible trees so far= 971
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][4] = 4; visible trees so far= 972
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][7] = 5; visible trees so far= 973
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][11] = 6; visible trees so far= 974
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][17] = 7; visible trees so far= 975
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][23] = 8; visible trees so far= 976
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[54][34] = 9; visible trees so far= 977
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[54][70] = 9; visible trees so far= 978
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[54][71] = 9; visible trees so far= 979
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[54][78] = 8; visible trees so far= 980
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[54][83] = 7; visible trees so far= 981
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[54][92] = 6; visible trees so far= 982
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[54][98] = 5; visible trees so far= 983
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[55][0] = 4; visible trees so far= 984
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[55][10] = 5; visible trees so far= 985
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[55][11] = 6; visible trees so far= 986
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[55][24] = 7; visible trees so far= 987
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[55][26] = 8; visible trees so far= 988
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[55][30] = 9; visible trees so far= 989
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[55][31] = 9; visible trees so far= 990
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[55][57] = 9; visible trees so far= 991
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[55][77] = 8; visible trees so far= 992
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[55][85] = 7; visible trees so far= 993
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[55][98] = 5; visible trees so far= 994
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[56][0] = 2; visible trees so far= 995
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][1] = 3; visible trees so far= 996
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][2] = 4; visible trees so far= 997
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][11] = 5; visible trees so far= 998
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][14] = 6; visible trees so far= 999
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][15] = 7; visible trees so far= 1000
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][25] = 8; visible trees so far= 1001
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[56][30] = 9; visible trees so far= 1002
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[56][68] = 9; visible trees so far= 1003
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[56][77] = 8; visible trees so far= 1004
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[56][84] = 7; visible trees so far= 1005
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[56][90] = 6; visible trees so far= 1006
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[56][96] = 5; visible trees so far= 1007
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[56][98] = 3; visible trees so far= 1008
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[57][0] = 2; visible trees so far= 1009
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[57][1] = 3; visible trees so far= 1010
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[57][2] = 5; visible trees so far= 1011
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[57][17] = 6; visible trees so far= 1012
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[57][24] = 7; visible trees so far= 1013
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[57][34] = 9; visible trees so far= 1014
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[57][62] = 9; visible trees so far= 1015
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[57][67] = 9; visible trees so far= 1016
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[57][74] = 8; visible trees so far= 1017
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[57][80] = 7; visible trees so far= 1018
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[57][90] = 6; visible trees so far= 1019
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[57][96] = 5; visible trees so far= 1020
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[57][98] = 1; visible trees so far= 1021
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[58][0] = 1; visible trees so far= 1022
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][1] = 3; visible trees so far= 1023
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][2] = 4; visible trees so far= 1024
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][5] = 5; visible trees so far= 1025
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[58][8] = 5; visible trees so far= 1026
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][9] = 6; visible trees so far= 1027
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][16] = 7; visible trees so far= 1028
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][23] = 8; visible trees so far= 1029
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[58][34] = 9; visible trees so far= 1030
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[58][36] = 9; visible trees so far= 1031
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[58][65] = 9; visible trees so far= 1032
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[58][73] = 8; visible trees so far= 1033
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[58][79] = 7; visible trees so far= 1034
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[58][91] = 6; visible trees so far= 1035
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[58][95] = 5; visible trees so far= 1036
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[58][98] = 3; visible trees so far= 1037
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[59][0] = 4; visible trees so far= 1038
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[59][12] = 5; visible trees so far= 1039
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[59][15] = 6; visible trees so far= 1040
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[59][19] = 7; visible trees so far= 1041
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[59][32] = 8; visible trees so far= 1042
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[59][40] = 9; visible trees so far= 1043
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[59][53] = 9; visible trees so far= 1044
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[59][69] = 9; visible trees so far= 1045
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[59][77] = 8; visible trees so far= 1046
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[59][91] = 6; visible trees so far= 1047
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[59][98] = 5; visible trees so far= 1048
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[60][0] = 3; visible trees so far= 1049
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[60][1] = 5; visible trees so far= 1050
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[60][19] = 7; visible trees so far= 1051
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[60][29] = 8; visible trees so far= 1052
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[60][33] = 9; visible trees so far= 1053
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[60][34] = 9; visible trees so far= 1054
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][59] = 9; visible trees so far= 1055
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][77] = 8; visible trees so far= 1056
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][83] = 7; visible trees so far= 1057
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][92] = 6; visible trees so far= 1058
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][95] = 5; visible trees so far= 1059
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[60][96] = 2; visible trees so far= 1060
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[60][98] = 1; visible trees so far= 1061
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[61][0] = 3; visible trees so far= 1062
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[61][1] = 5; visible trees so far= 1063
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[61][12] = 6; visible trees so far= 1064
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[61][15] = 6; visible trees so far= 1065
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[61][17] = 7; visible trees so far= 1066
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[61][24] = 8; visible trees so far= 1067
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[61][26] = 8; visible trees so far= 1068
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[61][27] = 8; visible trees so far= 1069
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[61][47] = 9; visible trees so far= 1070
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[61][66] = 9; visible trees so far= 1071
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[61][79] = 7; visible trees so far= 1072
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[61][86] = 6; visible trees so far= 1073
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[61][91] = 5; visible trees so far= 1074
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[61][94] = 4; visible trees so far= 1075
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[61][98] = 3; visible trees so far= 1076
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[62][0] = 1; visible trees so far= 1077
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][1] = 3; visible trees so far= 1078
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][4] = 5; visible trees so far= 1079
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][13] = 6; visible trees so far= 1080
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[62][14] = 6; visible trees so far= 1081
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][24] = 7; visible trees so far= 1082
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][29] = 8; visible trees so far= 1083
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[62][35] = 9; visible trees so far= 1084
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[62][57] = 9; visible trees so far= 1085
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[62][70] = 8; visible trees so far= 1086
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[62][72] = 8; visible trees so far= 1087
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[62][79] = 7; visible trees so far= 1088
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[62][83] = 6; visible trees so far= 1089
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[62][98] = 5; visible trees so far= 1090
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[63][0] = 0; visible trees so far= 1091
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][1] = 4; visible trees so far= 1092
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][6] = 5; visible trees so far= 1093
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][10] = 6; visible trees so far= 1094
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][21] = 7; visible trees so far= 1095
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][30] = 8; visible trees so far= 1096
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[63][35] = 9; visible trees so far= 1097
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[63][65] = 9; visible trees so far= 1098
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][67] = 9; visible trees so far= 1099
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[63][73] = 8; visible trees so far= 1100
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][75] = 8; visible trees so far= 1101
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][83] = 7; visible trees so far= 1102
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][85] = 6; visible trees so far= 1103
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][88] = 5; visible trees so far= 1104
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][89] = 4; visible trees so far= 1105
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[63][97] = 3; visible trees so far= 1106
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[63][98] = 1; visible trees so far= 1107
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[64][0] = 1; visible trees so far= 1108
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][2] = 3; visible trees so far= 1109
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][5] = 5; visible trees so far= 1110
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][10] = 6; visible trees so far= 1111
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][12] = 6; visible trees so far= 1112
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][18] = 7; visible trees so far= 1113
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][29] = 8; visible trees so far= 1114
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[64][37] = 9; visible trees so far= 1115
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][40] = 9; visible trees so far= 1116
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][41] = 9; visible trees so far= 1117
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][42] = 9; visible trees so far= 1118
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][44] = 9; visible trees so far= 1119
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][47] = 9; visible trees so far= 1120
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][56] = 9; visible trees so far= 1121
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][63] = 9; visible trees so far= 1122
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[64][64] = 9; visible trees so far= 1123
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[64][68] = 8; visible trees so far= 1124
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[64][81] = 7; visible trees so far= 1125
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[64][82] = 7; visible trees so far= 1126
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[64][85] = 6; visible trees so far= 1127
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[64][98] = 5; visible trees so far= 1128
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[65][0] = 4; visible trees so far= 1129
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[65][2] = 5; visible trees so far= 1130
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[65][16] = 6; visible trees so far= 1131
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[65][24] = 7; visible trees so far= 1132
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[65][25] = 7; visible trees so far= 1133
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[65][35] = 9; visible trees so far= 1134
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[65][43] = 9; visible trees so far= 1135
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[65][52] = 9; visible trees so far= 1136
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][64] = 9; visible trees so far= 1137
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[65][68] = 8; visible trees so far= 1138
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][71] = 8; visible trees so far= 1139
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][82] = 7; visible trees so far= 1140
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][89] = 6; visible trees so far= 1141
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][96] = 5; visible trees so far= 1142
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[65][97] = 2; visible trees so far= 1143
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[65][98] = 1; visible trees so far= 1144
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[66][0] = 4; visible trees so far= 1145
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[66][5] = 5; visible trees so far= 1146
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[66][21] = 6; visible trees so far= 1147
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[66][23] = 7; visible trees so far= 1148
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[66][28] = 8; visible trees so far= 1149
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[66][46] = 9; visible trees so far= 1150
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[66][50] = 9; visible trees so far= 1151
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[66][55] = 9; visible trees so far= 1152
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[66][64] = 9; visible trees so far= 1153
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[66][80] = 7; visible trees so far= 1154
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[66][85] = 6; visible trees so far= 1155
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[66][88] = 6; visible trees so far= 1156
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[66][93] = 4; visible trees so far= 1157
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[66][97] = 3; visible trees so far= 1158
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[66][98] = 2; visible trees so far= 1159
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[67][0] = 1; visible trees so far= 1160
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][1] = 2; visible trees so far= 1161
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][3] = 4; visible trees so far= 1162
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][5] = 5; visible trees so far= 1163
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][17] = 6; visible trees so far= 1164
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][20] = 7; visible trees so far= 1165
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[67][22] = 7; visible trees so far= 1166
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][35] = 8; visible trees so far= 1167
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[67][37] = 9; visible trees so far= 1168
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[67][57] = 9; visible trees so far= 1169
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[67][60] = 9; visible trees so far= 1170
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[67][61] = 9; visible trees so far= 1171
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[67][65] = 8; visible trees so far= 1172
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[67][70] = 7; visible trees so far= 1173
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[67][76] = 7; visible trees so far= 1174
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[67][87] = 6; visible trees so far= 1175
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[67][97] = 5; visible trees so far= 1176
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[67][98] = 2; visible trees so far= 1177
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[68][0] = 1; visible trees so far= 1178
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[68][1] = 4; visible trees so far= 1179
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[68][4] = 5; visible trees so far= 1180
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[68][20] = 7; visible trees so far= 1181
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[68][30] = 8; visible trees so far= 1182
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][32] = 8; visible trees so far= 1183
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][34] = 8; visible trees so far= 1184
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[68][38] = 9; visible trees so far= 1185
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][39] = 9; visible trees so far= 1186
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][46] = 9; visible trees so far= 1187
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[68][58] = 9; visible trees so far= 1188
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][69] = 8; visible trees so far= 1189
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[68][71] = 8; visible trees so far= 1190
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[68][82] = 6; visible trees so far= 1191
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[68][95] = 5; visible trees so far= 1192
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[68][97] = 5; visible trees so far= 1193
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[68][98] = 2; visible trees so far= 1194
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[69][0] = 1; visible trees so far= 1195
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[69][1] = 4; visible trees so far= 1196
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[69][5] = 5; visible trees so far= 1197
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[69][6] = 5; visible trees so far= 1198
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[69][13] = 6; visible trees so far= 1199
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[69][21] = 7; visible trees so far= 1200
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[69][30] = 8; visible trees so far= 1201
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[69][38] = 8; visible trees so far= 1202
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][54] = 9; visible trees so far= 1203
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][63] = 8; visible trees so far= 1204
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][78] = 7; visible trees so far= 1205
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[69][81] = 6; visible trees so far= 1206
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][88] = 6; visible trees so far= 1207
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[69][92] = 5; visible trees so far= 1208
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][93] = 5; visible trees so far= 1209
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[69][97] = 2; visible trees so far= 1210
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[69][98] = 0; visible trees so far= 1211
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[70][0] = 1; visible trees so far= 1212
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][1] = 3; visible trees so far= 1213
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][3] = 4; visible trees so far= 1214
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][11] = 5; visible trees so far= 1215
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][13] = 6; visible trees so far= 1216
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[70][16] = 6; visible trees so far= 1217
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[70][17] = 6; visible trees so far= 1218
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][21] = 7; visible trees so far= 1219
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][31] = 8; visible trees so far= 1220
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[70][37] = 8; visible trees so far= 1221
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[70][48] = 9; visible trees so far= 1222
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[70][51] = 9; visible trees so far= 1223
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[70][58] = 9; visible trees so far= 1224
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[70][64] = 8; visible trees so far= 1225
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[70][75] = 7; visible trees so far= 1226
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[70][87] = 6; visible trees so far= 1227
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[70][96] = 4; visible trees so far= 1228
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[70][98] = 1; visible trees so far= 1229
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[71][0] = 4; visible trees so far= 1230
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[71][5] = 5; visible trees so far= 1231
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[71][9] = 5; visible trees so far= 1232
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[71][13] = 6; visible trees so far= 1233
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[71][26] = 7; visible trees so far= 1234
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[71][45] = 9; visible trees so far= 1235
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[71][49] = 9; visible trees so far= 1236
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[71][54] = 9; visible trees so far= 1237
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[71][65] = 8; visible trees so far= 1238
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[71][78] = 7; visible trees so far= 1239
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[71][89] = 5; visible trees so far= 1240
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[71][98] = 4; visible trees so far= 1241
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[72][0] = 1; visible trees so far= 1242
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][1] = 3; visible trees so far= 1243
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][4] = 4; visible trees so far= 1244
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][7] = 5; visible trees so far= 1245
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][25] = 6; visible trees so far= 1246
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][27] = 7; visible trees so far= 1247
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[72][36] = 8; visible trees so far= 1248
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[72][39] = 8; visible trees so far= 1249
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[72][41] = 8; visible trees so far= 1250
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[72][44] = 8; visible trees so far= 1251
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[72][55] = 8; visible trees so far= 1252
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[72][76] = 7; visible trees so far= 1253
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[72][86] = 6; visible trees so far= 1254
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[72][94] = 5; visible trees so far= 1255
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[72][97] = 4; visible trees so far= 1256
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[72][98] = 2; visible trees so far= 1257
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[73][0] = 0; visible trees so far= 1258
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][1] = 1; visible trees so far= 1259
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][3] = 2; visible trees so far= 1260
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][4] = 4; visible trees so far= 1261
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][13] = 5; visible trees so far= 1262
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][18] = 6; visible trees so far= 1263
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][24] = 7; visible trees so far= 1264
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[73][33] = 8; visible trees so far= 1265
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][34] = 7; visible trees so far= 1266
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][45] = 8; visible trees so far= 1267
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][62] = 8; visible trees so far= 1268
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][63] = 8; visible trees so far= 1269
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][66] = 8; visible trees so far= 1270
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[73][67] = 8; visible trees so far= 1271
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][73] = 7; visible trees so far= 1272
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[73][74] = 7; visible trees so far= 1273
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[73][78] = 6; visible trees so far= 1274
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[73][79] = 6; visible trees so far= 1275
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[73][90] = 5; visible trees so far= 1276
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[73][98] = 2; visible trees so far= 1277
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[74][0] = 1; visible trees so far= 1278
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][1] = 2; visible trees so far= 1279
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][2] = 4; visible trees so far= 1280
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][10] = 5; visible trees so far= 1281
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][26] = 6; visible trees so far= 1282
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][29] = 7; visible trees so far= 1283
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[74][35] = 8; visible trees so far= 1284
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[74][39] = 7; visible trees so far= 1285
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[74][42] = 8; visible trees so far= 1286
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[74][46] = 8; visible trees so far= 1287
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[74][59] = 8; visible trees so far= 1288
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[74][65] = 8; visible trees so far= 1289
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[74][68] = 7; visible trees so far= 1290
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[74][75] = 7; visible trees so far= 1291
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[74][79] = 6; visible trees so far= 1292
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[74][97] = 4; visible trees so far= 1293
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[74][98] = 2; visible trees so far= 1294
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[75][0] = 2; visible trees so far= 1295
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[75][6] = 3; visible trees so far= 1296
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[75][7] = 5; visible trees so far= 1297
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][12] = 5; visible trees so far= 1298
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[75][26] = 7; visible trees so far= 1299
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][27] = 7; visible trees so far= 1300
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[75][40] = 8; visible trees so far= 1301
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][53] = 8; visible trees so far= 1302
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][58] = 8; visible trees so far= 1303
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][60] = 8; visible trees so far= 1304
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][61] = 8; visible trees so far= 1305
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][63] = 7; visible trees so far= 1306
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][64] = 8; visible trees so far= 1307
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][67] = 7; visible trees so far= 1308
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][83] = 6; visible trees so far= 1309
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[75][88] = 5; visible trees so far= 1310
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][93] = 5; visible trees so far= 1311
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][95] = 4; visible trees so far= 1312
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[75][97] = 3; visible trees so far= 1313
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[75][98] = 2; visible trees so far= 1314
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[76][0] = 0; visible trees so far= 1315
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[76][1] = 1; visible trees so far= 1316
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[76][7] = 5; visible trees so far= 1317
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[76][21] = 6; visible trees so far= 1318
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[76][28] = 7; visible trees so far= 1319
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[76][38] = 7; visible trees so far= 1320
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[76][40] = 8; visible trees so far= 1321
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[76][51] = 8; visible trees so far= 1322
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[76][55] = 8; visible trees so far= 1323
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[76][56] = 8; visible trees so far= 1324
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[76][71] = 7; visible trees so far= 1325
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[76][83] = 6; visible trees so far= 1326
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[76][91] = 5; visible trees so far= 1327
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[76][96] = 4; visible trees so far= 1328
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[76][98] = 0; visible trees so far= 1329
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[77][0] = 2; visible trees so far= 1330
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][2] = 3; visible trees so far= 1331
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][3] = 4; visible trees so far= 1332
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][11] = 5; visible trees so far= 1333
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][18] = 6; visible trees so far= 1334
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][21] = 6; visible trees so far= 1335
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][29] = 7; visible trees so far= 1336
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][31] = 7; visible trees so far= 1337
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][33] = 7; visible trees so far= 1338
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[77][43] = 8; visible trees so far= 1339
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][47] = 8; visible trees so far= 1340
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][50] = 8; visible trees so far= 1341
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[77][57] = 8; visible trees so far= 1342
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[77][67] = 7; visible trees so far= 1343
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[77][83] = 6; visible trees so far= 1344
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[77][87] = 5; visible trees so far= 1345
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[77][96] = 4; visible trees so far= 1346
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[77][97] = 4; visible trees so far= 1347
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[77][98] = 0; visible trees so far= 1348
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[78][0] = 3; visible trees so far= 1349
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[78][1] = 4; visible trees so far= 1350
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[78][13] = 5; visible trees so far= 1351
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[78][18] = 6; visible trees so far= 1352
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[78][28] = 7; visible trees so far= 1353
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[78][32] = 7; visible trees so far= 1354
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[78][46] = 7; visible trees so far= 1355
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[78][49] = 8; visible trees so far= 1356
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[78][52] = 8; visible trees so far= 1357
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[78][56] = 8; visible trees so far= 1358
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[78][72] = 7; visible trees so far= 1359
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[78][76] = 6; visible trees so far= 1360
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[78][82] = 6; visible trees so far= 1361
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[78][90] = 5; visible trees so far= 1362
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[78][98] = 4; visible trees so far= 1363
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[79][0] = 2; visible trees so far= 1364
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[79][1] = 4; visible trees so far= 1365
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[79][11] = 5; visible trees so far= 1366
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[79][19] = 6; visible trees so far= 1367
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[79][22] = 6; visible trees so far= 1368
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[79][23] = 6; visible trees so far= 1369
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[79][29] = 7; visible trees so far= 1370
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[79][44] = 7; visible trees so far= 1371
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[79][45] = 7; visible trees so far= 1372
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[79][52] = 7; visible trees so far= 1373
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][54] = 7; visible trees so far= 1374
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][65] = 6; visible trees so far= 1375
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][91] = 5; visible trees so far= 1376
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][92] = 4; visible trees so far= 1377
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][95] = 3; visible trees so far= 1378
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[79][97] = 2; visible trees so far= 1379
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[79][98] = 1; visible trees so far= 1380
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[80][0] = 3; visible trees so far= 1381
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[80][2] = 4; visible trees so far= 1382
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[80][11] = 5; visible trees so far= 1383
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[80][20] = 6; visible trees so far= 1384
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][25] = 6; visible trees so far= 1385
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[80][30] = 7; visible trees so far= 1386
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][36] = 7; visible trees so far= 1387
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][60] = 7; visible trees so far= 1388
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][65] = 7; visible trees so far= 1389
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[80][67] = 7; visible trees so far= 1390
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][74] = 6; visible trees so far= 1391
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[80][77] = 6; visible trees so far= 1392
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[80][86] = 5; visible trees so far= 1393
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[80][87] = 5; visible trees so far= 1394
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[80][95] = 4; visible trees so far= 1395
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[80][98] = 2; visible trees so far= 1396
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[81][0] = 3; visible trees so far= 1397
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[81][2] = 4; visible trees so far= 1398
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[81][9] = 4; visible trees so far= 1399
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[81][11] = 4; visible trees so far= 1400
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[81][18] = 5; visible trees so far= 1401
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[81][26] = 6; visible trees so far= 1402
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[81][37] = 7; visible trees so far= 1403
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[81][64] = 7; visible trees so far= 1404
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[81][80] = 6; visible trees so far= 1405
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[81][82] = 5; visible trees so far= 1406
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[81][85] = 5; visible trees so far= 1407
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[81][91] = 4; visible trees so far= 1408
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[81][95] = 4; visible trees so far= 1409
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[81][97] = 2; visible trees so far= 1410
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[81][98] = 0; visible trees so far= 1411
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[82][0] = 2; visible trees so far= 1412
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[82][4] = 4; visible trees so far= 1413
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[82][24] = 6; visible trees so far= 1414
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[82][35] = 7; visible trees so far= 1415
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][42] = 7; visible trees so far= 1416
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][47] = 7; visible trees so far= 1417
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][53] = 7; visible trees so far= 1418
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][61] = 7; visible trees so far= 1419
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][62] = 7; visible trees so far= 1420
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[82][66] = 7; visible trees so far= 1421
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[82][71] = 6; visible trees so far= 1422
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[82][89] = 5; visible trees so far= 1423
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[82][93] = 4; visible trees so far= 1424
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[82][94] = 4; visible trees so far= 1425
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[82][97] = 3; visible trees so far= 1426
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[82][98] = 0; visible trees so far= 1427
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[83][0] = 3; visible trees so far= 1428
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[83][3] = 4; visible trees so far= 1429
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][5] = 4; visible trees so far= 1430
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][8] = 4; visible trees so far= 1431
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[83][17] = 5; visible trees so far= 1432
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[83][28] = 6; visible trees so far= 1433
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[83][37] = 7; visible trees so far= 1434
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][39] = 6; visible trees so far= 1435
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][40] = 7; visible trees so far= 1436
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][41] = 7; visible trees so far= 1437
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][53] = 6; visible trees so far= 1438
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][58] = 7; visible trees so far= 1439
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[83][59] = 7; visible trees so far= 1440
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[83][72] = 6; visible trees so far= 1441
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[83][75] = 6; visible trees so far= 1442
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[83][83] = 5; visible trees so far= 1443
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[83][89] = 4; visible trees so far= 1444
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[83][97] = 2; visible trees so far= 1445
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[83][98] = 1; visible trees so far= 1446
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[84][0] = 0; visible trees so far= 1447
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][2] = 1; visible trees so far= 1448
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][3] = 3; visible trees so far= 1449
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][13] = 4; visible trees so far= 1450
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][16] = 5; visible trees so far= 1451
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[84][18] = 5; visible trees so far= 1452
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][27] = 6; visible trees so far= 1453
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[84][43] = 7; visible trees so far= 1454
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[84][48] = 7; visible trees so far= 1455
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[84][51] = 7; visible trees so far= 1456
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[84][56] = 7; visible trees so far= 1457
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[84][68] = 6; visible trees so far= 1458
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[84][81] = 5; visible trees so far= 1459
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[84][84] = 5; visible trees so far= 1460
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[84][92] = 4; visible trees so far= 1461
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[84][97] = 3; visible trees so far= 1462
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[84][98] = 0; visible trees so far= 1463
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[85][0] = 0; visible trees so far= 1464
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][1] = 1; visible trees so far= 1465
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][2] = 3; visible trees so far= 1466
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][6] = 4; visible trees so far= 1467
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][10] = 4; visible trees so far= 1468
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][14] = 5; visible trees so far= 1469
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][15] = 5; visible trees so far= 1470
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][26] = 6; visible trees so far= 1471
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[85][49] = 7; visible trees so far= 1472
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][54] = 7; visible trees so far= 1473
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][56] = 7; visible trees so far= 1474
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[85][57] = 7; visible trees so far= 1475
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][68] = 6; visible trees so far= 1476
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[85][73] = 6; visible trees so far= 1477
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[85][77] = 5; visible trees so far= 1478
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[85][83] = 5; visible trees so far= 1479
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[85][86] = 4; visible trees so far= 1480
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[85][98] = 3; visible trees so far= 1481
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[86][0] = 1; visible trees so far= 1482
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[86][4] = 2; visible trees so far= 1483
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[86][6] = 3; visible trees so far= 1484
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[86][7] = 4; visible trees so far= 1485
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[86][16] = 5; visible trees so far= 1486
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[86][26] = 6; visible trees so far= 1487
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[86][32] = 6; visible trees so far= 1488
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[86][36] = 6; visible trees so far= 1489
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[86][46] = 6; visible trees so far= 1490
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[86][48] = 6; visible trees so far= 1491
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[86][50] = 7; visible trees so far= 1492
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[86][67] = 6; visible trees so far= 1493
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[86][79] = 5; visible trees so far= 1494
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[86][92] = 4; visible trees so far= 1495
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[86][94] = 4; visible trees so far= 1496
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[86][97] = 2; visible trees so far= 1497
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[86][98] = 1; visible trees so far= 1498
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[87][0] = 0; visible trees so far= 1499
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[87][1] = 2; visible trees so far= 1500
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[87][3] = 3; visible trees so far= 1501
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[87][12] = 4; visible trees so far= 1502
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[87][21] = 5; visible trees so far= 1503
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[87][30] = 6; visible trees so far= 1504
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][31] = 6; visible trees so far= 1505
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][33] = 6; visible trees so far= 1506
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][61] = 6; visible trees so far= 1507
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][69] = 6; visible trees so far= 1508
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[87][70] = 6; visible trees so far= 1509
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][72] = 5; visible trees so far= 1510
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][76] = 5; visible trees so far= 1511
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[87][80] = 5; visible trees so far= 1512
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[87][83] = 4; visible trees so far= 1513
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[87][94] = 4; visible trees so far= 1514
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[87][96] = 3; visible trees so far= 1515
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[87][98] = 0; visible trees so far= 1516
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[88][0] = 2; visible trees so far= 1517
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[88][5] = 3; visible trees so far= 1518
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[88][13] = 4; visible trees so far= 1519
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[88][22] = 5; visible trees so far= 1520
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[88][23] = 5; visible trees so far= 1521
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[88][30] = 6; visible trees so far= 1522
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[88][64] = 6; visible trees so far= 1523
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[88][65] = 6; visible trees so far= 1524
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[88][67] = 6; visible trees so far= 1525
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[88][86] = 4; visible trees so far= 1526
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[88][97] = 3; visible trees so far= 1527
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[88][98] = 2; visible trees so far= 1528
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[89][0] = 1; visible trees so far= 1529
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[89][3] = 2; visible trees so far= 1530
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[89][9] = 3; visible trees so far= 1531
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[89][15] = 4; visible trees so far= 1532
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][18] = 4; visible trees so far= 1533
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[89][20] = 5; visible trees so far= 1534
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][21] = 5; visible trees so far= 1535
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][27] = 5; visible trees so far= 1536
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[89][34] = 6; visible trees so far= 1537
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][35] = 6; visible trees so far= 1538
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][51] = 6; visible trees so far= 1539
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][59] = 6; visible trees so far= 1540
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[89][63] = 6; visible trees so far= 1541
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[89][79] = 5; visible trees so far= 1542
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][80] = 4; visible trees so far= 1543
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[89][85] = 4; visible trees so far= 1544
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[89][87] = 4; visible trees so far= 1545
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[89][94] = 3; visible trees so far= 1546
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[89][98] = 2; visible trees so far= 1547
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[90][0] = 0; visible trees so far= 1548
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[90][1] = 2; visible trees so far= 1549
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[90][4] = 3; visible trees so far= 1550
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[90][14] = 4; visible trees so far= 1551
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[90][22] = 5; visible trees so far= 1552
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[90][24] = 5; visible trees so far= 1553
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[90][40] = 6; visible trees so far= 1554
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[90][41] = 6; visible trees so far= 1555
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[90][42] = 6; visible trees so far= 1556
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[90][44] = 6; visible trees so far= 1557
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[90][64] = 5; visible trees so far= 1558
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[90][66] = 6; visible trees so far= 1559
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[90][68] = 5; visible trees so far= 1560
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[90][88] = 4; visible trees so far= 1561
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[90][94] = 3; visible trees so far= 1562
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[90][96] = 2; visible trees so far= 1563
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[90][98] = 1; visible trees so far= 1564
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[91][0] = 3; visible trees so far= 1565
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[91][12] = 4; visible trees so far= 1566
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[91][26] = 5; visible trees so far= 1567
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[91][37] = 6; visible trees so far= 1568
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][38] = 6; visible trees so far= 1569
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][52] = 6; visible trees so far= 1570
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][54] = 6; visible trees so far= 1571
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][55] = 6; visible trees so far= 1572
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][58] = 6; visible trees so far= 1573
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][60] = 6; visible trees so far= 1574
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[91][63] = 6; visible trees so far= 1575
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[91][71] = 5; visible trees so far= 1576
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[91][73] = 5; visible trees so far= 1577
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[91][84] = 4; visible trees so far= 1578
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[91][96] = 3; visible trees so far= 1579
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[91][98] = 1; visible trees so far= 1580
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[92][0] = 0; visible trees so far= 1581
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[92][2] = 3; visible trees so far= 1582
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][10] = 3; visible trees so far= 1583
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[92][17] = 4; visible trees so far= 1584
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[92][32] = 5; visible trees so far= 1585
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[92][43] = 6; visible trees so far= 1586
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][44] = 5; visible trees so far= 1587
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][45] = 6; visible trees so far= 1588
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][47] = 6; visible trees so far= 1589
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][48] = 5; visible trees so far= 1590
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][50] = 6; visible trees so far= 1591
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[92][57] = 6; visible trees so far= 1592
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][61] = 5; visible trees so far= 1593
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][75] = 5; visible trees so far= 1594
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[92][78] = 5; visible trees so far= 1595
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[92][79] = 4; visible trees so far= 1596
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[92][89] = 4; visible trees so far= 1597
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[92][93] = 3; visible trees so far= 1598
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[92][97] = 2; visible trees so far= 1599
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[92][98] = 1; visible trees so far= 1600
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[93][0] = 0; visible trees so far= 1601
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[93][2] = 2; visible trees so far= 1602
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[93][8] = 3; visible trees so far= 1603
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[93][20] = 4; visible trees so far= 1604
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[93][25] = 5; visible trees so far= 1605
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[93][49] = 6; visible trees so far= 1606
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[93][50] = 5; visible trees so far= 1607
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[93][60] = 5; visible trees so far= 1608
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[93][66] = 5; visible trees so far= 1609
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[93][69] = 5; visible trees so far= 1610
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[93][73] = 5; visible trees so far= 1611
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[93][94] = 3; visible trees so far= 1612
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[93][98] = 1; visible trees so far= 1613
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[94][0] = 0; visible trees so far= 1614
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[94][1] = 2; visible trees so far= 1615
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[94][5] = 3; visible trees so far= 1616
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][9] = 3; visible trees so far= 1617
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[94][13] = 4; visible trees so far= 1618
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][16] = 4; visible trees so far= 1619
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][22] = 4; visible trees so far= 1620
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[94][26] = 5; visible trees so far= 1621
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][27] = 4; visible trees so far= 1622
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][29] = 5; visible trees so far= 1623
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][34] = 5; visible trees so far= 1624
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][42] = 5; visible trees so far= 1625
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][43] = 4; visible trees so far= 1626
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][44] = 4; visible trees so far= 1627
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][47] = 5; visible trees so far= 1628
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][49] = 5; visible trees so far= 1629
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[94][74] = 5; visible trees so far= 1630
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][81] = 4; visible trees so far= 1631
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[94][87] = 4; visible trees so far= 1632
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[94][94] = 2; visible trees so far= 1633
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[94][95] = 3; visible trees so far= 1634
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[94][98] = 2; visible trees so far= 1635
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[95][0] = 0; visible trees so far= 1636
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[95][1] = 1; visible trees so far= 1637
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[95][2] = 2; visible trees so far= 1638
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][4] = 2; visible trees so far= 1639
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[95][5] = 3; visible trees so far= 1640
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][7] = 3; visible trees so far= 1641
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][10] = 2; visible trees so far= 1642
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][13] = 3; visible trees so far= 1643
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[95][21] = 4; visible trees so far= 1644
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][25] = 3; visible trees so far= 1645
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[95][28] = 5; visible trees so far= 1646
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][32] = 4; visible trees so far= 1647
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][37] = 5; visible trees so far= 1648
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][40] = 5; visible trees so far= 1649
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][41] = 5; visible trees so far= 1650
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][43] = 3; visible trees so far= 1651
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][50] = 4; visible trees so far= 1652
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][55] = 5; visible trees so far= 1653
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][60] = 4; visible trees so far= 1654
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][65] = 5; visible trees so far= 1655
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[95][68] = 5; visible trees so far= 1656
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][71] = 4; visible trees so far= 1657
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][72] = 4; visible trees so far= 1658
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][75] = 4; visible trees so far= 1659
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][79] = 3; visible trees so far= 1660
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[95][82] = 4; visible trees so far= 1661
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[95][83] = 3; visible trees so far= 1662
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[95][88] = 3; visible trees so far= 1663
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[95][97] = 2; visible trees so far= 1664
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[95][98] = 1; visible trees so far= 1665
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[96][0] = 0; visible trees so far= 1666
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[96][1] = 2; visible trees so far= 1667
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][5] = 2; visible trees so far= 1668
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][7] = 2; visible trees so far= 1669
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][10] = 1; visible trees so far= 1670
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[96][15] = 3; visible trees so far= 1671
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[96][19] = 4; visible trees so far= 1672
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][21] = 4; visible trees so far= 1673
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][24] = 3; visible trees so far= 1674
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][29] = 4; visible trees so far= 1675
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[96][30] = 5; visible trees so far= 1676
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][31] = 4; visible trees so far= 1677
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][33] = 5; visible trees so far= 1678
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][34] = 4; visible trees so far= 1679
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][39] = 5; visible trees so far= 1680
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][49] = 4; visible trees so far= 1681
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][50] = 3; visible trees so far= 1682
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][51] = 5; visible trees so far= 1683
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][53] = 5; visible trees so far= 1684
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][54] = 5; visible trees so far= 1685
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][55] = 4; visible trees so far= 1686
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][58] = 4; visible trees so far= 1687
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[96][67] = 5; visible trees so far= 1688
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][68] = 4; visible trees so far= 1689
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][69] = 3; visible trees so far= 1690
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][71] = 3; visible trees so far= 1691
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[96][73] = 4; visible trees so far= 1692
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][81] = 3; visible trees so far= 1693
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][86] = 3; visible trees so far= 1694
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][87] = 1; visible trees so far= 1695
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[96][88] = 3; visible trees so far= 1696
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[96][93] = 3; visible trees so far= 1697
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[96][98] = 1; visible trees so far= 1698
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[97][0] = 0; visible trees so far= 1699
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[97][1] = 2; visible trees so far= 1700
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][3] = 2; visible trees so far= 1701
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][5] = 1; visible trees so far= 1702
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[97][6] = 3; visible trees so far= 1703
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][12] = 3; visible trees so far= 1704
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][15] = 3; visible trees so far= 1705
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][18] = 3; visible trees so far= 1706
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[97][19] = 4; visible trees so far= 1707
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][22] = 3; visible trees so far= 1708
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][24] = 2; visible trees so far= 1709
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][28] = 3; visible trees so far= 1710
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][30] = 1; visible trees so far= 1711
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][32] = 3; visible trees so far= 1712
+[main] INFO TreetopTreeHouse - Visible tree from LEFT; trees[97][38] = 5; visible trees so far= 1713
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][40] = 4; visible trees so far= 1714
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][47] = 4; visible trees so far= 1715
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][49] = 3; visible trees so far= 1716
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][54] = 3; visible trees so far= 1717
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][55] = 2; visible trees so far= 1718
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][57] = 5; visible trees so far= 1719
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][63] = 5; visible trees so far= 1720
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][64] = 4; visible trees so far= 1721
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[97][67] = 5; visible trees so far= 1722
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][68] = 3; visible trees so far= 1723
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][69] = 2; visible trees so far= 1724
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][70] = 4; visible trees so far= 1725
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][77] = 4; visible trees so far= 1726
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[97][78] = 4; visible trees so far= 1727
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][79] = 2; visible trees so far= 1728
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][82] = 3; visible trees so far= 1729
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][85] = 3; visible trees so far= 1730
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][88] = 2; visible trees so far= 1731
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][89] = 3; visible trees so far= 1732
+[main] INFO TreetopTreeHouse - Visible tree from DOWN; trees[97][91] = 3; visible trees so far= 1733
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[97][93] = 3; visible trees so far= 1734
+[main] INFO TreetopTreeHouse - Visible tree from RIGHT; trees[97][96] = 1; visible trees so far= 1735
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[97][98] = 0; visible trees so far= 1736
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][0] = 2; visible trees so far= 1737
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][1] = 0; visible trees so far= 1738
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][2] = 1; visible trees so far= 1739
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][3] = 1; visible trees so far= 1740
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][4] = 1; visible trees so far= 1741
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][5] = 0; visible trees so far= 1742
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][6] = 0; visible trees so far= 1743
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][7] = 1; visible trees so far= 1744
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][8] = 2; visible trees so far= 1745
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][9] = 1; visible trees so far= 1746
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][10] = 0; visible trees so far= 1747
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][11] = 3; visible trees so far= 1748
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][12] = 2; visible trees so far= 1749
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][13] = 1; visible trees so far= 1750
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][14] = 3; visible trees so far= 1751
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][15] = 1; visible trees so far= 1752
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][16] = 0; visible trees so far= 1753
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][17] = 2; visible trees so far= 1754
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][18] = 2; visible trees so far= 1755
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][19] = 0; visible trees so far= 1756
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][20] = 3; visible trees so far= 1757
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][21] = 2; visible trees so far= 1758
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][22] = 1; visible trees so far= 1759
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][23] = 4; visible trees so far= 1760
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][24] = 0; visible trees so far= 1761
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][25] = 2; visible trees so far= 1762
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][26] = 4; visible trees so far= 1763
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][27] = 2; visible trees so far= 1764
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][28] = 2; visible trees so far= 1765
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][29] = 1; visible trees so far= 1766
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][30] = 0; visible trees so far= 1767
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][31] = 1; visible trees so far= 1768
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][32] = 1; visible trees so far= 1769
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][33] = 4; visible trees so far= 1770
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][34] = 2; visible trees so far= 1771
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][35] = 5; visible trees so far= 1772
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][36] = 5; visible trees so far= 1773
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][37] = 4; visible trees so far= 1774
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][38] = 2; visible trees so far= 1775
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][39] = 1; visible trees so far= 1776
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][40] = 3; visible trees so far= 1777
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][41] = 4; visible trees so far= 1778
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][42] = 4; visible trees so far= 1779
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][43] = 1; visible trees so far= 1780
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][44] = 2; visible trees so far= 1781
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][45] = 5; visible trees so far= 1782
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][46] = 5; visible trees so far= 1783
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][47] = 1; visible trees so far= 1784
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][48] = 4; visible trees so far= 1785
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][49] = 1; visible trees so far= 1786
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][50] = 2; visible trees so far= 1787
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][51] = 2; visible trees so far= 1788
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][52] = 5; visible trees so far= 1789
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][53] = 4; visible trees so far= 1790
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][54] = 1; visible trees so far= 1791
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][55] = 1; visible trees so far= 1792
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][56] = 5; visible trees so far= 1793
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][57] = 2; visible trees so far= 1794
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][58] = 3; visible trees so far= 1795
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][59] = 5; visible trees so far= 1796
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][60] = 1; visible trees so far= 1797
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][61] = 4; visible trees so far= 1798
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][62] = 5; visible trees so far= 1799
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][63] = 2; visible trees so far= 1800
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][64] = 2; visible trees so far= 1801
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][65] = 3; visible trees so far= 1802
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][66] = 4; visible trees so far= 1803
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][67] = 0; visible trees so far= 1804
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][68] = 1; visible trees so far= 1805
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][69] = 1; visible trees so far= 1806
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][70] = 2; visible trees so far= 1807
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][71] = 1; visible trees so far= 1808
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][72] = 1; visible trees so far= 1809
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][73] = 4; visible trees so far= 1810
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][74] = 4; visible trees so far= 1811
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][75] = 3; visible trees so far= 1812
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][76] = 3; visible trees so far= 1813
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][77] = 3; visible trees so far= 1814
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][78] = 3; visible trees so far= 1815
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][79] = 1; visible trees so far= 1816
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][80] = 3; visible trees so far= 1817
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][81] = 1; visible trees so far= 1818
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][82] = 2; visible trees so far= 1819
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][83] = 0; visible trees so far= 1820
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][84] = 2; visible trees so far= 1821
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][85] = 2; visible trees so far= 1822
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][86] = 2; visible trees so far= 1823
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][87] = 0; visible trees so far= 1824
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][88] = 0; visible trees so far= 1825
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][89] = 2; visible trees so far= 1826
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][90] = 3; visible trees so far= 1827
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][91] = 0; visible trees so far= 1828
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][92] = 3; visible trees so far= 1829
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][93] = 3; visible trees so far= 1830
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][94] = 1; visible trees so far= 1831
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][95] = 2; visible trees so far= 1832
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][96] = 0; visible trees so far= 1833
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][97] = 0; visible trees so far= 1834
+[main] INFO TreetopTreeHouse - Boundary tree found; trees[98][98] = 1; visible trees so far= 1835
+[main] INFO TreetopTreeHouse -     Part 1 solution:
+ how many trees are visible from outside the grid?= [1835]
+[main] INFO TreetopTreeHouse - P1 Duration: 63ms (0s)
+[main] INFO TreetopTreeHouse - =========================================================================================
+[main] INFO TreetopTreeHouse -     ---=== Part 2 ===---     
+[main] INFO TreetopTreeHouse - Top distance increased = [3]
+[main] INFO TreetopTreeHouse - Top distance increased = [5]
+[main] INFO TreetopTreeHouse - Top distance increased = [30]
+[main] INFO TreetopTreeHouse - Top distance increased = [72]
+[main] INFO TreetopTreeHouse - Top distance increased = [333]
+[main] INFO TreetopTreeHouse - Top distance increased = [552]
+[main] INFO TreetopTreeHouse - Top distance increased = [960]
+[main] INFO TreetopTreeHouse - Top distance increased = [1728]
+[main] INFO TreetopTreeHouse - Top distance increased = [2520]
+[main] INFO TreetopTreeHouse - Top distance increased = [3190]
+[main] INFO TreetopTreeHouse - Top distance increased = [11165]
+[main] INFO TreetopTreeHouse - Top distance increased = [79200]
+[main] INFO TreetopTreeHouse - Top distance increased = [128557]
+[main] INFO TreetopTreeHouse - Top distance increased = [228780]
+[main] INFO TreetopTreeHouse - Top distance increased = [263670]
+[main] INFO TreetopTreeHouse -     Part 2 solution:
+ What is the highest scenic score possible for any tree= [263670]
+[main] INFO TreetopTreeHouse - P2 Duration: 4ms (0s)
+[main] INFO TreetopTreeHouse - ==========
+[main] INFO TreetopTreeHouse - Total Duration: 69ms (0s)
+[main] INFO TreetopTreeHouse - :::END = 1670801196053
+[main] INFO TreetopTreeHouse - :::END = 2022-12-12T01:26:36
