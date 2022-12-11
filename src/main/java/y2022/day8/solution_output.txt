@@ -1843,12 +1843,25 @@
 [main] INFO TreetopTreeHouse - P1 Duration: 63ms (0s)
 [main] INFO TreetopTreeHouse - =========================================================================================
 [main] INFO TreetopTreeHouse -     ---=== Part 2 ===---     
+[main] INFO TreetopTreeHouse - Top distance increased = [3]
+[main] INFO TreetopTreeHouse - Top distance increased = [5]
+[main] INFO TreetopTreeHouse - Top distance increased = [30]
+[main] INFO TreetopTreeHouse - Top distance increased = [72]
+[main] INFO TreetopTreeHouse - Top distance increased = [333]
+[main] INFO TreetopTreeHouse - Top distance increased = [552]
+[main] INFO TreetopTreeHouse - Top distance increased = [960]
+[main] INFO TreetopTreeHouse - Top distance increased = [1728]
+[main] INFO TreetopTreeHouse - Top distance increased = [2520]
+[main] INFO TreetopTreeHouse - Top distance increased = [3190]
+[main] INFO TreetopTreeHouse - Top distance increased = [11165]
+[main] INFO TreetopTreeHouse - Top distance increased = [79200]
+[main] INFO TreetopTreeHouse - Top distance increased = [128557]
+[main] INFO TreetopTreeHouse - Top distance increased = [228780]
+[main] INFO TreetopTreeHouse - Top distance increased = [263670]
 [main] INFO TreetopTreeHouse -     Part 2 solution:
- YYYYYYYYYYYY= [<solution_goes_here>]
-[main] INFO TreetopTreeHouse - P2 Duration: 0ms (0s)
+ What is the highest scenic score possible for any tree= [263670]
+[main] INFO TreetopTreeHouse - P2 Duration: 4ms (0s)
 [main] INFO TreetopTreeHouse - ==========
-[main] INFO TreetopTreeHouse - Total Duration: 63ms (0s)
-[main] INFO TreetopTreeHouse - :::END = 1670798891122
-[main] INFO TreetopTreeHouse - :::END = 2022-12-12T00:48:11
-
-Process finished with exit code 0
+[main] INFO TreetopTreeHouse - Total Duration: 69ms (0s)
+[main] INFO TreetopTreeHouse - :::END = 1670801196053
+[main] INFO TreetopTreeHouse - :::END = 2022-12-12T01:26:36
