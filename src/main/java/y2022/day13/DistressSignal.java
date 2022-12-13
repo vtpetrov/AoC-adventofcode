@@ -13,9 +13,9 @@ import static helper.InputLoader.closeInput;
 import static helper.InputLoader.getMainIn;
 import static helper.InputLoader.loadInput;
 
-public class Day13 {
+public class DistressSignal {
 
-    private static final Logger logger = LoggerFactory.getLogger(Day13.class.getSimpleName());
+    private static final Logger logger = LoggerFactory.getLogger(DistressSignal.class.getSimpleName());
     private static final String INPUT_FILE_NAME = "year_2022/day13_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
@@ -28,7 +28,7 @@ public class Day13 {
         long start = new Date().getTime();
         logger.info(":::START = " + LocalDateTime.ofEpochSecond(start / 1000, 0, ZoneOffset.ofHours(2)));
         logger.info("                ---=== Day 13 ===---     ");
-        logger.info("                  - XXXXXXXXX -     ");
+        logger.info("                 - Distress Signal -     ");
 
         logger.info("    ---=== Part 1 ===---     ");
 
