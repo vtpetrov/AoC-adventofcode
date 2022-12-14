@@ -1,0 +1,37 @@
+[main] INFO MonkeyInTheMiddle - ----   ADVENT Of code   2022    ----
+[main] INFO MonkeyInTheMiddle - :::START = 2022-12-14T00:52:46
+[main] INFO MonkeyInTheMiddle -                 ---=== Day 11 ===---     
+[main] INFO MonkeyInTheMiddle -                - Monkey in the Middle -     
+[main] INFO MonkeyInTheMiddle -     ---=== Part 1 ===---     
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 0:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=84}, Itm{wrryLvl=72}, Itm{wrryLvl=58}, Itm{wrryLvl=51}], crit={Op=MULTIPLY, Nominator=3, tstDivBy=13, toMnkyTstTrue=1, toMnkyTstFlse=7}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 1:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=88}, Itm{wrryLvl=58}, Itm{wrryLvl=58}], crit={Op=PLUS, Nominator=8, tstDivBy=2, toMnkyTstTrue=7, toMnkyTstFlse=5}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 2:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=93}, Itm{wrryLvl=82}, Itm{wrryLvl=71}, Itm{wrryLvl=77}, Itm{wrryLvl=83}, Itm{wrryLvl=53}, Itm{wrryLvl=71}, Itm{wrryLvl=89}], crit={Op=MULTIPLY, Nominator=-1, tstDivBy=7, toMnkyTstTrue=3, toMnkyTstFlse=4}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 3:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=81}, Itm{wrryLvl=68}, Itm{wrryLvl=65}, Itm{wrryLvl=81}, Itm{wrryLvl=73}, Itm{wrryLvl=77}, Itm{wrryLvl=96}], crit={Op=PLUS, Nominator=2, tstDivBy=17, toMnkyTstTrue=4, toMnkyTstFlse=6}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 4:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=75}, Itm{wrryLvl=80}, Itm{wrryLvl=50}, Itm{wrryLvl=73}, Itm{wrryLvl=88}], crit={Op=PLUS, Nominator=3, tstDivBy=5, toMnkyTstTrue=6, toMnkyTstFlse=0}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 5:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=59}, Itm{wrryLvl=72}, Itm{wrryLvl=99}, Itm{wrryLvl=87}, Itm{wrryLvl=91}, Itm{wrryLvl=81}], crit={Op=MULTIPLY, Nominator=17, tstDivBy=11, toMnkyTstTrue=2, toMnkyTstFlse=3}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 6:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=86}, Itm{wrryLvl=69}], crit={Op=PLUS, Nominator=6, tstDivBy=3, toMnkyTstTrue=1, toMnkyTstFlse=0}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Initializing monkey => Monkey 7:
+[main] INFO MonkeyInTheMiddle - Add Curr monkey to list: Mnky{items=[Itm{wrryLvl=91}], crit={Op=PLUS, Nominator=1, tstDivBy=19, toMnkyTstTrue=2, toMnkyTstFlse=5}, inspctns=0}
+[main] INFO MonkeyInTheMiddle - Inspections count at the end: [208, 43, 56, 197, 59, 237, 196, 234]
+[main] INFO MonkeyInTheMiddle - the two most active monkeys inspected items: 237, 234
+[main] INFO MonkeyInTheMiddle - The level of monkey business in this situation can be found by multiplying these together!
+[main] INFO MonkeyInTheMiddle -     Part 1 solution:
+ What is the level of monkey business after 20 rounds of stuff-slinging simian shenanigans?= [55458]
+[main] INFO MonkeyInTheMiddle - P1 Duration: 54ms (0s)
+[main] INFO MonkeyInTheMiddle - =========================================================================================
+
+[main] INFO MonkeyInTheMiddle -     ---=== Part 2 ===---     
+[main] INFO MonkeyInTheMiddle -     Part 2 solution:
+ YYYYYYYYYYYY= [<solution_goes_here>]
+[main] INFO MonkeyInTheMiddle - P2 Duration: 0ms (0s)
+[main] INFO MonkeyInTheMiddle - ==========
+[main] INFO MonkeyInTheMiddle - Total Duration: 54ms (0s)
+[main] INFO MonkeyInTheMiddle - :::END = 1670971966352
+[main] INFO MonkeyInTheMiddle - :::END = 2022-12-14T00:52:46
