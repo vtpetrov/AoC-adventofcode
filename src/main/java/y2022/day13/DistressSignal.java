@@ -1,3 +1,5 @@
+package y2022.day13;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,10 +13,10 @@ import static helper.InputLoader.closeInput;
 import static helper.InputLoader.getMainIn;
 import static helper.InputLoader.loadInput;
 
-public class Template {
+public class DistressSignal {
 
-    private static final Logger logger = LoggerFactory.getLogger(Template.class.getSimpleName());
-    private static final String INPUT_FILE_NAME = "year_2022/dayXX_input.txt";
+    private static final Logger logger = LoggerFactory.getLogger(DistressSignal.class.getSimpleName());
+    private static final String INPUT_FILE_NAME = "year_2022/day13_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
@@ -25,8 +27,8 @@ public class Template {
         logger.info("----   ADVENT Of code   2022    ----");
         long start = new Date().getTime();
         logger.info(":::START = " + LocalDateTime.ofEpochSecond(start / 1000, 0, ZoneOffset.ofHours(2)));
-        logger.info("                ---=== Day XX ===---     ");
-        logger.info("                  - XXXXXXXXX -     ");
+        logger.info("                ---=== Day 13 ===---     ");
+        logger.info("                 - Distress Signal -     ");
 
         logger.info("    ---=== Part 1 ===---     ");
 

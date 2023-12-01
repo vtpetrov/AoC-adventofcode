@@ -1,11 +1,20 @@
 package y2017.day8;
 
+import common.enums.Operator;
 import lombok.Data;
 import lombok.ToString;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
-import static helper.InputLoader.*;
+import static helper.InputLoader.closeInput;
+import static helper.InputLoader.getMainIn;
+import static helper.InputLoader.loadInput;
 
 public class ILikeRegisters {
 
@@ -130,34 +139,6 @@ public class ILikeRegisters {
                     return DECREASE;
                 default:
                     throw new Error("VTP - unknown operation:" + input);
-            }
-        }
-    }
-
-    private enum Operator {
-        GT,
-        LT,
-        GTOET,
-        LTOET,
-        EQUAL_TO,
-        NOT_EQUAL_TO;
-
-        static Operator fromString(String input) {
-            switch (input) {
-                case ">":
-                    return GT;
-                case "<":
-                    return LT;
-                case ">=":
-                    return GTOET;
-                case "<=":
-                    return LTOET;
-                case "==":
-                    return EQUAL_TO;
-                case "!=":
-                    return NOT_EQUAL_TO;
-                default:
-                    throw new Error("VTP - unknown operator:" + input);
             }
         }
     }
