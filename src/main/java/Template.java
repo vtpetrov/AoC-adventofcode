@@ -14,7 +14,7 @@ import static helper.InputLoader.loadInput;
 public class Template {
 
     private static final Logger logger = LoggerFactory.getLogger(Template.class.getSimpleName());
-    private static final String INPUT_FILE_NAME = "year_2022/dayXX_input.txt";
+    private static final String INPUT_FILE_NAME = "year_2023/dayXX_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
@@ -22,7 +22,7 @@ public class Template {
 
 
     public static void main(String[] args) {
-        logger.info("----   ADVENT Of code   2022    ----");
+        logger.info("----   ADVENT Of code   2023    ----");
         long start = new Date().getTime();
         logger.info(":::START = " + LocalDateTime.ofEpochSecond(start / 1000, 0, ZoneOffset.ofHours(2)));
         logger.info("                ---=== Day XX ===---     ");
