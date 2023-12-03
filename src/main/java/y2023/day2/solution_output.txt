@@ -1,0 +1,17 @@
+[main] INFO CubeConundrum - ----   ADVENT Of code   2023    ----
+[main] INFO CubeConundrum - :::START = 2023-12-03T04:19:28
+[main] INFO CubeConundrum -                 ---=== Day 02 ===---
+[main] INFO CubeConundrum -                   - Cube Conundrum -
+[main] INFO CubeConundrum -     ---=== Part 1 ===---
+[main] INFO CubeConundrum -     Part 1 solution:
+ What is the sum of the IDs of valid games?= [2617]
+[main] INFO CubeConundrum - P1 Duration: 47ms (0s)
+[main] INFO CubeConundrum - =========================================================================================
+[main] INFO CubeConundrum -     ---=== Part 2 ===---
+[main] INFO CubeConundrum -     Part 2 solution:
+ the sum of the game powers= [59795]
+[main] INFO CubeConundrum - P2 Duration: 19ms (0s)
+[main] INFO CubeConundrum - ==========
+[main] INFO CubeConundrum - Total Duration: 66ms (0s)
+[main] INFO CubeConundrum - :::END = 1701569968476
+[main] INFO CubeConundrum - :::END = 2023-12-03T04:19:28

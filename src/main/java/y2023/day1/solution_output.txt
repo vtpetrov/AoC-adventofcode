@@ -1,0 +1,3027 @@
+
+[main] INFO Trebuchet - ----   ADVENT Of code   2023    ----
+[main] INFO Trebuchet - :::START = 2023-12-03T00:12:46
+[main] INFO Trebuchet -                 ---=== Day 01 ===---
+[main] INFO Trebuchet -                   - Trebuchet -
+[main] INFO Trebuchet -     ---=== Part 1 ===---
+[main] INFO Trebuchet -     Part 1 solution:
+ Consider your entire calibration document. What is the sum of all of the calibration values?= [54390]
+[main] INFO Trebuchet - P1 Duration: 57ms (0s)
+[main] INFO Trebuchet - =========================================================================================
+[main] INFO Trebuchet -     ---=== Part 2 ===---
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9vxfg
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 99
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 19qdlpmdrxone7sevennine
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 118
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1dzntwofour9nineffck
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 137
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7bx8hpldgzqjheight
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 215
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= joneseven2sseven64chvczzn
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 229
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven82683
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 302
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7onefour1eighttwo5three
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 375
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8lmsk871eight7
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 462
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninefivefive2nine5ntvscdfdsmvqgcbxxxt
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 557
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onepx6hbgdssfivexs
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 572
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cdtjprrbvkftgtwo397seven
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 599
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2eightsix16
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 625
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 41pqdmfvptwo
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 667
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xhlqvsjpbhfivefour5sevenonemcmrkvhkjqfour5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 722
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2czddtpsrgsbgddsix6gvmxqlsnnine4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 746
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twozxsix9kmctfour
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 770
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3hqfxkzr2nineqdpgbzndxf2two
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 802
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bjd99eight6sfive
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 897
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= oneeighttwo34dcjck5eightjznpzhxdlc
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 915
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6sixeighttqslqvplsxvpxch
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 983
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixonemc55
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 1048
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixeight7five9ninesixfour
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 1112
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lmbzpzrhssdslkeight9eightpjj
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 1200
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six2eight579hlbgjnjkqrxrdlhnpfour
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 1264
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6fkfxsqncm456onesftkndhl
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 1325
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bqfckhdmppqvjlkx75dvjzveight8
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 1403
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= btfppljkfkzcklskgzzhmtwo9fjsix
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 1429
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven44tgvh
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 1503
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rvmjm8nlg3ttgcjtwo
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 1585
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevendjdckvz9nine6cth
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 1661
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dpxdpzbmnqsn8prggxn8twotwo4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 1745
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twofivesevenonedmkrnpznfhgh1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 1766
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gqeightwothreefours16gljkzgnkgclmrpsmfkq
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 1852
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eighteightsrfcxtvg7three1two9nineeightwolqn
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 1934
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 18sixlone
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 1945
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight7rxfbmhnsf
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 2032
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6twodndmhcgxlgbqbqndbbthnngblfgtzh5fouroneightrjp
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 2100
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3vpxlzkc
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 2133
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qpmbxctsmt38sn1
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 2164
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threefivelxcf9eight
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 2202
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5vsptrhgltgqnkcgn4
+[main] INFO Trebuchet - Line value= 54, Intermediate sum= 2256
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeseven59
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 2295
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 83eight8sevenklzjcs2
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 2377
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three5three6twoone9
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 2416
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fkbfvltznine2bbjpng2zhtmmhnrjq3
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 2509
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven1xxjfq6
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 2585
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7btxleight4one
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 2656
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xzsfive3rcxlczkp
+[main] INFO Trebuchet - Line value= 53, Intermediate sum= 2709
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8bjfmkjc4dxvd9
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 2798
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixddfg8onetwotwosbsb
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 2860
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gmvbngqgfour66eightcspbtjkzlxrqhfrsvfn
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 2908
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three91djmrkkdkrrsmv
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 2939
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four4eightlnhtvrscbf5gh5
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 2984
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seventwo775dcg
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 3059
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 85sevenfivesixslkjbninefournine
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 3148
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cljxdshd93rxjppchxonekmvpcmrzrv
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 3239
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kkzkp315
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 3274
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three3jxmvjzzvtwojsj1seven
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 3311
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jvcfzjvfp5gsbpr5fourfour5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 3366
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jpfivetxmgthvlqnvjzdgrhknf4dvslqsxtv
+[main] INFO Trebuchet - Line value= 54, Intermediate sum= 3420
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jkvtctx6kkgkeight
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 3488
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jgsrnzzz8cf4eighteight3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 3571
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 88eight1
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 3652
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one674zclxfive
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 3667
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 34nlkc8threexfmlqrxbpeight3rj
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 3700
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6six9onetgjmvqz63tnrrqlg
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 3763
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3n67five16ninevttnvbznlq
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 3802
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven98
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 3880
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5pkvtpzqs9mvpfpvhb
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 3939
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 39s1one6phcgfqbgcvhpqv
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 3975
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevensevenlhphq5rxffsix
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 4051
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kvvlqzmglmqddtt87nine
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 4140
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5npjkfhmnreightscqf
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 4198
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 954
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 4292
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five4tmeightkfdkhdfq34eight
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 4350
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= smdqspmlv3twokthree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 4383
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7fivegvgfhlqsqfxdljnnpninenine429
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 4462
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevensixdrsltf6fnhtcssfhpl7
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 4539
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= drctwoneeighttwoninebzvhslngqjhtwo1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 4560
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kzeightwo14bjkksx
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 4644
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 35gglqtcjponenine4lhtjrtjzsf
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 4678
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six4two9
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 4747
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 88dpbpbrrnceighteight3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 4830
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jf24sqscmzfq
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 4854
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourone9three2r2ninethree
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 4897
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2fcjl2two8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 4925
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ndshrmtqxtwo56eight
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 4953
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mhlsk7
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 5030
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hcmx8792six3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 5113
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2sixonexgpzsjbmbqnxbtkbcvmktone
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 5134
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= trqckccvgbdjt7eight9pcnrkxbxrb
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 5213
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sfqnzdlxqcdf56five27pfb
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 5270
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cffn1bfjkxdvcthreetvvxfzlrrpmpmddh
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 5283
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sxone6xzdrsdlfnn19seven8
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 5301
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twofourtwoqxvpcjmnv3eighteightonetwo
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 5323
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9seven453seventhree67oneightv
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 5421
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 28xmzcttr
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 5449
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five4twohrlthrjqmthreerzprxcbj
+[main] INFO Trebuchet - Line value= 53, Intermediate sum= 5502
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vlrdjpznp38
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 5540
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 98nphlf5ztrdzthreeddtnxrkhlzxkttpz
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 5633
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mqbntpz6eight4
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 5697
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 28nine
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 5726
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= khkreight3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 5809
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1seven2fivebnjbzd
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 5824
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cgvdfmncxdn13tp5kxvfqntveight
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 5842
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7bkgncbfql68ninetwolfmltr8glvsdpm
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 5920
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7onesevennine
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 5999
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pjtmseven6mhcfrbqnmpbspsrcsixfpfkhjxdhq
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 6075
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 256one54one
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 6096
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sonefour4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 6110
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vzbsj5nnhpkgkqhthreevlgfvnz6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 6166
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qtkrjxgrvs4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 6210
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four1fcglninemggpfrone2
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 6252
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 22trflsckfg7eighteightoneightrbk
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 6280
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenfive5fxmbktqfive43
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 6353
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoonedbl1seventwokjjbv
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 6375
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixjlkfjnfkzfhvsj5eightmgmh
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 6443
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gxqjmnjp5pxdksnszcrfivepeight
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 6501
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightthree5shxvhnzlhninefourkvchmxfj
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 6585
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two9mjkxhsevenddtbm696
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 6611
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3threedrs3twothree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 6644
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= d1fivencnbrcvfcbvvphxfour
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 6658
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenfkgjgrt1lzfqzksddlcprlx9six
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 6734
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one7ckxzglncdgzxcxfour
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 6748
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three8four6dhn3
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 6781
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5rphkp6three2six2
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 6833
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7ztzzlnthree4three
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 6906
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rgxrpczczcsevenrphlhcczm985gdbjcnvjx5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 6981
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ggmrcxnrdxfdtd6
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 7047
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= meightwovdrpxgmpjqhpmrdsixhts86cl81
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 7128
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4ninejdbzhtfkdnthree26
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 7174
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9five8
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 7272
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six276
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 7338
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gbsphnmgz5smseven6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 7394
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourgrjvpbkgninetwo1dkrcv
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 7435
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven96
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 7511
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2sixninexvmxbjttxb
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 7540
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixnine3sixsixhvtxone7
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 7607
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6x8
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 7675
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 773fiveeightxtrtshfivemcqxnvplx
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 7750
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 182mfcthbstt2cvqs
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 7762
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 13cone1fcgtchxpgs
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 7773
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three45nblglcktt
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 7808
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seventzrjngglvpcbdzfivexclqhsjdd5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 7883
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jhfmcqdjp8pktwoqgzskmp4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 7967
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pbsixtdvshb2three2lq68
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 8035
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one9nine
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 8054
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8six98three8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 8142
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7ninethree1
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 8213
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gbpchggch74lsmfseveneight
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 8291
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= shshsjlqp7xggv2chskzzdfceightcnhrnine
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 8370
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoone1fdzjkdhxeight1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 8391
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8hdxvfblkxfive1seven3mxhv
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 8474
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hfgmbeight9threefour9
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 8563
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven734
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 8637
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three9three6
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 8673
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dgnine4eightnineeight
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 8771
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 66nmltsclptfptxrpj
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 8837
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5qcmvt9jhj8five
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 8892
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 532qbhhz78
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 8950
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3bvkm
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 8983
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 34mpxdthree7nine4k1
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 9014
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= frls93
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 9107
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixsevenhtzjqzfthree1ninesixnpv
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 9173
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jzqgtptsrgx4nine9txzsqghqrbnhflf
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 9222
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7f84
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 9296
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 54sixnsdppg16nine5vcmlcqbmhb
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 9351
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4onesixtwoghhpmgltfkxldzjh7
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 9398
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5gncbnhztwo6eight7ninez
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 9457
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5191jsnqmgeightwojfr
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 9509
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bvxzrjnhnjjfvvrkvxncs6
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 9575
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dtwo4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 9599
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bgckgdpdzksmlrzfone2two
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 9611
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= x98lqxzxrdrjrkbfk8
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 9709
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6gmseven921
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 9770
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= q4eight3eight
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 9818
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivenkjkrcvs8hpvnrgpcthreekjfnmtg1vntwo
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 9870
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7nine9
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 9949
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lthqzvxmthreeonefourtwo8fourfour8
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 9987
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vgn96cmdrnxs
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 10083
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 94fourdmfpjfbgdc7sb5xldk
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 10178
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1eighttwodfzffvpv8eight
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 10196
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onefivetwo1five
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 10211
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6ttjvrlqv2fiveseven5d4
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 10275
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 87399
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 10364
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7hblrjsxdphnplgsevendx
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 10441
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6312
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 10503
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vtwone4five61
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 10524
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2fdmhrbdssf
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 10546
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ztxbmttzvldljxrtt142tkfrfivesevenfive
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 10561
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zz1one
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 10572
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivetwo98
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 10630
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mcqggtklx39cdz7lkpxthreensztkfmc
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 10663
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qbzmkprpfd166qhtzpcjhkqpmqrdqtcdgfhtgx
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 10679
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 95xjrltxrnp
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 10774
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4rsjnrone85
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 10819
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qqnhlgchvvpcrj8dmcjccthreesseven
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 10906
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivevbvqdftvxvgxglsevenlvrrknpk9
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 10965
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3krqgv5fourq47
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 11002
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninetwosixvmt3one
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 11093
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fcfvzrsbrqcsdhbflhkn9fdgtjxn
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 11192
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 82onekcxcvjv6dkk
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 11278
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fkntvmx8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 11366
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nineljkckkldnk6
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 11462
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoqdptcvnine5tnmstkrsixdc
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 11488
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ftwone6lmjlntfxptmnnnconepqszsbsbkqkvcxghmhtvsxvfldd
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 11509
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightfivexxhjmxvmklhzt52mvh
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 11591
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1mmpxmsbpkf368sevennine
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 11610
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8six3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 11693
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onekh1
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 11704
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 74nine6gh1bbvsevenone
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 11775
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4pxzmslsevengdqqv
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 11822
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five1qjfxlstfsixnine6pqqseven
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 11879
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mgbdtwooneeight74hrfflzddfgtnmd
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 11903
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mrsqnffrhmhjlvqthreesevenseven6fxrfmhfv
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 11939
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two5threeeightthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 11962
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ddgsixeighttwo26fourgmhg
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 12026
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine41g962khzsxzkg
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 12118
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qfvdz41svzprbzthreedsfcqksix
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 12164
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threebnbbs5six
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 12200
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= msix1
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 12261
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three1eightoner4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 12295
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= b2twojnrfk2zsrzqfourthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 12318
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3onevqhp
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 12349
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fjszvhmsix1
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 12410
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hhjkjxz37nbbsjpfg28btponeightxv
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 12448
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2six2krqlzph8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 12476
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5two8jmtkmpfxmkbjqxjbbvnfcgl1
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 12527
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= h2mg
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 12549
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3seven2nine6
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 12585
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five5qbcnsfjxm5nptwotwo
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 12637
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6nineoneppcgf5threedcv
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 12700
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fournjkrjn9zd2cxsfmhjtzfourphflng
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 12744
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9seven33five1
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 12835
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xjmhz86
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 12921
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7sevenfivesix
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 12997
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3kpdzzninebjzbmnklkhvn
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 13036
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cvlcqtsix4seveneighthvhrfmsjeight
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 13104
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1p
+[main] INFO Trebuchet - short line, use digits only
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 13115
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2four3xrbhl
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 13138
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vonerdscjkztwosj8fbxskdzk7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 13155
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pnx8nqjninephdhnhmc7
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 13242
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1sevenckbxpsix5stlhknddjmgdrpm
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 13257
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8vkltvtwo96
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 13343
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 88xccqf2fg7three
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 13426
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four75
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 13471
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jrcfgzddtnlmvjxgttthree1threenmrbone9
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 13510
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 27btrxjlcqftxkkjvsxnine
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 13539
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8qvc98shcjzz
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 13627
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cjn8three9dphltgdrscdxpv7pzrfg5
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 13712
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 27sixthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 13735
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9one7nine3dvvfcztxk
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 13828
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three82
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 13860
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bpszb42two9
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 13909
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twofb5gdzxbt6
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 13935
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threecrpmqbfivefksjlxgrggb8
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 13973
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9eight9five872
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 14065
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vtrsixjgccvbpdppthreethree1eightjk
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 14133
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 37lh88four7six
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 14169
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6oneseven157fourtbzdtgnkgc6eightwoqdj
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 14231
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1two4nineoneone4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 14245
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2fourkqf
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 14269
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9xbqpvlfpcfdfqxkqv233
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 14362
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeeight3
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 14395
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xc9three57pnlln
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 14492
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nineseveng1four
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 14586
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tfivefive6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 14642
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninedkf6ninerqzdrf
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 14741
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ploneight675xmgxfrfour
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 14755
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenvsixeight1pxbtmklzp9
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 14834
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dtldflk1six
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 14850
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivetwo8
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 14908
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight2kbfmjsvst8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 14996
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one2qrtrfblvlnljlmnldmv7dljts
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 15013
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six39sevenphclhsdts7
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 15080
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bjrfrzknhctwo138four9sixeight
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 15108
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hhttbnlrfour3fourfiveqjvzxdgrpxnine
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 15157
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rvjvqmsscrllhmzmbdlfqlkdfcrjd67one
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 15218
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xggzxpjmddfive5pvcdhllftb8
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 15276
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5315one5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 15331
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2mtjxrxzlftmeightnineqgjpgseventhree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 15354
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 464onenine462
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 15396
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three6sixzstbsq
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 15432
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1sevenone
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 15443
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven1pkpdeight1qlxfgqpbkzdlj
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 15514
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1gj
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 15525
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4dzlfbbnfourfive9kp5
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 15570
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= q8m3four9
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 15659
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 94ldqfrgnd1two
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 15751
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 38four489eighteightpr
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 15789
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threekxr261
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 15820
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tworgmfzsd8jjtvdlxhdpzseventwosix4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 15844
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tcsvdphjtgrh2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 15866
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nmqxclrszlhgrn3
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 15899
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5tzxvkxbpvqgfourmlmnknxt1hjnine
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 15958
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven8nbvxqd1
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 16029
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3zcqcsj6lfjvsfkfmrsplp3
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 16062
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ts2ninetrmpjp57pbzfnfb
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 16089
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5onesqkk82
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 16141
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eighteight8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 16229
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vkmrvxhjbr3tzjlfksixseven
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 16266
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hrlxjppxsr83dsgfxmdz6ninemlrnhz
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 16355
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8sevenninekvjmfl35nine
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 16444
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 91
+[main] INFO Trebuchet - short line, use digits only
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 16535
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 35seventkx95six
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 16571
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight4two854five
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 16656
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four4seven2
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 16698
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fhbnqmlxthreeeight1
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 16729
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7threeljeight
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 16807
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four9cvkztds4pqql
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 16851
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5klhghrvgng
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 16906
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hhz8eighttwothreetwojhbxfmkjeight4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 16990
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two9eightwocq
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 17012
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= znj2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 17034
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 935eight
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 17132
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 55eightkdxcmm6fivemrlbsqtvxb
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 17187
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vzzbjkmjqktwovs5one
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 17208
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7vqqrqhcjtzxeightthree
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 17281
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 34cfninesrcbczg91hptwo
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 17313
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 63htjrvldqmldzzqrnslzcsfmlcgjmrlnf1zjdrgzkgeightwomrv
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 17375
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ljdpzttczjthree8five
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 17410
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= flqjdbskkp3kjmcc9nine
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 17449
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rfcj78five
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 17524
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ttplggc924vdkbqlcrqs
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 17618
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninethreeseven5
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 17713
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5sh9
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 17772
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four6vrrs1
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 17813
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one7eighteight
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 17831
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4szmhdhgdtseven62nine9four
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 17875
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= szsfkfj6cgrprx2
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 17937
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 38fourkbrlzzfhrseven2foursevenxdv
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 17974
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3ninejcghgdchzcffxtl7eight
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 18012
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 61three
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 18075
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kbvzkmngj35
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 18110
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gkzrtccmg3sevenmkdcskvsone
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 18141
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bg8txkhfiveonerdqvhrcxjrhrlndzjj
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 18222
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4v559three
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 18265
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninethree4prhnsrmgq
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 18359
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onenine2lxsixqjsxqlrzkvzcninegz
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 18378
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 444lxgckhmhxd19ngrhftc
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 18427
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine76lznlninesevenfsrknvktmz
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 18524
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 518onethreeeighttwo
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 18576
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vxzkrgfshvvtdpsix99vnts
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 18645
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine67
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 18742
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixtwo2qtncmtxntfthree
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 18805
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two5five895ccsxdphn4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 18829
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 768
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 18907
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jvsgtwo7sixkhkvfiveqfhjdone
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 18928
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mqmnrqxbctwo5jtk4tg
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 18952
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2174fjrphztmg
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 18976
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lp4two
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 19018
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1qldfxjmzb6
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 19034
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one8krbtzzdgfjkrmnfnlone737
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 19051
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3six4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 19085
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nineeight87threefqjgzktgnffrggb
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 19178
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8xjhk
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 19266
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninesmz44fvx
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 19360
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gktxcseven2brd28xzkflb
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 19438
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 42vfqmq8hftsixeighttwoxkfktsgn
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 19480
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3fourzkklrbfh2hqvjmgggxrq137
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 19517
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mthree8eightvjptjvpkhp8tvrzz5twonez
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 19548
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sc2cbrsrtcnskjsgvd
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 19570
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6jxhprlqpxlhkckmxxxplndps8288
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 19638
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threegjhnbhzfn7977bfjqsqzdtjhxjpkvx
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 19675
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9sixthree
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 19768
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six3sixonedqgtqqzggfive7kgtksd5
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 19833
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9djnf9htxlhkphzmthreeqxkrzpljhtx
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 19926
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4threefivethreevxvkfour8qv
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 19974
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightseveneight1four5fourmvrcxvhx
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 20058
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tdhtwone4vphnspkn
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 20082
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onethree81pkbcljs3
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 20095
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nspprpkgbnnine8gmfqzdlmdone
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 20186
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vblklpvlfmtcnxgshc1threevth7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 20203
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3ninefivekhcvbeight427
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 20240
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5ninesevensevengjbhfbtjgnfhtmldczcgvmfqgrtjhdmxd
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 20297
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninebnpvq8two4
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 20391
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4lpsrkhmzxmffrq
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 20435
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four1seven1
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 20476
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threesix4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 20510
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twobcninegnvtcmnxmq9
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 20539
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 58sixeight1onepdgk3five
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 20594
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mkkdvjfoursix2nmk
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 20636
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six21bljfzdl37seven7
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 20703
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4eightvtbrr6532
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 20745
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jf2kxjbfvg
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 20767
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6t
+[main] INFO Trebuchet - short line, use digits only
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 20833
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 51mdnkqpnine9
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 20892
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twojqlrlhnseven2one
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 20913
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qoneight5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 20928
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rmkhbb36four3vtwothree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 20961
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vpxfcmmj6fiveonebssninetftgngbxfive4twoneq
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 21022
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoseven16
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 21048
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6lfivedpvfltcdeighttwonine
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 21117
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7krhmggd3578
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 21195
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vckxnbsgqm4jkjtsqrp1tvvhnfkgsghcrrxqkvb
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 21236
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jmclhfourkqmp1
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 21277
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jvtgthree478qxgprsxscfzngxgtgrfjfqqf
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 21315
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xttnzjcgsxvqrxmhlcnine9two14
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 21409
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 829
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 21498
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kmb4ninefgtjgjnxzqjmcxqpprdonesix
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 21544
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= klsnmqtwo4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 21568
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7pjjhtskhdvgtwoxsncbsnj
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 21640
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mhdhkfive23seven
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 21697
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zndrdh1xrsxmmxjvp8
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 21715
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fktwonefcqstdshq8foureightsix
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 21741
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kzlfqmvbqninetwo4five
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 21836
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4sevenjffivezscdqskmfkfzltbh
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 21881
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1782
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 21893
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6sevenfour
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 21957
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rleightwoqqnpsbprgtbvssjvd4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 22041
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= brpfntx5hj
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 22096
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rqvhgqpdz62eightthree9
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 22165
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onejgsvzns9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 22184
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fournjhjlvvqpfourtwofive6
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 22230
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7jxglnsnhbglnjsixxdhbrhgmd
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 22306
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qznbkl9sevenfourqrnmhfeightjz
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 22404
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1threethree5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 22419
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four27znfzt4298
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 22467
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9fivejvqfdcfqtlxhhm279vl
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 22566
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1dgvpsmnsevensix19vchfgbzpmqtdrksxczxt
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 22585
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twospzvsmjbfqhmcd5zznpgxkfbnbsevenxkzzfhzthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 22608
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4sixfpxzgblm
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 22654
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four7sevenbvhxrjf8ffjlbnjkp
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 22702
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 73twogmnngcjsnine5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 22777
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3fdspqvvrmv
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 22810
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vq8zqpzfhmmdbgqx55eighteight
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 22898
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixeight4jrzhqbjmcgzzxzgzcjcrg969
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 22967
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zmsfklqskd79
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 23046
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one85csix4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 23060
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9twodxfqxbhn
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 23152
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevensix8xbfmdtzeight4bcdcxdlxmk5four
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 23226
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8fdvhpv8tcpqmjsbf6two9dsxrsndr
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 23315
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jnhsclvtltwo41sixfour2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 23337
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mnmmdmsqlxpeight9fjgjgnmvvdxsqlcninesbglbone
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 23418
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vleightthree7sixsxgd1
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 23499
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dhsgn2hflhqzrxvfjbn
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 23521
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1twofivenine2nine94
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 23535
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeqtgdnf8gvxfourjjrbsjgksx
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 23569
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two8rlxcgsbdftlhx
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 23597
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1seventhreethree7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 23614
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dvksvxfeightbkccpztwo6
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 23700
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 35twokpxztqnpl
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 23732
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ctsnqstklcmcb1xhj
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 23743
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= deightwoxbrkhtgszszqspqeight91zjff
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 23824
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onehrkvgs34twofourninennddpjtrkp
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 23843
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2drv
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 23865
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3rjrkmggvfive6nine6fouronethree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 23898
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8twonine35
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 23983
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gqnn8ldkrjcbd4four
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 24067
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8mtgpsflmlkcvkmffnstnqhzrfpscjhxpctvkl
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 24155
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 89threefive3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 24238
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixxnvtsixxrjqvtkkb1threertdfg
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 24301
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onenine7ndrthree5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 24316
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zfftwoneone59
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 24345
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hqfzfivezpqkpptthreeseven8sixhb
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 24401
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six298xgsfvdz
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 24469
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sxbcgbnrlqsfhjgneightfive6two
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 24551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6zninenine71sevennineone
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 24612
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= txjkscxjxqvhrcmzzbxxxm6ninesix
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 24678
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cnsr6fivefvvbdjfgrnpqkpsjbgbm
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 24743
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tkhdhbmqbhfoursix46cbjpvqr7
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 24790
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= trbtfnsps769
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 24869
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vkrtwonefour78onevktshzxrg9three1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 24890
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5vmxn8vcsxt8
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 24948
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3eightfourpxblrzxlfx567
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 24985
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 626six1seven
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 25052
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six3fzxsdmlpq
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 25115
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 44672ztsjrfkhk9six
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 25161
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8smbknine
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 25250
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven42tt
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 25322
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five13fivetwotwonegn
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 25373
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 98fivehpdtwofive
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 25468
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cvthree491xrhgvlsixp
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 25504
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four4threezkcfbqcl
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 25547
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4six8fivefourfourtwo6
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 25593
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8849zcrrf2threetwonevc
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 25674
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zmzqvnnxskbbt7nine79five
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 25749
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8cfkzkzlgdx33
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 25832
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6gnineqj1tmmxnhntqgcrjgrcz9
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 25901
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninejpjzphsrsevenvtkthgtcq6onesix3
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 25994
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seventwo1threevrpfqgrdkrnvlftwothreefive
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 26069
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qgn4nineoneonefqfpvkb
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 26110
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twofive5569four8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 26138
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9czzvcrglj86mpxctcrrninefour
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 26232
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 16one5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 26247
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5fiveeight8lqft
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 26305
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 36oneoneqrvqzzlvnbhnvstjrlsrnlplkccjzjx
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 26336
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xtjgdvd3eightfb
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 26374
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vkx2nine1gghfcrdd
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 26395
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three3dzkxgxjvhgqvfnptmfj
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 26428
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8hgvvlgclpl
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 26516
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three7threefour
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 26550
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threetxgtrvz4eighttworkd
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 26582
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rpvlzbxs8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 26670
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hgmbvjfxdstpl7tnrgdjzvdtwo7bzhpcghnc
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 26747
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kkrsprlrgslpszcxmnine44z3eightthree
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 26840
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jxrljfivegtzbrhxmh6pqmvzf
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 26896
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twopdvrdffbzjrckcbvp4
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 26920
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dfms7bcmceightnine7ninethree
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 26993
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xjpzpqtwo4three1ftpz
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 27014
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixeight5two3
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 27077
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= r21
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 27098
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1twofivefiveeight47three
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 27111
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 483onehhfive9
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 27160
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nbcfngdpqc4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 27204
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= slnhjm3hcdnntfmbkvzthg
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 27237
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4nine5
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 27282
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zthninevonesixcskc8
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 27380
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenckbqvmjxjx41
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 27451
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4c
+[main] INFO Trebuchet - short line, use digits only
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 27495
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nineninegmdpxkttb421jhmlxckm
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 27586
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onesixthreeone75twoj
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 27598
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6sdzj
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 27664
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4xddvcvx
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 27708
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sixgsntt2fivethree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 27741
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nq1fourm5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 27756
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninesld9fivesix4dxtvnzdmzvxkp
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 27850
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ptwo8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 27878
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9fkvsxprvpf4five
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 27973
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6sbjzd4vdsfvkj9fpcgqksbg
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 28042
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kgrfsrr17twot
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 28054
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lshfkltwo88737sevenxskzzpzg
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 28081
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= djxvsnghlm7sevenlh348
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 28159
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4onevgcxlzmpncfflhtfrjrhf
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 28200
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5sevenjfzkqlpmxknine6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 28256
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= c3fourvfpzhjcppthree29
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 28295
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zninellddrfp9
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 28394
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3qtcxrppjseventbjvfninetwommbchqbqzx
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 28426
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight7sevenn
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 28513
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qbxqpthreelvxvkprjzsncnz1
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 28544
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8gkrxthreeeight8ltwoskdvxkg
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 28626
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9seventwodnfghndpxtl
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 28718
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ltwofive3jzh8two
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 28740
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven9qdngkndlbrhd9
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 28819
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1m1
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 28830
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two28fived
+[main] INFO Trebuchet - Line value= 25, Intermediate sum= 28855
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8one3kbppsdvrn2sevenhkrfive2
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 28937
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8one24dkzrxmdxqfourfivev
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 29022
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dxfive11
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 29073
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5glthvkgtzksixfoursix1
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 29124
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jxxtpndkctfrhrssqtvv6eightchprr
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 29192
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qdmv9kbtnk5eight83
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 29285
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevendkmvljcv6eightwocv
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 29357
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lpzseven8onesbtskxjrhqhkvfblbjv5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 29432
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one5lvcjrkjklsfm8six7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 29449
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qjfvdjghsdgzmfivefive5slds7mlcsmlgnpfive
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 29504
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tsqkjjmfhlrcfjxxsx278ninebnc
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 29533
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeknvkkvgpqrzbdn7six
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 29569
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 512lkhpmdntsxsixzmpcp
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 29625
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lzvkfkmxlpsix7
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 29692
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8fztrnfseven91sixxvbhtzghlcr4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 29776
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine6891lnrfdzntsthree
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 29869
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rvfmdl92seven
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 29966
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tlfjnhpsix3onemhmvsthmkftbhcc
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 30027
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3kmxcjnsm8six
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 30063
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onethree479twolht9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 30082
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jdlsqp4onefour59lhdthreenine
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 30131
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qnlpgrsrlhtwoeightfournmsbl2four
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 30155
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lhptgljveight1vkbfx
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 30236
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixsdgv6fourtjltcpkbqrone
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 30297
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine1one1
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 30388
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qxkrfczbpndp5gkghrqbcgcmmqrjjkxxf76dnjbnfc
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 30444
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3nineseven99xhmndd94
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 30478
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6875twonefns
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 30539
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 24threeeighttwo
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 30561
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3six1threeeightsix2sixp
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 30597
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xvone27fvmdd11four
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 30611
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6eightwolhn
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 30673
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gseventwobbj9bfrtdzsrjone7qz
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 30750
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twopbfdzddqninern5gxzbqcj
+[main] INFO Trebuchet - Line value= 25, Intermediate sum= 30775
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5four4sixfivefb
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 30830
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 88xtkpjtthreefourtcldldhk
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 30914
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mnbxx1
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 30925
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2dvfour2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 30947
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightfvrsnk27
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 31034
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivexfnblfpp77qfour1mrfrphbg
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 31085
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6lgddqkjqheight
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 31153
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rvtwonemdxgfsgnnc98hmonexvmhkzkmjt
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 31174
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two6cglzbdklmjqjncn5xptwovtbhvmgsd
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 31196
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenkvxn6
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 31272
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8eightjkmtncbrv8199six
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 31358
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixd14six665
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 31423
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gbkfpnnjxpmdfivettvdpnbrk16xdnhqkrpljfq
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 31479
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 58vgmvzx
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 31537
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onetxxzl9fivelhcfpkvrsgn4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 31551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 25two6mcrvbkxrtltrbsfour
+[main] INFO Trebuchet - Line value= 24, Intermediate sum= 31575
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 517
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 31632
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rvqq6ninekfmninefiveseven
+[main] INFO Trebuchet - Line value= 67, Intermediate sum= 31699
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five2jp
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 31751
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qvlcmsqpvmjbjknvlknzfxcqp5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 31806
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1ttsbmjz8bmgrjvtrrthree8dlrjeightrjjvcbcpmv
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 31824
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 95sixtwonine1
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 31915
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tkpjkpbq16
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 31931
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lstsfrltcm1qbzx9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 31950
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three713three
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 31983
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onetwo4eightfivefive
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 31998
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7sixxcfive
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 32073
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 52two9
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 32132
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xngd1
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 32143
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8eightvmktwo4eight
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 32231
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixgjjgvtznrskhxnsonetwoqdhtone21
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 32292
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9fftwo3
+[main] INFO Trebuchet - Line value= 93, Intermediate sum= 32385
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5ninevmlvmjnxvb91fourqbnnfcz
+[main] INFO Trebuchet - Line value= 54, Intermediate sum= 32439
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hpcmsgseven2sdp82eightwot
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 32511
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3five8
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 32549
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jnxd6
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 32615
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3vfgbml831dkbqsix93
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 32648
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6pdlllrll3mskssmddnine8three6
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 32714
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4vsdqddkfivethree11pklbpk
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 32755
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 47five
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 32800
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 58fivefptcc3xfqvkxqmd
+[main] INFO Trebuchet - Line value= 53, Intermediate sum= 32853
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight94mrvtn93eight8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 32941
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6fdlbrbbninebmdptsfdzmeightzqmxvpptps
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 33009
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1ninegcgcrcgbvtfptlgdthreenflkdhjqjctwoneh
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 33020
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8ppqpvrphfhrkgqjrseven
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 33107
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= knklcdrcrcjt545
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 33162
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ztmqxsevenhpqtgknssnnvdssfpxztwo8threeseven
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 33239
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xnhoneightf2five
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 33254
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= r3tworkmgkqvtf77qtbxg
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 33291
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeone41five57
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 33328
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fpsix7jrkmmxlhqknjbldthree38
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 33396
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pzxlnfj2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 33418
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevensevenkbjfvtfzbvgjvzkmnb8eightgggzbz9
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 33497
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zqkvgk3
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 33530
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vcpvzhxsxcglhtvmcn2zmqjkxconeonesrdmmmhgjrgkszhxj
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 33551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dfjhvgftwo1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 33572
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8fivetwofoursix8fivenine
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 33661
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rfive5eighttfn1
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 33712
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourrnine4bh
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 33756
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gnh9nine4pbbj
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 33850
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4129four22llnx5
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 33895
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cvdrdzlbmhjchfmvdhhztf4dxnrpvr
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 33939
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 31fourfivegl2
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 33971
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hp2eight2klkzlthmd2
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 33993
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8mzghdpvjkseven667
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 34080
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightfourthreehhxjkljdeight9twoone
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 34161
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= d519
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 34220
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zlcncbrbnlblfxjtntjkmh4939
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 34269
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3484eight9five1one
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 34300
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6two365vvllsqcsmrzqnfgrf
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 34365
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qqtntflfoureightdhzrgg84eight
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 34413
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 43ndrxmkznbnseventwotfckg9five
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 34458
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gqxghcjtmnine1
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 34549
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 622
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 34611
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nxfdgdgmnd6ninedqnfnvnlkoneeightwob
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 34673
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nhnfgxrninesix47
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 34770
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9nine8jvqrv4two
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 34862
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ldjklnnfour31oneeight3
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 34905
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dfhdmtqrttln5five41
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 34956
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4seven1six52
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 34998
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6nz498sixhbsbjxbzxr
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 35064
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gpx4four5246
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 35110
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nqzsqjhqmrninedfxkmnine9431mdgbkn
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 35201
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ghdfpkxkgtjbsqvmqjsbgljrpbqggpgptwofour8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 35229
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2pmckttc3663rkshqjmvm
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 35252
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1seven7gzsevenks8
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 35270
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tchrd7nq44
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 35344
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pljkrthree2
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 35376
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four57
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 35423
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= five138
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 35481
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= k36
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 35517
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivednxrs818
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 35575
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three6eight96eighthvpcrldfiveqkglq
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 35610
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivezbnmsevensix3eight
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 35668
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qbfeightwofour3pcr1sixseventwo
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 35750
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three4two7
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 35787
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivetrdfdqpbt15
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 35842
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 26nine1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 35863
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sevenq8eight
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 35901
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two669six
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 35927
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5p4eight219rgkj
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 35986
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 76four
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 36060
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jrmnkp1224qrzg6
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 36076
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 29eightninelvkxbt8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 36104
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven7vq
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 36181
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lgrgxxk2sbxbcvmjqqs
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 36203
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4threesixshtxpgdhnine38
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 36251
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6fcmmzhgnmm8
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 36319
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lxrtjvqzmzeight2ninept
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 36408
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2hqd93sixone2nine
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 36437
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= m1
+[main] INFO Trebuchet - short line, use digits only
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 36448
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4five5threesixnine
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 36497
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7sixfxrbr
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 36573
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightsix369one
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 36654
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= foursix7seven2bmrqmkb7dbvzrk
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 36701
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 35seven4onesmsbgbxlh2oneknnlnrg
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 36732
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hmsevenfour84eighttwo
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 36804
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight73sevenseven555jklfjnrts
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 36889
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ktqbgzvdqdcbreightjkjz4dxnfpfgjs1fvfpbczvt
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 36970
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xflxseight7smkkkdqsrgoneightx
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 37058
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9sixfive3nineonebfqbptl
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 37149
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rkxtmcltxjeight3fivetwomsjpjdm
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 37231
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4bldszkxzrq1threetd
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 37274
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gnpthree5one
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 37305
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3onesevenvbfghbzksrlkl63seven
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 37342
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6xjqqsztdsnine1fournine3eight
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 37410
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8957four17
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 37497
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three75
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 37532
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5zlsixtwo78
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 37590
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mjqtlfqztt55eightpsevensevenkrdrvsqxjtphpp
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 37647
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rztvsc9four5jsrcnvc
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 37742
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2fgstpfournine
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 37771
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onesjjhlcg1nineknqhlr
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 37790
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ldfone9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 37809
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threernszcbdxjdhbmg1eight4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 37843
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= klkmktxqfz4qcvptvdtwofive8
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 37891
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sbpvfxpsvpsnine7nine
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 37930
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threexdsbxxrxmmndql19pxzvj
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 37969
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1cbn7hvhggznffkp
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 37986
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 41f
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 38027
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hdmgqzrhdhseven25zdjdqrrpksixtwo
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 38099
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2two7ninesixscd
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 38125
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two5twojjvkjbs
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 38147
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightsix186twonelp
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 38228
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xpdskdkmjb5hhnkcnxrdbnpj
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 38283
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 96fourfour
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 38377
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7one22
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 38449
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1one2qkjszlfourtwoeightgmlfkgsm3
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 38462
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= klqmpxqzhhhk1sixqmmfnmbllqjkvlqdz
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 38478
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nmgjmhsevensix799
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 38557
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rrgpsbmnine9ninebqdgnxfsix
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 38653
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xrmslkfkzfiveninefzzbn7eightndscmjqsldlclkmsxbtjstzds
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 38711
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bqrjjrbgsixsixjgds1
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 38772
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7fmtncmjbgcvhfhlhzzdlltpdscszrlmk88
+[main] INFO Trebuchet - Line value= 78, Intermediate sum= 38850
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourchvjlhzxxtwo94
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 38894
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six2one78vkrqvp2sixvhtmqngtk
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 38960
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fknxmgcljbxfkkbdkbl868nine9
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 39049
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= height12fjt
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 39131
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= knrlb2ninesevenpzjd
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 39158
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threefourkxtmnxbtfiveeight98fvnkvrx
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 39196
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3xxszc
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 39229
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vhp2rxfrhteightkfive
+[main] INFO Trebuchet - Line value= 25, Intermediate sum= 39254
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cxlzglbnineeightsixxlphhkkkl7eight
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 39352
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lcltksrvsevensixsixtssrszb55
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 39427
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 21sjzxsqvlj1seven293j
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 39450
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3gkjdshvxkfmxnfkqhpfour56
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 39486
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kgdbqsmxxqone3p4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 39500
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3m7hmbctwo297
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 39537
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4vvr5
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 39582
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight11
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 39663
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine1six74vzdllp
+[main] INFO Trebuchet - Line value= 94, Intermediate sum= 39757
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1nine9756sxr6
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 39773
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9sevenfourtwovxbshb
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 39865
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qcgztnjjvvfiveghlbr7
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 39922
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nfgngg7fntfv
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 39999
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threeftwonndpzp681
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 40030
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= llbmvrfive5slpjkrpslcthreer
+[main] INFO Trebuchet - Line value= 53, Intermediate sum= 40083
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightrgmglgds3ggddvtfbrddhpktz
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 40166
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 75nineonethree6fourseventwonek
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 40237
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2226
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 40263
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4twokt8
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 40311
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2svschdf58eightzpsk1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 40332
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gqxthreetmfourcqvzponethree2
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 40364
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rbsvrl616
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 40430
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8threeghjeightshsnheightrvrfhvzgeight
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 40518
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6klzknkbkxg76cs38
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 40586
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vfive4cxrnmkfnmf54cffsnrsbhjtwo
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 40638
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twozclqgkdfmqfzvjxzbfonetwo5tgrfive9
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 40667
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hphppvb43ninefive3
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 40710
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3tx76threeninefqdtspfxqvq
+[main] INFO Trebuchet - Line value= 39, Intermediate sum= 40749
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5twoltwo6lvqsfd4
+[main] INFO Trebuchet - Line value= 54, Intermediate sum= 40803
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bvzcthreeqxbjrnnm5
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 40838
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 61five
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 40903
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine1fgsdjvdfrl9ninefour11d
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 40994
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hfzkbvmbrbh866ninefour
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 41078
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4spfmhsdbqn
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 41122
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fbgqhzpffhfvrnflhttrmx7fourfourrrfrcrnbbcsix
+[main] INFO Trebuchet - Line value= 76, Intermediate sum= 41198
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xczblxnpjjhbxlpffzchjvhhj98jkhvjphb
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 41296
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two17x
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 41323
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twodkg2three
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 41346
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4ninefour2grfive1eight
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 41394
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sfsvv5nineninevgshrjonefiveone5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 41449
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fiveqqpggmmptjcg5seveneight4threejqpn
+[main] INFO Trebuchet - Line value= 53, Intermediate sum= 41502
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8sevenfoureightthreegrrjlgn9
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 41591
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6fnmtzfqfive72three8
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 41659
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7nine7
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 41736
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1threelhddbxnndpsgxnb
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 41749
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 73mpcjnhcn
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 41822
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2knbcxnnfvthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 41845
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two4kmbrxzrqgtnineftjlslgdz
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 41874
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= f36992ninefour
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 41908
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 26fourninesixthree
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 41931
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zvggfbznineone85nine
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 42030
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three7threehfour
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 42064
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4eightxq7vxdqxjdntc
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 42111
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8nineprhgqb9rvkcssflvck2bghnf
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 42193
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kbkjxjs4eight188rjlmmdgcvr7
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 42240
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fnkcbmdmbmnglztltrbcnineone6
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 42336
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7jjgtlt821
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 42407
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 78xfgxrtm6four
+[main] INFO Trebuchet - Line value= 74, Intermediate sum= 42481
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9k5five
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 42576
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four764one
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 42617
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4pmdqzcceight6sevenrl5seven
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 42664
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ckhvfc92jdrxzxhzgsnkj45
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 42759
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sgveightwolhl8one454pmcmks7
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 42846
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hlpbfkqtnjoneeightjnpt9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 42865
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tnine8
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 42963
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ddlhfqglnftnd4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 43007
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pdpdvdgdr3twofqzjqqjp8sixtwo
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 43039
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jq4onetlpzllzmk
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 43080
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoseventwotwobpone1twok
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 43102
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3759qbxgjfivenine4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 43136
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vhxhh31
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 43167
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cbfkfld3one54
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 43201
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bpchvxkvtone4npnkccpchvf16sixrpcrftmc
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 43217
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sixeightmhvbxthree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 43250
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2six5qeighttxgfour41
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 43271
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vjchfvn88kjsdzvkzphlhgsvseven5
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 43356
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 823nineqd369
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 43445
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 377
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 43482
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8ninethree7
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 43569
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jvvvz4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 43613
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mldjxseven2
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 43685
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two2xvjrjvqsx8
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 43713
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ftwo91
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 43734
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zhndzkhzcqone332
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 43746
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vcssgkmvneightcdhm1przq
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 43827
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8tfvgcheight76
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 43913
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zqxthsnine7nine
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 44012
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onezsklndhqllfourfive24qmlvgtm7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 44029
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jgh8h1six
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 44115
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six23
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 44178
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threehxhvsqpcxrnrpggtwoxtptrlt95
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 44213
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rhcxxeightthree444djzcckrst
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 44297
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9onensgone1eightmfkftpsfctqmn
+[main] INFO Trebuchet - Line value= 98, Intermediate sum= 44395
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 55eight
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 44453
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 656cpbmgsevenrsqd2onefour
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 44517
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sevenbjlggzzfzxnhkzxtbpgxqbrfgtb4
+[main] INFO Trebuchet - Line value= 34, Intermediate sum= 44551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3hhbrdtmmrzssfmtv8
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 44589
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 28szkfjnzrcv
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 44617
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7twopthree
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 44690
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= hnp42
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 44732
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5rxg6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 44788
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= twoeightnfhdbndrtzltninehdtkheight4eightwolpr
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 44810
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 33sevenmggst
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 44847
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2fiveseven
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 44874
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fhfrmgnsfcthree849bznbtbfourfive
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 44909
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1twooneone1four
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 44923
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourxlvsgqzzpkzgmsixtwo63
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 44966
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nmcmgkfdt2fiveeight7
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 44993
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qnhjdccdqdnine41tjzbpzmztwo7
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 45090
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1eightkqftvgmgqnqqgvghvhds4
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 45104
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 49seven59
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 45153
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6trfive9
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 45222
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixbtrqxgsdjl6three
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 45285
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight4seven
+[main] INFO Trebuchet - Line value= 87, Intermediate sum= 45372
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 14xblhzfdbxeight
+[main] INFO Trebuchet - Line value= 18, Intermediate sum= 45390
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixlbthqhcmrn7five2eight3
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 45453
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tpltwonejjvqkz8onelgndpsvxzninenineseven
+[main] INFO Trebuchet - Line value= 27, Intermediate sum= 45480
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sevenfive8twonez
+[main] INFO Trebuchet - Line value= 71, Intermediate sum= 45551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dkzrpvtkhq664pnine
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 45620
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine1m6
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 45716
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ltwone1fourphtqthreethree1foureighttwo
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 45738
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threegmlxrnbkmjfvlbmdhn4mcchtmcninetwodtz
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 45770
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninerknt1sixsevenfive
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 45865
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6vzpjhtwonemc
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 45926
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixsevenninexmf6five1
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 45987
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qrkvjcdvnkh1ssfmqxqmnine83three
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 46000
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8cjtsf6hmmnveightsix82
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 46082
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= zphqxnsevenjklnhmfphcfoursixtbmtmkeight5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 46157
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3sevensevendnxdrqskvx
+[main] INFO Trebuchet - Line value= 37, Intermediate sum= 46194
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vpltgsevenpkbspnfzc5qmbdb
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 46269
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fiveseven5dgkdpjxtzvffqvltwo38
+[main] INFO Trebuchet - Line value= 58, Intermediate sum= 46327
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninesxljqcmmqf3two
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 46419
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= one19mgdbsmsonethree73lmdchhccc
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 46432
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 27six
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 46458
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vd6seven946h
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 46524
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourthreerqcnchsfourthreefourgghcmcjvfv4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 46568
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mmjhninefiveseven5
+[main] INFO Trebuchet - Line value= 95, Intermediate sum= 46663
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8eighttls2
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 46745
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= bcconeblccrjckjpr5tqbvpm9
+[main] INFO Trebuchet - Line value= 19, Intermediate sum= 46764
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1rggt418threevmjhkdztqm5
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 46779
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 687jzfltlveightone1
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 46840
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nine5seven4ninexmgnmpqnc
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 46939
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6cbthree2
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 47001
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= mdhrs4tqddtrhzxscxxggkgcfiveone
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 47042
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5rjfldggflcslhkkjllthree631
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 47093
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 94pxssc6eighteightfivesix
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 47189
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivezmjqnlfggqzsix9
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 47248
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivefour369five5
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 47303
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4stgkns3xz
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 47346
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threenine1
+[main] INFO Trebuchet - Line value= 31, Intermediate sum= 47377
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7qttnmpld89fivetpxgzjhgjpcrhm
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 47452
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight158
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 47540
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 16one
+[main] INFO Trebuchet - Line value= 11, Intermediate sum= 47551
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninefqbmlkkkhppbvlljbeightc6onefkthmhktkbdjc
+[main] INFO Trebuchet - Line value= 91, Intermediate sum= 47642
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight533gzndzbl7sevenninefive
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 47727
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fournine6
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 47773
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 49pscnggt6one4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 47817
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six2seven2fourmeight
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 47885
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= xdvvgsevenjpdjtl7eight6onerj5
+[main] INFO Trebuchet - Line value= 75, Intermediate sum= 47960
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cdmcsjbt7fivevvczqvdpqqcnxttk1two
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 48032
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivefourfivespmgsfghdqmpqqvngj6
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 48088
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6fkrqlc
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 48154
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qffdddhmxck23nvnqmczxpvnb8eighttwo
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 48176
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= j6xhzcgskqzk9qtnine3
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 48239
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three224vdsix
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 48275
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qhl8lzcvdskb
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 48363
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six9hxgm
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 48432
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six3lm8xgptktfbml3
+[main] INFO Trebuchet - Line value= 63, Intermediate sum= 48495
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3twofive1threeeight6
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 48531
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 933seven7sspmm
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 48628
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vvxkvmlpzn7
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 48705
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2six6onempljqttngeightgrzkxxsbqb
+[main] INFO Trebuchet - Line value= 28, Intermediate sum= 48733
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourtjgmd254two
+[main] INFO Trebuchet - Line value= 42, Intermediate sum= 48775
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jptqbmvninenqx69
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 48874
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cqcsfmzx4kvrcpjm
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 48918
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= jmmmb4mpdxrkvqc5dthree1seven
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 48965
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= psmpdnmb3hthree
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 48998
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5612zvndmk
+[main] INFO Trebuchet - Line value= 52, Intermediate sum= 49050
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= cdfmfrxrhvsevenbpvpxtsmr9two3
+[main] INFO Trebuchet - Line value= 73, Intermediate sum= 49123
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six7fourt1sixtwo
+[main] INFO Trebuchet - Line value= 62, Intermediate sum= 49185
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9sevenfour4fdzseven5vdcgvqsix
+[main] INFO Trebuchet - Line value= 96, Intermediate sum= 49281
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dffpldbfourjlklt99
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 49330
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vhmbrd8qhglxdgninefourdnvcdzfzhssqnmfnlgeightrvff
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 49418
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sfxkfhx8
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 49506
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qglscpbxzffivenineone41hbzgjfzzvghtrklp
+[main] INFO Trebuchet - Line value= 51, Intermediate sum= 49557
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rrzvzbqkjl4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 49601
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixfour1zkqtmrkhm26six
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 49667
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2rqdcxnine76seven9five
+[main] INFO Trebuchet - Line value= 25, Intermediate sum= 49692
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8lxnzzt514
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 49776
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gdhdz572bhbhqhrhxdninebvv
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 49835
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 3one68eightvjtrqg
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 49873
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8775mdcqcjthreehhrshdbtss19
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 49962
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ddgjkksvhseven22dqsclbgl
+[main] INFO Trebuchet - Line value= 72, Intermediate sum= 50034
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six7vdsix4
+[main] INFO Trebuchet - Line value= 64, Intermediate sum= 50098
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fsbtxfmdzlfxqxpfdxl65sixjpvpkjhqp
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 50164
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= l4r3mgjninedqh
+[main] INFO Trebuchet - Line value= 49, Intermediate sum= 50213
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four2cmk6twoczsnqddjdxgm3three
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 50256
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= gsmhmkfsz8mfninehx
+[main] INFO Trebuchet - Line value= 89, Intermediate sum= 50345
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5dhgpmdjmdvpvmbone995qdhmmjlg
+[main] INFO Trebuchet - Line value= 55, Intermediate sum= 50400
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tfour35636fiveseven
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 50447
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vfdv8bzvjqbfpsix
+[main] INFO Trebuchet - Line value= 86, Intermediate sum= 50533
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= sixdgfqgxfvr6tdzhzkzknbl
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 50599
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fivefoursix83eightsevenrcqprm
+[main] INFO Trebuchet - Line value= 57, Intermediate sum= 50656
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightzxxvckndp58zpq
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 50744
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 66one
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 50805
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8xlgdrjnhxphtsstrptninetwojgvkrprtzklcpjbp
+[main] INFO Trebuchet - Line value= 82, Intermediate sum= 50887
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8fzdtf
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 50975
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8hkljkkck5
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 51060
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onefivesix6nllxhcczxdszxnxpxbpthree15
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 51075
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 85oneighttx
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 51163
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 1fiveqkvflmzsgdxnnthreefour
+[main] INFO Trebuchet - Line value= 14, Intermediate sum= 51177
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8fczsixone9sixfive
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 51262
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight9onedtvszfxsqpvdzmsevenfivejghsqvkhn
+[main] INFO Trebuchet - Line value= 85, Intermediate sum= 51347
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= foursevendmrgdbngndeight6fivendmgxkh
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 51392
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4446
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 51438
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9kbrmsm2eightsfxvldhgsznrlqsixhtfxxllm9
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 51537
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8trchslhdfxxhrrkonesix74twoone
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 51618
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightnine5cfsrfjpxh141
+[main] INFO Trebuchet - Line value= 81, Intermediate sum= 51699
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four6nine6
+[main] INFO Trebuchet - Line value= 46, Intermediate sum= 51745
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threenmxeightseventhree9threevqzfg
+[main] INFO Trebuchet - Line value= 33, Intermediate sum= 51778
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three9fournineeight25
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 51813
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four5nhd
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 51858
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nrkzspjpmfcqxthreerxpxlcknn1rkhggsix
+[main] INFO Trebuchet - Line value= 36, Intermediate sum= 51894
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= kzrdjnvxfone5sixsixrdnbvgtwo7
+[main] INFO Trebuchet - Line value= 17, Intermediate sum= 51911
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= ninethreefive3vmc63ninebkccndnmq
+[main] INFO Trebuchet - Line value= 99, Intermediate sum= 52010
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seven89eight8fjtfzqlrbmnine9r
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 52089
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= lbhkmjxx46one4
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 52133
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 32121nine2
+[main] INFO Trebuchet - Line value= 32, Intermediate sum= 52165
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= seveneighttskhdjninezzfh4clnhstsnine
+[main] INFO Trebuchet - Line value= 79, Intermediate sum= 52244
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 9fourcvhseven
+[main] INFO Trebuchet - Line value= 97, Intermediate sum= 52341
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pbheightwobpcpfzqfxone6onejmmmtgvhtfour
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 52425
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 62rkfnbkjkqzthree4twoeight15
+[main] INFO Trebuchet - Line value= 65, Intermediate sum= 52490
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= six1jgpvqtwo378
+[main] INFO Trebuchet - Line value= 68, Intermediate sum= 52558
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4stwosevenxfnqcmglgzxtrbhvd
+[main] INFO Trebuchet - Line value= 47, Intermediate sum= 52605
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= nkoneightq35srthgtnjpd
+[main] INFO Trebuchet - Line value= 15, Intermediate sum= 52620
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= three6ctx1fiveeight
+[main] INFO Trebuchet - Line value= 38, Intermediate sum= 52658
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eight9eighttnthsddmfz8mktrsix4
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 52742
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightpmqqxfqcffour8xflgdscrzmbjhjq1four
+[main] INFO Trebuchet - Line value= 84, Intermediate sum= 52826
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 648one
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 52887
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= threesix88zdsbmsmch5
+[main] INFO Trebuchet - Line value= 35, Intermediate sum= 52922
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourdpkgxggzvm3
+[main] INFO Trebuchet - Line value= 43, Intermediate sum= 52965
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 262
+[main] INFO Trebuchet - Line value= 22, Intermediate sum= 52987
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 597onethreenine
+[main] INFO Trebuchet - Line value= 59, Intermediate sum= 53046
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 2zsgllcmjz8hvvgbzxpv29qdqnfrj
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 53075
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 63lxzjglsk59
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 53144
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 5nineclzblmhqzoneninesixm
+[main] INFO Trebuchet - Line value= 56, Intermediate sum= 53200
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6eighteightfour9threehnine
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 53269
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= pjrqcmrntwo5g346hhstlmgx
+[main] INFO Trebuchet - Line value= 26, Intermediate sum= 53295
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fhgkhdhqbzrlone9fiveknjmthreethreejqgbgmvxlq
+[main] INFO Trebuchet - Line value= 13, Intermediate sum= 53308
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= onesixmhhfckkhcbzffthreegp6
+[main] INFO Trebuchet - Line value= 16, Intermediate sum= 53324
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= foursixkbvzvnsdtggpb68onefourctst
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 53368
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 6zlrrqdnineqfjjq
+[main] INFO Trebuchet - Line value= 69, Intermediate sum= 53437
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4bx
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 53481
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= dqnsix1onefqlsqlmtlcgpsfrkcx
+[main] INFO Trebuchet - Line value= 61, Intermediate sum= 53542
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4three2czjxqbf8s4vhsc
+[main] INFO Trebuchet - Line value= 44, Intermediate sum= 53586
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= fourtwomdfiverfmsgzfour6one
+[main] INFO Trebuchet - Line value= 41, Intermediate sum= 53627
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= qgpctkpdoneonefive2
+[main] INFO Trebuchet - Line value= 12, Intermediate sum= 53639
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= vks66
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 53705
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= four5725eight
+[main] INFO Trebuchet - Line value= 48, Intermediate sum= 53753
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= tdrxflfkpgtwo35three
+[main] INFO Trebuchet - Line value= 23, Intermediate sum= 53776
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= eightfivebxs3
+[main] INFO Trebuchet - Line value= 83, Intermediate sum= 53859
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 8four4298gtfqnmqvqd
+[main] INFO Trebuchet - Line value= 88, Intermediate sum= 53947
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 7jhvtfxs
+[main] INFO Trebuchet - Line value= 77, Intermediate sum= 54024
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 961cvmsbzkonefive2
+[main] INFO Trebuchet - Line value= 92, Intermediate sum= 54116
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= rdkfxsix4tnmndhnxnv86
+[main] INFO Trebuchet - Line value= 66, Intermediate sum= 54182
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= two4dddpmrhh7fourthreeeight9
+[main] INFO Trebuchet - Line value= 29, Intermediate sum= 54211
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= slhdsxngfxszspppxxfftmxlptzhtwovp1
+[main] INFO Trebuchet - Line value= 21, Intermediate sum= 54232
+[main] INFO Trebuchet - -------------------------------------------------------
+[main] INFO Trebuchet - line= 4vmzcrhtdvnm6zfive5pkbhcxj
+[main] INFO Trebuchet - Line value= 45, Intermediate sum= 54277
+[main] INFO Trebuchet -  Part 2 solution:
+ What is the sum of all of the calibration values?
+
+= [54277]
+[main] INFO Trebuchet - P2 Duration: 45ms (0s)
+[main] INFO Trebuchet - ==========
+[main] INFO Trebuchet - Total Duration: 102ms (0s)
+[main] INFO Trebuchet - :::END = 1701555166125
+[main] INFO Trebuchet - :::END = 2023-12-03T00:12:46
+
+Process finished with exit code 0
