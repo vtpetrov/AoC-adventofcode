@@ -1,74 +1,109 @@
 package y2023.day3;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import base.BaseDay;
+import helper.Misc;
+import lombok.extern.slf4j.Slf4j;
 
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import static helper.InputLoader.*;
+import static helper.InputLoader.closeInput;
+import static helper.Misc.prettyPrintNumber;
 
-public class GearRatios {
+@Slf4j
+public class GearRatios extends BaseDay {
 
-    private static final Logger logger = LoggerFactory.getLogger(GearRatios.class.getSimpleName());
-    private static final String INPUT_FILE_NAME = "year_2023/day03_input.txt";
-//    private static final String INPUT_FILE_NAME = "debug.txt";
+    static final int schemaSize = 140;
+    private static Character[][] engineSchema = new Character[schemaSize][schemaSize];
+    private static List<Integer> enginePartsP1;
 
-    static List<String> inputLines = new ArrayList<>();
-    private static String solution;
+    static {
+        inputFileName = "year_2023/day03_input.txt";
+//        inputFileName = "debug.txt";
+    }
 
+    static String year = "2023";
+    static String day = "03";
+    static String puzzleTitle = "Gear Ratios";
 
     public static void main(String[] args) {
-        logger.info("----   ADVENT Of code   2023    ----");
-        long start = new Date().getTime();
-        logger.info(":::START = " + LocalDateTime.ofEpochSecond(start / 1000, 0, ZoneOffset.ofHours(2)));
-        logger.info("                ---=== Day XX ===---     ");
-        logger.info("                   - Gear Ratios -     ");
+        logStartP1(year, day, puzzleTitle);
+        loadInputDay();
 
-        logger.info("    ---=== Part 1 ===---     ");
-
-        loadInput(INPUT_FILE_NAME, "");
-        while (getMainIn().hasNextLine()) {
-            String line = getMainIn().nextLine();
-            inputLines.add(line);
-        }
+        drawEngineSchematic();
 
         solvePartOne();
-
-        long p2Start = new Date().getTime();
-        logger.info("P1 Duration: " + (p2Start - start) + "ms (" + (p2Start - start) / 1000 + "s)");
-
-        logger.info("=========================================================================================");
-        logger.info("    ---=== Part 2 ===---     ");
-
+        logStartP2();
         solvePartTwo();
-
         closeInput();
+        logEndP2();
+    }
 
-
-        long end = new Date().getTime();
-        logger.info("P2 Duration: " + (end - p2Start) + "ms (" + (end - p2Start) / 1000 + "s)");
-        logger.info("==========");
-        logger.info("Total Duration: " + (end - start) + "ms (" + (end - start) / 1000 + "s)");
-
-        logger.info(":::END = " + end);
-        logger.info(":::END = " + LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
+    private static void drawEngineSchematic() {
+        for (int i = 0; i < schemaSize; i++) {
+            engineSchema[i] = inputLines.get(i).chars().mapToObj(elem -> (char) elem).toArray(Character[]::new);
+        }
+        log.info("engine schema loaded:\n{}", Misc.prettyPrintTwoDimensArray(engineSchema, true, " "));
     }
 
     private static void solvePartOne() {
+        enginePartsP1 = identifyEngineParts(engineSchema);
+        // sum engine parts and get the solution:
+        solutionP1 = enginePartsP1.stream().mapToInt(Integer::intValue).sum();
 
+        log.info("""
+                Part 1 solution:
+                 What is the sum of all of the part numbers in the engine schematic?
+                       = [{}]""", prettyPrintNumber((Number)solutionP1, '\''));
+    }
 
-        logger.info("    Part 1 solution:\n XXXXXX= [{}]", "<solution_goes_here>");
+    private static List<Integer> identifyEngineParts(Character[][] engineSchema) {
+        // find each number (1/2/3 digits in a row, which touch  symbol (anything not a digit or . /dot/)
+        List<Integer> engineParts = new ArrayList<>();
+        List<Integer> numberIdxs = new ArrayList<>();
+        String numberAsString = "";
+        int rowIndex;
+        boolean hasNumberToCheck = false;
 
+        for (int i = 0; i < schemaSize; i++) {
+            rowIndex = i;
+            for (int j = 0; j < schemaSize; j++) {
+                // if digit, start building a "number"
+                Character currChar = engineSchema[i][j];
+                if (Character.isDigit(currChar)) {
+                    hasNumberToCheck = true;
+                    numberAsString += currChar;
+                    numberIdxs.add(j);
+                } else {// if not a digit, stop building number, check for touching symbols
+                    if (hasNumberToCheck) {
+                        hasNumberToCheck = false;
+                        // check area above, same and below row, and 1 index to the left and right from the number region:
+                        for (int k = Math.max(0, rowIndex - 1); k < Math.min(schemaSize, rowIndex + 2); k++) {
+                            for (int l = Math.max(0, numberIdxs.getFirst() - 1); l < Math.min(schemaSize, numberIdxs.getLast() + 2); l++) {
+                                if (isPartSymbol(engineSchema[k][l])) {
+                                    // mark number area as engine part
+                                    engineParts.add(Integer.parseInt(numberAsString));
+                                    k = l = schemaSize; // break the search
+                                }
+                            }
+                        }
+                        // reset number area and indexes:
+                        numberIdxs.clear();
+                        numberAsString = "";
+                    }
+                }
+            }
+        }
+        return engineParts;
+    }
+
+    private static boolean isPartSymbol(Character character) {// if digit or '.', not a symbol, else is a symbol
+        return !Character.isDigit(character) && character != '.';
     }
 
     private static void solvePartTwo() {
 
-
-        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
+        log.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", solutionP2);
     }
 
 }

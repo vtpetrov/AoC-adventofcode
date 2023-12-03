@@ -15,7 +15,7 @@ import static helper.InputLoader.*;
 public class Trebuchet {
 
     private static final Logger logger = LoggerFactory.getLogger(Trebuchet.class.getSimpleName());
-        private static final String INPUT_FILE_NAME = "year_2023/day01_input.txt";
+    private static final String INPUT_FILE_NAME = "year_2023/day01_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
@@ -83,14 +83,7 @@ public class Trebuchet {
 
     final static List<String> numberWords = List.of("one", "two", "three", "four", "five", "six", "seven", "eight", "nine");
 
-    static int lineMostLeftDigit;
-    static int lineMostLeftDigitIdx;
-    static int lineMostLeftWord;
-    static int lineMostLeftWordIdx;
-    static int lineMostRightDigit;
-    static int lineMostRightDigitIdx;
-    static int lineMostRightWord;
-    static int lineMostRightWordIdx;
+    static int lineMostLeftDigit, lineMostLeftDigitIdx, lineMostLeftWord, lineMostLeftWordIdx, lineMostRightDigit, lineMostRightDigitIdx, lineMostRightWord, lineMostRightWordIdx;
 
 
     private static void solvePartTwo() {
@@ -106,14 +99,10 @@ public class Trebuchet {
                 lineCalibrationValue = findAndConcatFirstAndLastDigit(line);
                 logger.info("short line, use digits only");
             } else {
-//                logger.info("long line, use digits and words");
                 String firstNumber = getFirstNumber(line);
                 String lastNumber = getLastNumber(line);
                 String concatenation = firstNumber.concat(lastNumber);
                 lineCalibrationValue = Integer.parseInt(concatenation);
-//                logger.info("firstNumber=   {}", firstNumber);
-//                logger.info("lastNumber=    {}", lastNumber);
-//                logger.info("concatenation= {}", concatenation);
             }
 
             sumOfCalibrationValues2 += lineCalibrationValue;
@@ -129,27 +118,15 @@ public class Trebuchet {
     }
 
     private static String getFirstNumber(String line) {
-//        logger.info("getting First number...");
         calcFirstDigitData(line);
         // decide if pick digit or word (which is more to the left. i.e. has smaller index):
-//        logger.info("lineMostLeftDigitIdx = {}", lineMostLeftDigitIdx);
-//        logger.info("lineMostLeftDigit    = {}", lineMostLeftDigit);
-//        logger.info("lineMostLeftWordIdx = {}", lineMostLeftWordIdx);
-//        logger.info("lineMostLeftWord    = {}", lineMostLeftWord);
-
         int firstNumber = lineMostLeftDigitIdx < lineMostLeftWordIdx ? lineMostLeftDigit : lineMostLeftWord;
         return String.valueOf(firstNumber);
     }
 
     private static String getLastNumber(String line) {
-//        logger.info("getting Last number...");
         calcLastDigitData(line);
         // decide if pick digit or word (which is more to the right. i.e. has bigger index):
-//        logger.info("lineMostRightDigitIdx = {}", lineMostRightDigitIdx);
-//        logger.info("lineMostRightDigit    = {}", lineMostRightDigit);
-//        logger.info("lineMostRightWordIdx = {}", lineMostRightWordIdx);
-//        logger.info("lineMostRightWord    = {}", lineMostRightWord);
-
         int lastNumber = lineMostRightDigitIdx > lineMostRightWordIdx ? lineMostRightDigit : lineMostRightWord;
         return String.valueOf(lastNumber);
     }
