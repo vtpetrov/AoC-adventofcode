@@ -17,11 +17,10 @@ import static helper.InputLoader.*;
 public class CubeConundrum {
 
     private static final Logger logger = LoggerFactory.getLogger(CubeConundrum.class.getSimpleName());
-        private static final String INPUT_FILE_NAME = "year_2023/day02_input.txt";
+    private static final String INPUT_FILE_NAME = "year_2023/day02_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
-    private static String solution;
 
 
     public static void main(String[] args) {
@@ -71,11 +70,11 @@ public class CubeConundrum {
 
             String lineInput = inputLines.get(i);
 
-            logger.info("lineInput= {}", lineInput);
+//            logger.info("lineInput= {}", lineInput);
 
             List<String> gamePulls = Arrays.stream(lineInput.split(";")).toList();
 
-            List<Game.Pull> currGamePulls = new ArrayList<>();
+            List<Pull> currGamePulls = new ArrayList<>();
 
             for (String gamePull : gamePulls) {
                 Pattern numberColorPairs = Pattern.compile("(\\d+) (red|green|blue)");
@@ -83,7 +82,7 @@ public class CubeConundrum {
 
                 Map<String, Integer> currentGamePullColorNumberPairs = new HashMap<>();
 
-                logger.info("================================ gamePull= {}", gamePull);
+//                logger.info("================================ gamePull= {}", gamePull);
                 while (pairsMatcher.find()) {
 //                logger.info("-------------------------------- {}", pairsMatcher.group());
 //                logger.info("pairsMatcher.group(0)= {}", pairsMatcher.group(0));// whole pair
@@ -93,7 +92,7 @@ public class CubeConundrum {
                     currentGamePullColorNumberPairs.put(pairsMatcher.group(2), Integer.valueOf(pairsMatcher.group(1)));
                 }
 
-                Game.Pull currentPull = new Game.Pull();
+                Pull currentPull = new Pull();
                 currentPull.colorNumberPairs.putAll(currentGamePullColorNumberPairs);
 
                 currGamePulls.add(currentPull);
@@ -105,8 +104,8 @@ public class CubeConundrum {
             boolean isCurrGameValid = determineGameValidity(currGame);
             currGame.setIsValid(isCurrGameValid);
 
-            logger.info("currGame isValid= {}", currGame.isValid);
-            logger.info("currGame= {}", currGame.pulls);
+//            logger.info("currGame isValid= {}", currGame.isValid);
+//            logger.info("currGame= {}", currGame.pulls);
 
             games.add(currGame);
         }
@@ -121,7 +120,7 @@ public class CubeConundrum {
 
     private static boolean determineGameValidity(Game game) {
         boolean isGameValid = true;
-        for (Game.Pull pull : game.getPulls()) {
+        for (Pull pull : game.getPulls()) {
             if (pull.getColorNumberPairs().get(Colors.RED.value) > thresholdsPart1.get(Colors.RED.value) ||
                     pull.getColorNumberPairs().get(Colors.GREEN.value) > thresholdsPart1.get(Colors.GREEN.value) ||
                     pull.getColorNumberPairs().get(Colors.BLUE.value) > thresholdsPart1.get(Colors.BLUE.value)) {
@@ -136,8 +135,37 @@ public class CubeConundrum {
 
     private static void solvePartTwo() {
 
+        // find MAX number of each color per game:
+        for (Game givenGame : games) {
+            Map<String, Integer> maxNumberPerColor = new HashMap<>(Map.of(Colors.RED.value, 0, Colors.GREEN.value, 0, Colors.BLUE.value, 0));
 
-        logger.info("    Part 2 solution:\n YYYYYYYYYYYY= [{}]", "<solution_goes_here>");
+            givenGame.getPulls()
+                    .stream().map(Pull::getColorNumberPairs)
+                    .forEach(pull -> {
+                        if (maxNumberPerColor.get(Colors.RED.value) < pull.get(Colors.RED.value)) {
+                            maxNumberPerColor.put(Colors.RED.value, pull.get(Colors.RED.value));
+                        }
+                        if (maxNumberPerColor.get(Colors.GREEN.value) < pull.get(Colors.GREEN.value)) {
+                            maxNumberPerColor.put(Colors.GREEN.value, pull.get(Colors.GREEN.value));
+                        }
+                        if (maxNumberPerColor.get(Colors.BLUE.value) < pull.get(Colors.BLUE.value)) {
+                            maxNumberPerColor.put(Colors.BLUE.value, pull.get(Colors.BLUE.value));
+                        }
+                    });
+
+//            logger.info("maxNumberPerColor AFTER= {}", maxNumberPerColor);
+
+            // multiply these MAX numbers to calculate game POWER
+            long gamePower = maxNumberPerColor.values().stream().reduce(1, Math::multiplyExact);
+            givenGame.setPower(gamePower);
+
+//            logger.info("givenGame Power= {}", givenGame.getPower());
+        }
+
+        // sum game POWERS to have final solution:
+        Long sumOfGamePowers = games.stream().map(Game::getPower).reduce(0L, Long::sum);
+
+        logger.info("    Part 2 solution:\n the sum of the game powers= [{}]", sumOfGamePowers);
     }
 
     @Data
@@ -145,19 +173,20 @@ public class CubeConundrum {
     @NoArgsConstructor
     private static class Game {
         Boolean isValid;
+        long power;
         List<Pull> pulls = new ArrayList<>();
 
-        @Data
-        @AllArgsConstructor
-        @NoArgsConstructor
-        private static class Pull {
-            //            Map<String, Integer> colorNumberPairs = new HashMap<>();
-            Map<String, Integer> colorNumberPairs = new HashMap<>(Map.of(Colors.RED.value, 0, Colors.GREEN.value, 0, Colors.BLUE.value, 0));
-            Boolean isValid;
-        }
     }
 
-    private static enum Colors {
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    private static class Pull {
+        Map<String, Integer> colorNumberPairs = new HashMap<>(Map.of(Colors.RED.value, 0, Colors.GREEN.value, 0, Colors.BLUE.value, 0));
+        Boolean isValid;
+    }
+
+    private enum Colors {
         RED("red"),
         GREEN("green"),
         BLUE("blue");
