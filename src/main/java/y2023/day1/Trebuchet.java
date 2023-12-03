@@ -106,14 +106,14 @@ public class Trebuchet {
                 lineCalibrationValue = findAndConcatFirstAndLastDigit(line);
                 logger.info("short line, use digits only");
             } else {
-                logger.info("long line, use digits and words");
+//                logger.info("long line, use digits and words");
                 String firstNumber = getFirstNumber(line);
                 String lastNumber = getLastNumber(line);
                 String concatenation = firstNumber.concat(lastNumber);
                 lineCalibrationValue = Integer.parseInt(concatenation);
-                logger.info("firstNumber=   {}", firstNumber);
-                logger.info("lastNumber=    {}", lastNumber);
-                logger.info("concatenation= {}", concatenation);
+//                logger.info("firstNumber=   {}", firstNumber);
+//                logger.info("lastNumber=    {}", lastNumber);
+//                logger.info("concatenation= {}", concatenation);
             }
 
             sumOfCalibrationValues2 += lineCalibrationValue;
@@ -129,7 +129,7 @@ public class Trebuchet {
     }
 
     private static String getFirstNumber(String line) {
-        logger.info("getting First number...");
+//        logger.info("getting First number...");
         calcFirstDigitData(line);
         // decide if pick digit or word (which is more to the left. i.e. has smaller index):
 //        logger.info("lineMostLeftDigitIdx = {}", lineMostLeftDigitIdx);
@@ -142,7 +142,7 @@ public class Trebuchet {
     }
 
     private static String getLastNumber(String line) {
-        logger.info("getting Last number...");
+//        logger.info("getting Last number...");
         calcLastDigitData(line);
         // decide if pick digit or word (which is more to the right. i.e. has bigger index):
 //        logger.info("lineMostRightDigitIdx = {}", lineMostRightDigitIdx);
