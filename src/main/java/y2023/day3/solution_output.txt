@@ -1,6 +1,6 @@
 
 [main] INFO base.BaseDay - ----   ADVENT Of code   2023    ----
-[main] INFO base.BaseDay - :::START = 2023-12-04T00:15:39
+[main] INFO base.BaseDay - :::START = 2023-12-04T23:30:05
 [main] INFO base.BaseDay -                 ---=== Day 03 ===---
 [main] INFO base.BaseDay -                   - Gear Ratios -
 [main] INFO base.BaseDay -     ---=== Part 1 ===---
@@ -149,15 +149,16 @@
 [main] INFO y2023.day3.GearRatios - Part 1 solution:
  What is the sum of all of the part numbers in the engine schematic?
        = [539'637]
-[main] INFO base.BaseDay - P1 Duration: 89ms (0s)
+[main] INFO base.BaseDay - P1 Duration: 48ms (0s)
 [main] INFO base.BaseDay - =========================================================================================
 [main] INFO base.BaseDay -     ---=== Part 2 ===---
-[main] INFO y2023.day3.GearRatios -     Part 2 solution:
- YYYYYYYYYYYY= [null]
-[main] INFO base.BaseDay - P2 Duration: 16ms (0s)
+[main] INFO y2023.day3.GearRatios - Part 2 solution:
+ What is the sum of all of the gear ratios in your engine schematic?
+       = [82'818'007]
+[main] INFO base.BaseDay - P2 Duration: 30ms (0s)
 [main] INFO base.BaseDay - ==========
-[main] INFO base.BaseDay - Total Duration: 105ms (0s)
-[main] INFO base.BaseDay - :::END = 1701641739283
-[main] INFO base.BaseDay - :::END = 2023-12-04T00:15:39
+[main] INFO base.BaseDay - Total Duration: 78ms (0s)
+[main] INFO base.BaseDay - :::END = 1701725406068
+[main] INFO base.BaseDay - :::END = 2023-12-04T23:30:06
 
 Process finished with exit code 0
