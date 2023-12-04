@@ -4,6 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
@@ -71,5 +74,28 @@ public class Misc {
 
         Map map = oMapper.convertValue(obj, Map.class);
         return prettyPrintMap(map);
+    }
+
+    public static <T> String prettyPrintTwoDimensArray(T[][] arrayToPrint, Boolean useDelimiter, String delimiter) {
+        StringBuilder result = new StringBuilder();
+        for (T[] objects : arrayToPrint) {
+            for(Object elem : objects) {
+                result.append(elem);
+                if (useDelimiter){
+                    result.append(delimiter);
+                }
+            }
+            result.append('\n');
+        }
+        return result.toString();
+    }
+
+    public static String prettyPrintNumber(Number num, char thousandSeparator) {
+        DecimalFormat numberFormat = (DecimalFormat) NumberFormat.getInstance();
+        DecimalFormatSymbols decimalFormatSymbols = numberFormat.getDecimalFormatSymbols();
+        decimalFormatSymbols.setGroupingSeparator(thousandSeparator);
+        numberFormat.setDecimalFormatSymbols(decimalFormatSymbols);
+
+        return numberFormat.format(num);
     }
 }

@@ -1,0 +1,43 @@
+package base;
+
+import lombok.extern.slf4j.Slf4j;
+
+import static helper.InputLoader.closeInput;
+
+@Slf4j
+public class DayTemplate extends BaseDay {
+
+    static {
+        inputFileName = "year_2023/dayXX_input.txt";
+        // inputFileName = "debug.txt";
+    }
+
+    static String year = "2023";
+    static String day = "XX";
+    static String puzzleTitle = "<PuzzleTitle_here>";
+
+    public static void main(String[] args) {
+        logStartP1(year, day, puzzleTitle);
+        loadInputDay();
+        solvePartOne();
+        logStartP2();
+        solvePartTwo();
+        closeInput();
+        logEndP2();
+    }
+
+    private static void solvePartOne() {
+
+        log.info("""
+                Part 1 solution:
+                 XXXXXX= [{}]""", solutionP1);
+    }
+
+    private static void solvePartTwo() {
+
+        log.info("""
+                Part 2 solution:
+                 XXXXXX= [{}]""", solutionP2);
+    }
+
+}
