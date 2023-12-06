@@ -15,12 +15,12 @@ import static helper.InputLoader.loadInput;
 public class BaseDay {
     protected static String inputFileName;
     protected static List<String> inputLines = new ArrayList<>();
-    protected static Object solutionP1;
-    protected static Object solutionP2;
+    protected static Object solutionP1 = 0;
+    protected static Object solutionP2 = 0;
     private static long startTime;
     private static long p2Start;
 
-    protected static void loadInputDay() {
+    protected static void loadDayInput() {
         loadInput(inputFileName, "");
         while (getMainIn().hasNextLine()) {
             String line = getMainIn().nextLine();
