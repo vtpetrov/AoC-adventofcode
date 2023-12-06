@@ -8,5 +8,5 @@ import lombok.Data;
 public class Race {
 
     int time;
-    int record;
+    long record;
 }

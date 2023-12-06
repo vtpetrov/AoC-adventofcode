@@ -5,6 +5,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static helper.InputLoader.closeInput;
 import static helper.Misc.prettyPrintNumber;
@@ -21,14 +23,6 @@ public class BoatRaces extends BaseDay {
     static String day = "06";
     static String puzzleTitle = "Wait For It";
 
-    //    Time:      7  15   30
-    //    Distance:  9  40  200
-//    static List<Race> races = List.of(new Race(7, 9), new Race(15, 40), new Race(30, 200));
-
-    //    Time:        40     92     97     90
-    //    Distance:   215   1064   1505   1100
-    static List<Race> races = List.of(new Race(40, 215), new Race(92, 1064), new Race(97, 1505), new Race(90, 1100));
-
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
         loadDayInput();
@@ -39,46 +33,79 @@ public class BoatRaces extends BaseDay {
         logEndP2();
     }
 
-    //    (rTime - holdTime) * holdTime = travelDist
-//
-//        0. (7 - 0) * 0      =           0
-//        1. (7 - 1) * 1      = 6 * 1 =   6
-//        2. (7 - 2) * 2      = 5 * 2 =   10
-//        3. (7 - 3) * 3      = 4 * 3 =   12
-//        4. (7 - 4) * 4      = 3 * 4 =   12
-//        5. (7 - 5) * 5      =           10
-//        6. (7 - 6) * 6      =           6
-//        7. (7 - 7) * 7      =           0
     private static void solvePartOne() {
+        //    Time:      7  15   30
+        //    Distance:  9  40  200
+        // List<Race> racesP1 = List.of(new Race(7, 9), new Race(15, 40), new Race(30, 200));
 
+        //    Time:        40     92     97     90
+        //    Distance:   215   1064   1505   1100
+        List<Race> racesP1 = List.of(new Race(40, 215), new Race(92, 1064), new Race(97, 1505), new Race(90, 1100));
 
-        long multipleOfWaysToWin = 1;
-        for (Race currRace : races) {
-            List<Integer> raceTravelDistances = new ArrayList<>();
-            //    (rTime - holdTime) * holdTime = travelDist
-            for (int holdTime = 0; holdTime < currRace.getTime() + 1; holdTime++) {
-                int travelDistance = (currRace.getTime() - holdTime) * holdTime;
-                raceTravelDistances.add(travelDistance);
-            }
-            long waysToWin = raceTravelDistances.stream().filter(d -> d > currRace.getRecord()).count();
-            multipleOfWaysToWin *= waysToWin;
-        }
-
-        solutionP1 = multipleOfWaysToWin;
+        solutionP1 = calcWaysToWin(racesP1, false);
 
         log.info("""
                 Part 1 solution:
                  Determine the number of ways you could beat the record in each race.
-                 What do you get if you multiply these numbers together?      
+                 What do you get if you multiply these numbers together?
                        = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1, '\''));
     }
 
     private static void solvePartTwo() {
+        // single race
+        //    Time:      71530
+        //    Distance:  940200
+        // List<Race> racesP2 = List.of(new Race(71530, 940200));
+
+        //    Time:        40929790
+        //    Distance:   215106415051100
+        List<Race> racesP2 = List.of(new Race(40_929_790, 215_106_415_051_100L));
+
+        solutionP2 = calcWaysToWin(racesP2, false);
 
         log.info("""
                 Part 2 solution:
-                 XXXXXX
+                 How many ways can you beat the record in this one much longer race?
                  = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2, '\''));
     }
 
+    private static long calcWaysToWin(List<Race> racesP1, boolean printTravelDistances) {
+        long multipleOfWaysToWin = 1;
+        AtomicInteger i = new AtomicInteger(0);
+        for (Race currRace : racesP1) {
+            log.info("-------------------------------------------------------------------------");
+            log.info("Race      {} , record= {}", i.incrementAndGet(), currRace.getRecord());
+            List<Long> raceTravelDistances = new ArrayList<>();
+            boolean doubleEnd = false;
+            //    (rTime - holdTime) * holdTime = travelDist
+            for (int holdTime = 0; holdTime < currRace.getTime() / 2 + 2; holdTime++) {
+                long travelDistance = (long) (currRace.getTime() - holdTime) * holdTime;
+                long lastElem = raceTravelDistances.isEmpty() ? -1 : raceTravelDistances.getLast();
+                if (travelDistance >= lastElem) {
+                    raceTravelDistances.add(travelDistance);
+                } else {
+                    break;
+                }
+            }
+            int size = raceTravelDistances.size();
+            // if the last 2 elements are equal, mark doubleEnd
+            if (Objects.equals(raceTravelDistances.get(size - 1), raceTravelDistances.get(size - 2))) {
+                doubleEnd = true;
+            }
+
+            log.info("raceTravelDistances.size 1/2= {}, doubleEnd= {}", size, doubleEnd);
+            if (printTravelDistances) {
+                log.info("raceTravelDistances: {}", raceTravelDistances);
+            }
+
+            long waysToWin = raceTravelDistances.stream().filter(d -> d > currRace.getRecord()).count();
+            log.info("waysToWin= {}, doubleEnd= {}", waysToWin, doubleEnd);
+            long adjustedWaysToWin = doubleEnd ? (waysToWin - 1) * 2 : waysToWin * 2 - 1;
+            log.info("adjustedWaysToWin= {}", adjustedWaysToWin);
+
+            multipleOfWaysToWin *= adjustedWaysToWin;
+
+        }
+        return multipleOfWaysToWin;
+    }
 }
