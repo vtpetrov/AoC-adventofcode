@@ -31,7 +31,7 @@ public class Scratchcards extends BaseDay {
     static List<List<Integer>> cardsWinningNumbers = new ArrayList<>();
     static List<List<Integer>> cardsMyNumbers = new ArrayList<>();
     static List<Integer> cardMatches = new ArrayList<>();
-    static List<Integer> cardCoppies = new ArrayList<>();
+    static int[] cardCopies = new int[209];
     static List<Long> cardPoints = new ArrayList<>();
     private static Long sumTotal = 0L;
 
@@ -92,7 +92,7 @@ public class Scratchcards extends BaseDay {
 
             cardPoints.add(round(floor(pow(2, cardMatches.get(i) - 1))));
             sumTotal += cardPoints.get(i);
-            log.info("Card {}, has [{}] matches => |{}| points", i + 1, cardMatches.get(i), cardPoints.get(i));
+//            log.info("Card {}, has [{}] matches => |{}| points", i + 1, cardMatches.get(i), cardPoints.get(i));
         }
     }
 
@@ -102,56 +102,24 @@ public class Scratchcards extends BaseDay {
             calcMatches();
         }
 
-
         int currentCardIdx = 0;
-        cardCoppies.add(0); // set the number of copies for Card 1 to 0 (because it starts the sequence and doesn't have copies)
-        while (currentCardIdx < cardMatches.size() - 1) {
-            int currCardMatches = cardMatches.get(currentCardIdx);
 
-            // spawn copies:
-            int from = currentCardIdx + 1;
-            int to = from + currCardMatches;
-            // process ORIGINALS:
-            for (int j = from; j < to; j++) {
-                try {
-                    Integer old = cardCoppies.get(j);
-                    cardCoppies.set(j, ++old);
-                } catch (IndexOutOfBoundsException e) {
-                    cardCoppies.add(1);
-                }
+        int originalsCount = cardMatches.size();
+        while (currentCardIdx < originalsCount - 1) {
+
+            int nCardsfollowingCurrenToBeCopied = cardMatches.get(currentCardIdx);
+
+            // 1 for the original and X from the copies of the original:
+            int howManyCopiesOfEach = 1 + cardCopies[currentCardIdx];
+            // THEN increment the value of the COPIES array with howManyCopiesOfEach
+            for (int c = currentCardIdx + 1; c < currentCardIdx + 1 + nCardsfollowingCurrenToBeCopied; c++) {
+                cardCopies[c] += howManyCopiesOfEach;
             }
-
-            // get the number of copies of the ORIGINAL card currently being processed
-            Integer currCardCopies = cardCoppies.get(currentCardIdx);
-            log.info("currCardCopies= {}", currCardCopies);
-            for (int c = from; c < to; c++) {
-                // increment FROM-TO in COPIES by adding 'currCardCopies' to them
-                Integer newVal;
-                try {
-                    newVal = cardCoppies.get(c) + currCardCopies;
-                    cardCoppies.set(c, newVal);
-                } catch (IndexOutOfBoundsException e) {
-                    cardCoppies.add(currCardCopies);
-                }
-            }
-
-
-//                // process COPIES:
-//                Integer currCardCopies = cardCoppies.get(currentCardIdx);// get the number of copies of the ORIGINAL card currently being processed
-//                Integer newVal = cardCoppies.get(j) + currCardCopies;
-//                cardCoppies.set(j, newVal);
-
-//            // account for a lot of 0 matches, sync copy list with 0 copies; copy list should follow the 'currentCardIdx'
-//            if(currentCardIdx >= cardCoppies.size()){
-//                for (int i = 0; i < currentCardIdx - cardCoppies.size() + 1; i++) {
-//                    cardCoppies.add(0);
-//                }
-//            }
-
             currentCardIdx++;
         }
 
-        solutionP2 = cardMatches.size() + cardCoppies.stream().mapToInt(Integer::intValue).sum();
+        int copiesCount = stream(cardCopies).sum();
+        solutionP2 = originalsCount + copiesCount;
 
         log.info("""
                 Part 2 solution:
