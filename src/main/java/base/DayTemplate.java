@@ -3,6 +3,7 @@ package base;
 import lombok.extern.slf4j.Slf4j;
 
 import static helper.InputLoader.closeInput;
+import static helper.Misc.prettyPrintNumber;
 
 @Slf4j
 public class DayTemplate extends BaseDay {
@@ -18,7 +19,7 @@ public class DayTemplate extends BaseDay {
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
-        loadInputDay();
+        loadDayInput();
         solvePartOne();
         logStartP2();
         solvePartTwo();
@@ -30,14 +31,17 @@ public class DayTemplate extends BaseDay {
 
         log.info("""
                 Part 1 solution:
-                 XXXXXX= [{}]""", solutionP1);
+                 XXXXXX
+                 = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1, '\''));
     }
 
     private static void solvePartTwo() {
 
         log.info("""
                 Part 2 solution:
-                 XXXXXX= [{}]""", solutionP2);
+                 XXXXXX
+                 = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2, '\''));
+
     }
 
 }
