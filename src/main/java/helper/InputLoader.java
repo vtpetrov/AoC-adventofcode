@@ -1,5 +1,7 @@
 package helper;
 
+import lombok.Getter;
+
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
@@ -7,6 +9,7 @@ import java.util.Scanner;
 
 public class InputLoader {
 
+    @Getter
     private static Scanner mainIn;
 
     public static void loadInput(String fileName, String delimiter) {
@@ -20,10 +23,6 @@ public class InputLoader {
             throw new Error("Couldn't load input file [" + inputFile.toString() + "]");
         }
 
-    }
-
-    public static Scanner getMainIn(){
-        return mainIn;
     }
 
     public static void closeInput() {

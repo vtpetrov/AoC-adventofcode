@@ -30,7 +30,6 @@ Hold the button for 4 milliseconds. After its remaining 3 milliseconds of travel
 Hold the button for 5 milliseconds, causing the boat to travel a total of 10 millimeters.
 Hold the button for 6 milliseconds, causing the boat to travel a total of 6 millimeters.
 Hold the button for 7 milliseconds. That's the entire duration of the race. You never let go of the button. The boat can't move until you let go of the button. Please make sure you let go of the button so the boat gets to move. 0 millimeters.
-
 Since the current record for this race is 9 millimeters, there are actually 4 different ways you could win: you could hold the button for 2, 3, 4, or 5 milliseconds at the start of the race.
 
 In the second race, you could hold the button for at least 4 milliseconds and at most 11 milliseconds and beat the record, a total of 8 different ways to win.
@@ -41,34 +40,21 @@ To see how much margin of error you have, determine the number of ways you can b
 
 Determine the number of ways you could beat the record in each race. What do you get if you multiply these numbers together?
 
-R1
-possibleMoves = raceTime + 1
-8             = 7  + 1
-(from 0 to 7 /race time/)
-record = 9
+Your puzzle answer was 6209190.
 
-0 1 2  3  4  5  6 7
-------------------------
-0 6 10 12 12 10 6 0
+--- Part Two ---
+As the race is about to start, you realize the piece of paper with race times and record distances you got earlier actually just has very bad kerning. There's really only one race - ignore the spaces between the numbers on each line.
 
-(rTime - holdTime) * holdTime = travelDist
+So, the example from before:
 
-0. (7 - 0) * 0      =           0
-1. (7 - 1) * 1      = 6 * 1 =   6
-2. (7 - 2) * 2      = 5 * 2 =   10
-3. (7 - 3) * 3      = 4 * 3 =   12
-4. (7 - 4) * 4      = 3 * 4 =   12
-5. (7 - 5) * 5      =           10
-6. (7 - 6) * 6      =           6
-7. (7 - 7) * 7      =           0
+Time:      7  15   30
+Distance:  9  40  200
+...now instead means this:
 
-R
-possibleMoves = raceTime + 1
-16             = 15  + 1
-(from 0 to 15 /race time/)
+Time:      71530
+Distance:  940200
+Now, you have to figure out how many ways there are to win this single race. In this example, the race lasts for 71530 milliseconds and the record distance you need to beat is 940200 millimeters. You could hold the button anywhere from 14 to 71516 milliseconds and beat the record, a total of 71503 ways!
 
-record = 40
+How many ways can you beat the record in this one much longer race?
 
-0 1 2  3  4  5  6 7 8   9   10  11  12  13  14  15
---------------------------------------------------
-0 6 10 12                           12  10  6   0
+Your puzzle answer was 28545089.
