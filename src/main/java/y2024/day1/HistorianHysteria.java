@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -13,10 +14,12 @@ import static helper.InputLoader.*;
 @Slf4j
 public class HistorianHysteria {
 
-        private static final String INPUT_FILE_NAME = "year_2024/day01_input.txt";
+    private static final String INPUT_FILE_NAME = "year_2024/day01_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
     static List<String> inputLines = new ArrayList<>();
+    static List<Integer> letfList = new ArrayList<>();
+    static List<Integer> rightList = new ArrayList<>();
 
     public static void main(String[] args) {
         log.info("----   ADVENT Of code   2024    ----");
@@ -33,6 +36,20 @@ public class HistorianHysteria {
             inputLines.add(line);
         }
 
+        final String SEPARATOR_3_SPACES = " {3}";
+
+        for (String line : inputLines) {
+            log.debug("line= [{}]", line);
+            String[] split = line.split(SEPARATOR_3_SPACES);
+            letfList.add(Integer.parseInt(split[0]));
+            rightList.add(Integer.parseInt(split[1]));
+        }
+        log.debug("""
+                Lists:
+                            left ={}
+                            right={}""", letfList, rightList);
+
+
         solvePartOne();
 
         long p2Start = new Date().getTime();
@@ -41,7 +58,7 @@ public class HistorianHysteria {
         log.info("=========================================================================================");
         log.info("    ---=== Part 2 ===---     ");
 
-//        solvePartTwo();
+        solvePartTwo();
 
         closeInput();
 
@@ -55,41 +72,28 @@ public class HistorianHysteria {
     }
 
     private static void solvePartOne() {
-        final String SEPARATOR_3_SPACES = "   ";
         long totalDistance = 0;
-        List<Integer> letfList = new ArrayList<>();
-        List<Integer> rightList = new ArrayList<>();
 
-        for (String line : inputLines) {
-//            log.info("line= [{}]", line);
-            String[] split = line.split(SEPARATOR_3_SPACES);
-            letfList.add(Integer.parseInt(split[0]));
-            rightList.add(Integer.parseInt(split[1]));
-        }
-//        log.info("""
-//                Lists:
-//                            left ={}
-//                            right={}""", letfList, rightList);
+        //sort lists, copy to local instance of lists
+        List<Integer> sortedLeftList = new ArrayList<>(letfList);
+        List<Integer> sortedRightList = new ArrayList<>(rightList);
 
-        //sort lists
-        letfList.sort(Integer::compareTo);
-        rightList.sort(Integer::compareTo);
+        sortedLeftList.sort(Integer::compareTo);
+        sortedRightList.sort(Integer::compareTo);
 
-//        log.info("""
-//                Sorted Lists:
-//                                left ={}
-//                                right={}""", letfList, rightList);
+        log.debug("""
+                Sorted Lists:
+                                left ={}
+                                right={}""", sortedLeftList, sortedRightList);
         int pairDistance = 0;
 
         for (int i = 0; i < inputLines.size(); i++) {
             // compare pairs in each list - 1st with 1st, 2nd with 2nd, etc. Find the difference between the values
             // in each pair:
-            pairDistance = Math.abs(letfList.get(i) - rightList.get(i));
-            log.info("pair=[{}  {}], dist= {}", letfList.get(i), rightList.get(i), pairDistance);
+            pairDistance = Math.abs(sortedLeftList.get(i) - sortedRightList.get(i));
+            log.info("pair=[{}  {}], dist= {}", sortedLeftList.get(i), sortedRightList.get(i), pairDistance);
             totalDistance += pairDistance;
         }
-
-        log.info("totalDistance= {}", totalDistance);
 
         log.info("""
                 Part 1 solution:
@@ -97,18 +101,21 @@ public class HistorianHysteria {
                 """, totalDistance);
     }
 
-
     private static void solvePartTwo() {
+        long totalSimilarityScore = 0;
 
-
-        for (String line : inputLines) {
-            log.info("-------------------------------------------------------");
-            log.info("line= {}", line);
+        for (int i = 0; i < inputLines.size(); i++) {
+            // This time, you'll need to figure out exactly how often each number from the left list appears in the right list.
+            // Calculate a total similarity score by adding up each number in the left list after multiplying it
+            // by the number of times that number appears in the right list.
+            int countInRight = Collections.frequency(rightList, letfList.get(i));
+            long currSimilarity = (long) letfList.get(i) * countInRight;
+            log.info("left= {}, count in right= {}, similarity= {}", letfList.get(i), countInRight, currSimilarity);
+            totalSimilarityScore += currSimilarity;
         }
 
         log.info("""
-                 Part 2 solution:
-                 TBD
-                = [{}]""", "TBD");
+                Part 2 solution:
+                What is the similarity score of the two lists = [{}]""", totalSimilarityScore);
     }
 }
