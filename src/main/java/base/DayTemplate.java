@@ -8,14 +8,14 @@ import static helper.Misc.prettyPrintNumber;
 @Slf4j
 public class DayTemplate extends BaseDay {
 
-    static {
-        inputFileName = "year_2023/dayXX_input.txt";
-        // inputFileName = "debug.txt";
-    }
-
-    static String year = "2023";
+    static String year = "2024";
     static String day = "XX";
     static String puzzleTitle = "<PuzzleTitle_here>";
+
+    static {
+        inputFileName = "year_" + year + "/day" + day + "_input.txt";
+        // inputFileName = "debug.txt";
+    }
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
@@ -43,5 +43,4 @@ public class DayTemplate extends BaseDay {
                  = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2, '\''));
 
     }
-
 }
