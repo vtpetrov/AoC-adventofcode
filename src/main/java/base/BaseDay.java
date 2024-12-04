@@ -31,7 +31,7 @@ public class BaseDay {
     protected static void logStartP1(String year, String day, String title) {
         log.info("----   ADVENT Of code   {}    ----", year);
         startTime = new Date().getTime();
-        log.info(":::START = " + LocalDateTime.ofEpochSecond(startTime / 1000, 0, ZoneOffset.ofHours(2)));
+        log.info(":::START = {}", LocalDateTime.ofEpochSecond(startTime / 1000, 0, ZoneOffset.ofHours(2)));
         log.info("                ---=== Day {} ===---     ", day);
         log.info("                  - {} -     ", title);
 
@@ -40,7 +40,7 @@ public class BaseDay {
 
     protected static void logStartP2() {
         p2Start = new Date().getTime();
-        log.info("P1 Duration: " + (p2Start - startTime) + "ms (" + (p2Start - startTime) / 1000 + "s)");
+        log.info("P1 Duration: {}ms ({}s)", p2Start - startTime, (p2Start - startTime) / 1000);
 
         log.info("=========================================================================================");
         log.info("    ---=== Part 2 ===---     ");
@@ -48,12 +48,12 @@ public class BaseDay {
 
     protected static void logEndP2() {
         long end = new Date().getTime();
-        log.info("P2 Duration: " + (end - p2Start) + "ms (" + (end - p2Start) / 1000 + "s)");
+        log.info("P2 Duration: {}ms ({}s)", end - p2Start, (end - p2Start) / 1000);
         log.info("==========");
-        log.info("Total Duration: " + (end - startTime) + "ms (" + (end - startTime) / 1000 + "s)");
+        log.info("Total Duration: {}ms ({}s)", end - startTime, (end - startTime) / 1000);
 
-        log.info(":::END = " + end);
-        log.info(":::END = " + LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
+        log.info(":::END = {}", end);
+        log.info(":::END = {}", LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
     }
 
 }
