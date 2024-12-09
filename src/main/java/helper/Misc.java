@@ -1,8 +1,6 @@
 package helper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
@@ -14,9 +12,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 public class Misc {
-
-    private final Logger logger = LoggerFactory.getLogger(Misc.class.getSimpleName());
-
 
     public static void sleepSeconds(final int sleepTimeSeconds) {
         try {
@@ -53,7 +48,7 @@ public class Misc {
             return "none";
         }
         StringBuilder sb = new StringBuilder();
-        mapToPrint.forEach((key, value) -> sb.append(String.format("%s: %s", key, value)));
+        mapToPrint.forEach((key, value) -> sb.append(String.format("%n%s: %s", key, value)));
         return sb.toString();
     }
 
