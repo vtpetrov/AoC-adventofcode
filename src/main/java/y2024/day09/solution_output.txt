@@ -1,0 +1,9 @@
+[main] INFO base.BaseDay - ----   ADVENT Of code   2024    ----
+[main] INFO base.BaseDay - :::START = 2024-12-09T18:57:32
+[main] INFO base.BaseDay -                 ---=== Day 09 ===---
+[main] INFO base.BaseDay -                   - Disk Fragmenter -
+[main] INFO base.BaseDay -     ---=== Part 1 ===---
+[main] INFO y2024.day09.DiskFragmenter - Part 1 solution:
+ What is the resulting filesystem checksum?
+ = [6353658451014] (6'353'658'451'014)
+[main] INFO base.BaseDay - P1 Duration: 1849ms (1s)
