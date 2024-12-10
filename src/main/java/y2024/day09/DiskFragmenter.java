@@ -17,6 +17,7 @@ public class DiskFragmenter extends BaseDay {
     static String year = "2024";
     static String day = "09";
     static String puzzleTitle = "Disk Fragmenter";
+    private static List<Integer> fileMapWithIDs;
 
     static {
         inputFileName = "year_" + year + "/day" + day + "_input.txt";
@@ -26,47 +27,33 @@ public class DiskFragmenter extends BaseDay {
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
         loadDayInput();
+        List<Integer> rawDiskMap = Stream.of(inputLines.getFirst().split("")).map(Integer::parseInt).toList();
+        log.debug("raw              :{}", rawDiskMap);
+        fileMapWithIDs = convertRawToFileIdMap(rawDiskMap);
+        log.debug("fileMapWithIDs   :{}", fileMapWithIDs);
+        log.debug("files      : {}", files);
+        log.debug("free spaces: {}", eligibleFreeSpaces);
         solvePartOne();
+
         logStartP2();
         solvePartTwo();
+
         closeInput();
         logEndP2();
     }
 
     private static final int DOT = -1;
-    private static int fileBlocks = 0;
     private static int freeSpaceBlocks = 0;
-    private static int filesCount = 0;
+    private static final List<MyDiskEntity> files = new ArrayList<>();
+    private static final List<MyDiskEntity> eligibleFreeSpaces = new ArrayList<>();
 
     private static void solvePartOne() {
-        // file_size, free_space, file_size, free_space, ....
-//        List<Integer> rawDiskMap = Arrays.asList(1, 2, 3, 4, 5);
-        List<Integer> rawDiskMap = Stream.of(inputLines.getFirst().split("")).map(Integer::parseInt).toList();
-        //raw       1,  2,  3,  4,  5   6   7   8
-        //idx       0   1   2   3   4   5   6   7   (+1)
-        //fileId    0       1       2       3
-        List<Integer> fileMapWithIDs = new ArrayList<>();
+        List<Integer> reArrangedFileMapP1 = defragmentFileMapP1(fileMapWithIDs);
+        log.debug("reArrangedFileMap P1:{}", reArrangedFileMapP1);
+        log.debug("files P1            : {}", files);
+        log.debug("free spaces P1      : {}", eligibleFreeSpaces);
 
-        for (int rawListIdx = 0; rawListIdx < rawDiskMap.size(); rawListIdx++) {
-            boolean isFile = rawListIdx % 2 == 0;
-            int sizeInBlocks = rawDiskMap.get(rawListIdx);
-            fileMapWithIDs.addAll(Collections.nCopies(sizeInBlocks, isFile ? rawListIdx / 2 : DOT));
-
-            if (isFile) {
-                fileBlocks += sizeInBlocks;
-                filesCount++;
-            } else {
-                freeSpaceBlocks += sizeInBlocks;
-            }
-        }
-
-        List<Integer> reArrangedFileMap = defragmentFileMap(fileMapWithIDs);
-
-//        log.info("raw              :{}", rawDiskMap);
-//        log.info("fileMapWithIDs   :{}", fileMapWithIDs);
-//        log.info("reArrangedFileMap:{}", reArrangedFileMap);
-
-        solutionP1 = calculateChecksumP1(reArrangedFileMap);
+        solutionP1 = calculateChecksum(reArrangedFileMapP1);
 
         log.info("""
                 Part 1 solution:
@@ -74,17 +61,47 @@ public class DiskFragmenter extends BaseDay {
                  = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1, '\''));
     }
 
-    private static Long calculateChecksumP1(List<Integer> reArrangedFileMap) {
-        // blocks' position multiplied by its file ID number, , the checksum is the sum of these
+    private static List<Integer> convertRawToFileIdMap(List<Integer> rawDiskMap) {
+        List<Integer> fileMapWithIDs = new ArrayList<>();
+        for (int rawListIdx = 0; rawListIdx < rawDiskMap.size(); rawListIdx++) {
+            boolean isFile = rawListIdx % 2 == 0;
+            int sizeInBlocks = rawDiskMap.get(rawListIdx);
+            int fileId = rawListIdx / 2;
+
+            fileMapWithIDs.addAll(Collections.nCopies(sizeInBlocks, isFile ? fileId : DOT));
+
+            if (isFile) {
+                // store in file list:
+                MyDiskEntity fileToAdd = new MyDiskEntity(fileId, sizeInBlocks, fileMapWithIDs.size() - 1, true);
+                files.add(fileToAdd);
+            } else {
+                freeSpaceBlocks += sizeInBlocks;
+                // store in free space list if size > 0:
+                if (sizeInBlocks > 0) {
+                    MyDiskEntity freeSpaceToAdd = new MyDiskEntity(eligibleFreeSpaces.size(), sizeInBlocks, fileMapWithIDs.size() - 1, false);
+                    eligibleFreeSpaces.add(freeSpaceToAdd);
+                }
+            }
+        }
+
+        return fileMapWithIDs;
+    }
+
+    private static Long calculateChecksum(List<Integer> reArrangedFileMap) {
+        // blocks' position multiplied by its file ID number, the checksum is the sum of these
         long checksum = 0;
-        for (int i = 0; i < reArrangedFileMap.indexOf(DOT); i++) {
-            checksum += (long) reArrangedFileMap.get(i) * (long) i;
+        int toIdx = getLastNonFreeIdx(reArrangedFileMap);
+        for (int i = 0; i <= toIdx; i++) {
+            Integer blockValue = reArrangedFileMap.get(i);
+            if (blockValue != DOT) {
+                checksum += (long) blockValue * (long) i;
+            }
         }
 
         return checksum;
     }
 
-    private static List<Integer> defragmentFileMap(List<Integer> fileMapWithIDs) {
+    private static List<Integer> defragmentFileMapP1(List<Integer> fileMapWithIDs) {
         List<Integer> listToReturn = new ArrayList<>(fileMapWithIDs);
 
         // the last non-empty element (!= -1)
@@ -93,8 +110,6 @@ public class DiskFragmenter extends BaseDay {
         int idxToFill = listToReturn.indexOf(DOT); // target index (= firstFreeSpaceIdx)
 
         while ((listToReturn.size() - freeSpaceBlocks) != idxToFill) {
-            // while all free spaces are not moved toward the tail of the list, keep moving
-            //[0, -1, -1, 1, 1, 1, -1, -1, -1, -1, 2, 2, 2, 2, 2]
             // start moving elements from the tail toward the head of the list by filling the empty (-1) spaces.
             // and placing empty space (-1) in place of the moved element
             listToReturn.set(idxToFill, valueToMove);
@@ -124,11 +139,88 @@ public class DiskFragmenter extends BaseDay {
     }
 
     private static void solvePartTwo() {
+        List<Integer> reArrangedDiskMapP2 = defragmentFileMapP2(fileMapWithIDs);
+        log.debug("originalMap      : {}", fileMapWithIDs);
+        log.debug("reArrangedDiskMap: {}", reArrangedDiskMapP2);
 
+        solutionP2 = calculateChecksum(reArrangedDiskMapP2);
         log.info("""
                 Part 2 solution:
-                 XXXXXX
+                 Start over, now compacting the amphipod's hard drive using this new method instead.
+                 What is the resulting filesystem checksum?
                  = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2, '\''));
 
+    }
+
+    private static List<Integer> defragmentFileMapP2(List<Integer> originalFileMap) {
+        List<Integer> reArrangedDiskMapP2 = new ArrayList<>(originalFileMap);
+        ArrayList<MyDiskEntity> notAttemptedFiles = new ArrayList<>(files);
+
+        while (!notAttemptedFiles.isEmpty()) {
+            // pick the last File from the non-attempted list:
+            MyDiskEntity fileToMoveLeft = notAttemptedFiles.getLast();
+            // return the LEFTMOST beginIndex of a free space where the file fits OR -1 if it doesn't fit.
+            // FS should be to the LEFT of the file itself!
+            int fromIdx = reArrangedDiskMapP2.indexOf(DOT);
+            int toIdx = fileToMoveLeft.getBeginIdx() - 1;
+            MyDiskEntity freeSpaceToFitTheFileTo = findFreeSpaceForFile(fileToMoveLeft, fromIdx, toIdx);
+            // if it doesn't fit, REMOVE it from the notAttemptedFiles, it won't move (stays where is atm);
+            if (freeSpaceToFitTheFileTo != null) { // if it FITS:
+                boolean fullMatch = freeSpaceToFitTheFileTo.getSizeInBlocks() == fileToMoveLeft.getSizeInBlocks();
+
+                // 1. swap the F with the FS in the reArrangedDiskMapP2:
+                for (int targetIdx = freeSpaceToFitTheFileTo.getBeginIdx(); targetIdx < fileToMoveLeft.getSizeInBlocks() + freeSpaceToFitTheFileTo.getBeginIdx(); targetIdx++) {
+                    //set the F to target:
+                    reArrangedDiskMapP2.set(targetIdx, fileToMoveLeft.getId());
+                }
+                for (int sourceIdx = fileToMoveLeft.getBeginIdx(); sourceIdx <= fileToMoveLeft.getEndIdx(); sourceIdx++) {
+                    //set the FS to source:
+                    reArrangedDiskMapP2.set(sourceIdx, DOT);
+                }
+
+                // 2. update the info of the FS entity (size, begin index):
+                // if full match, remove the FS completely
+                if (fullMatch) {
+                    eligibleFreeSpaces.remove(freeSpaceToFitTheFileTo);
+                } else {// if partial match, adjust the info -> SIZE, beginIdx (endIdx remains unchanged!)
+                    int fsNewSize = freeSpaceToFitTheFileTo.getSizeInBlocks() - fileToMoveLeft.getSizeInBlocks();
+                    int fsNewBeginIdx = freeSpaceToFitTheFileTo.getEndIdx() - (fsNewSize - 1);
+                    freeSpaceToFitTheFileTo.setSizeInBlocks(fsNewSize);
+                    freeSpaceToFitTheFileTo.setBeginIdx(fsNewBeginIdx);
+                }
+            }
+            //remove the file once processed (it either moved /above/ OR remains where it was)
+            notAttemptedFiles.removeLast();
+            // remove all free spaces that are to the right of the processed file:
+            eligibleFreeSpaces.removeIf(elem -> elem.getBeginIdx() > fileToMoveLeft.getBeginIdx());
+        }
+
+        return reArrangedDiskMapP2;
+    }
+
+    /**
+     * return the LEFTMOST beginIndex of a free space where the file fits OR -1 if it doesn't fit.
+     * <br/>FS should be to the LEFT of the file itself!
+     *
+     * @param fileToMoveLeft the file to search a place for
+     * @param from           the left most valid index of FS (inclusive)
+     * @param to             the right most valid index of FS (inclusive)
+     * @return the FS found OR null if there is no such space
+     */
+    private static MyDiskEntity findFreeSpaceForFile(MyDiskEntity fileToMoveLeft, int from, int to) {
+        MyDiskEntity matchingFs = null;
+        for (MyDiskEntity targetFs : eligibleFreeSpaces) {
+            if (targetFs.getBeginIdx() >= from
+                    && targetFs.getSizeInBlocks() >= fileToMoveLeft.getSizeInBlocks()
+            ) {
+                matchingFs = targetFs;
+                break;
+            } else if (targetFs.getBeginIdx() > to) {
+                // stop traversing FSs if we reached one that is to the right of the valid area:
+                break;
+            }
+        }
+
+        return matchingFs;
     }
 }
