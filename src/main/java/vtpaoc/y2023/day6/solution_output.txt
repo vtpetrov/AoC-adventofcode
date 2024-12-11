@@ -1,0 +1,48 @@
+
+[main] INFO vtpaoc.base.BaseDay - ----   ADVENT Of code   2023    ----
+[main] INFO vtpaoc.base.BaseDay - :::START = 2023-12-06T12:47:37
+[main] INFO vtpaoc.base.BaseDay -                 ---=== Day 06 ===---
+[main] INFO vtpaoc.base.BaseDay -                   - Wait For It -
+[main] INFO vtpaoc.base.BaseDay -     ---=== Part 1 ===---
+[main] INFO vtpaoc.y2023.day6.BoatRaces - -------------------------------------------------------------------------
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Race      1 , record= 215
+[main] INFO vtpaoc.y2023.day6.BoatRaces - raceTravelDistances.size 1/2= 21, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - waysToWin= 14, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - adjustedWaysToWin= 27
+[main] INFO vtpaoc.y2023.day6.BoatRaces - -------------------------------------------------------------------------
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Race      2 , record= 1064
+[main] INFO vtpaoc.y2023.day6.BoatRaces - raceTravelDistances.size 1/2= 47, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - waysToWin= 33, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - adjustedWaysToWin= 65
+[main] INFO vtpaoc.y2023.day6.BoatRaces - -------------------------------------------------------------------------
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Race      3 , record= 1505
+[main] INFO vtpaoc.y2023.day6.BoatRaces - raceTravelDistances.size 1/2= 50, doubleEnd= true
+[main] INFO vtpaoc.y2023.day6.BoatRaces - waysToWin= 30, doubleEnd= true
+[main] INFO vtpaoc.y2023.day6.BoatRaces - adjustedWaysToWin= 58
+[main] INFO vtpaoc.y2023.day6.BoatRaces - -------------------------------------------------------------------------
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Race      4 , record= 1100
+[main] INFO vtpaoc.y2023.day6.BoatRaces - raceTravelDistances.size 1/2= 46, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - waysToWin= 31, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - adjustedWaysToWin= 61
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Part 1 solution:
+ Determine the number of ways you could beat the record in each race.
+ What do you get if you multiply these numbers together?
+       = [6209190] (6'209'190)
+[main] INFO vtpaoc.base.BaseDay - P1 Duration: 25ms (0s)
+[main] INFO vtpaoc.base.BaseDay - =========================================================================================
+[main] INFO vtpaoc.base.BaseDay -     ---=== Part 2 ===---
+[main] INFO vtpaoc.y2023.day6.BoatRaces - -------------------------------------------------------------------------
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Race      1 , record= 215106415051100
+[main] INFO vtpaoc.y2023.day6.BoatRaces - raceTravelDistances.size 1/2= 20464896, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - waysToWin= 14272545, doubleEnd= false
+[main] INFO vtpaoc.y2023.day6.BoatRaces - adjustedWaysToWin= 28545089
+[main] INFO vtpaoc.y2023.day6.BoatRaces - Part 2 solution:
+ How many ways can you beat the record in this one much longer race?
+ = [28545089] (28'545'089)
+[main] INFO vtpaoc.base.BaseDay - P2 Duration: 558ms (0s)
+[main] INFO vtpaoc.base.BaseDay - ==========
+[main] INFO vtpaoc.base.BaseDay - Total Duration: 583ms (0s)
+[main] INFO vtpaoc.base.BaseDay - :::END = 1701859658262
+[main] INFO vtpaoc.base.BaseDay - :::END = 2023-12-06T12:47:38
+
+Process finished with exit code 0

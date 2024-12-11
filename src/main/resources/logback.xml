@@ -1,0 +1,26 @@
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{YYY-MM-dd HH:mm:ss.SSS} [%thread]: %highlight(%-5level) %-30(%cyan(%logger{40}),%-3line):%msg%n</pattern>
+        </encoder>
+    </appender>
+
+<!--    <appender name="FILE" class="ch.qos.logback.core.FileAppender">-->
+<!--        &lt;!&ndash; See more config options at https://logback.qos.ch/manual/appenders.html#FileAppender &ndash;&gt;-->
+<!--        &lt;!&ndash; See more config options at https://logback.qos.ch/manual/appenders.html#RollingFileAppender &ndash;&gt;-->
+<!--        <file>target\market-maker-logs.log</file>-->
+<!--        <append>true</append>-->
+<!--        <encoder>-->
+<!--            <pattern>%d{YYY-MM-dd HH:mm:ss.SSS} [%thread]: %-5level %20logger{40},%-3line - %msg%n</pattern>-->
+<!--        </encoder>-->
+
+<!--    </appender>-->
+
+    <logger name="vtpaoc" level="TRACE" />
+    <!-- All other logs (from 3rd party libs) will be using the INFO level and thus will reduce noise in logs: -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+<!--        <appender-ref ref="FILE"/>-->
+    </root>
+
+</configuration>
