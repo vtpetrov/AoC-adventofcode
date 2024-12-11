@@ -56,7 +56,7 @@ public class MullItOver_Ver2 extends BaseDay {
         for (String line : payload) {
             Matcher myMatcher = matchingMuls.matcher(line);
             int multiplication;
-            while(myMatcher.find()) {
+            while (myMatcher.find()) {
                 int multiplicand = parseInt(myMatcher.group(1));
                 int multiplier = parseInt(myMatcher.group(2));
                 multiplication = multiplicand * multiplier;
@@ -70,23 +70,22 @@ public class MullItOver_Ver2 extends BaseDay {
 
         List<String> newLines = new ArrayList<>();
         log.info("How many inputLines: '{}'", inputLines.size());
+        log.info("original input lines: {}", prettyPrintList(inputLines));
+        log.info("Join input lines into 1 BIG line");
+        String processingLine = String.join("", inputLines);
+        log.info("The BIG line: {}", processingLine);
 
-        for (int i = 0, inputLinesSize = inputLines.size(); i < inputLinesSize; i++) {
-            String processingLine = inputLines.get(i);
-            String newLine;
+        String lineOfMuls;
 
-            log.debug("processingLine: {}", processingLine);
+        // REMOVE anything between DON'Ts and DOs
+        String betweenDontsAndDosRegExStr = "don't\\(\\)(.*?)do\\(\\)";
+        String intermediateLine = processingLine.replaceAll(betweenDontsAndDosRegExStr, "");
 
-            // REMOVE anything between DON'Ts and DOs
-            String betweenDontsAndDosRegExStr = "don't\\(\\)(.*?)do\\(\\)";
-            String intermediateLine = processingLine.replaceAll(betweenDontsAndDosRegExStr, "");
+        // THEN remove anything after the last DON'T
+        String lastDontRegExStr = "don't\\(\\)(.*?)$";
+        lineOfMuls = intermediateLine.replaceAll(lastDontRegExStr, "");
 
-            // THEN remove anything after the last DON'T
-            String lastDontRegExStr = "don't\\(\\)(.*?)$";
-            newLine = intermediateLine.replaceAll(lastDontRegExStr, "");
-
-            newLines.add(newLine);
-        }
+        newLines.add(lineOfMuls);
 
         log.info("TOTAL newLines: '{}'", prettyPrintList(newLines));
 
