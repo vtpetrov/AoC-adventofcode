@@ -1,20 +1,97 @@
-[main] INFO vtpaoc.base.BaseDay - ----   ADVENT Of code   2024    ----
-[main] INFO vtpaoc.base.BaseDay - :::START = 2024-12-11T00:58:54
-[main] INFO vtpaoc.base.BaseDay -                 ---=== Day 09 ===---
-[main] INFO vtpaoc.base.BaseDay -                   - Disk Fragmenter -
-[main] INFO vtpaoc.base.BaseDay -     ---=== Part 1 ===---
-[main] INFO vtpaoc.y2024.day09.DiskFragmenter - Part 1 solution:
- What is the resulting filesystem checksum?
- = [6353658451014] (6'353'658'451'014)
-[main] INFO vtpaoc.base.BaseDay - P1 Duration: 714ms (0s)
-[main] INFO vtpaoc.base.BaseDay - =========================================================================================
-[main] INFO vtpaoc.base.BaseDay -     ---=== Part 2 ===---
-[main] INFO vtpaoc.y2024.day09.DiskFragmenter - Part 2 solution:
- Start over, now compacting the amphipod's hard drive using this new method instead.
- What is the resulting filesystem checksum?
- = [6382582136592] (6'382'582'136'592)
-[main] INFO vtpaoc.base.BaseDay - P2 Duration: 302ms (0s)
-[main] INFO vtpaoc.base.BaseDay - ==========
-[main] INFO vtpaoc.base.BaseDay - Total Duration: 1016ms (1s)
-[main] INFO vtpaoc.base.BaseDay - :::END = 1733871535253
-[main] INFO vtpaoc.base.BaseDay - :::END = 2024-12-11T00:58:55
+2024-12-11 20:07:38.135 [main]: INFO  vtpaoc.base.BaseDay,32 :----   ADVENT Of code   2024    ----
+2024-12-11 20:07:38.161 [main]: INFO  vtpaoc.base.BaseDay,34 ::::START = 2024-12-11T20:07:38
+2024-12-11 20:07:38.161 [main]: INFO  vtpaoc.base.BaseDay,35 :                ---=== Day 11 ===---
+2024-12-11 20:07:38.161 [main]: INFO  vtpaoc.base.BaseDay,36 :                  - Plutonian Pebbles -
+2024-12-11 20:07:38.161 [main]: INFO  vtpaoc.base.BaseDay,38 :    ---=== Part 1 ===---
+2024-12-11 20:07:38.180 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 1 blink(s): 11   (11)
+2024-12-11 20:07:38.181 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 2 blink(s): 14   (14)
+2024-12-11 20:07:38.181 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 3 blink(s): 21   (21)
+2024-12-11 20:07:38.182 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 4 blink(s): 34   (34)
+2024-12-11 20:07:38.182 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 5 blink(s): 47   (47)
+2024-12-11 20:07:38.183 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 6 blink(s): 64   (64)
+2024-12-11 20:07:38.184 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 7 blink(s): 103   (103)
+2024-12-11 20:07:38.184 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 8 blink(s): 155   (155)
+2024-12-11 20:07:38.185 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 9 blink(s): 225   (225)
+2024-12-11 20:07:38.186 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 10 blink(s): 359   (359)
+2024-12-11 20:07:38.187 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 11 blink(s): 537   (537)
+2024-12-11 20:07:38.188 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 12 blink(s): 801   (801)
+2024-12-11 20:07:38.189 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 13 blink(s): 1174   (1'174)
+2024-12-11 20:07:38.190 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 14 blink(s): 1810   (1'810)
+2024-12-11 20:07:38.191 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 15 blink(s): 2901   (2'901)
+2024-12-11 20:07:38.191 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 16 blink(s): 4189   (4'189)
+2024-12-11 20:07:38.192 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 17 blink(s): 6279   (6'279)
+2024-12-11 20:07:38.193 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 18 blink(s): 9890   (9'890)
+2024-12-11 20:07:38.193 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 19 blink(s): 14730   (14'730)
+2024-12-11 20:07:38.194 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 20 blink(s): 22477   (22'477)
+2024-12-11 20:07:38.195 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 21 blink(s): 34025   (34'025)
+2024-12-11 20:07:38.196 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 22 blink(s): 51693   (51'693)
+2024-12-11 20:07:38.197 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 23 blink(s): 79208   (79'208)
+2024-12-11 20:07:38.198 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 24 blink(s): 118031   (118'031)
+2024-12-11 20:07:38.198 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 25 blink(s): 182081   (182'081)
+2024-12-11 20:07:38.199 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,60 :Part 1 solution:
+ Consider the arrangement of stones in front of you.
+ How many stones will you have after blinking 25 times?
+ = [182081] (182'081)
+2024-12-11 20:07:38.200 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 26 blink(s): 277154   (277'154)
+2024-12-11 20:07:38.201 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 27 blink(s): 414824   (414'824)
+2024-12-11 20:07:38.202 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 28 blink(s): 637128   (637'128)
+2024-12-11 20:07:38.205 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 29 blink(s): 964027   (964'027)
+2024-12-11 20:07:38.207 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 30 blink(s): 1466235   (1'466'235)
+2024-12-11 20:07:38.209 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 31 blink(s): 2229727   (2'229'727)
+2024-12-11 20:07:38.212 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 32 blink(s): 3366152   (3'366'152)
+2024-12-11 20:07:38.215 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 33 blink(s): 5154934   (5'154'934)
+2024-12-11 20:07:38.217 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 34 blink(s): 7793740   (7'793'740)
+2024-12-11 20:07:38.220 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 35 blink(s): 11819352   (11'819'352)
+2024-12-11 20:07:38.222 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 36 blink(s): 18052606   (18'052'606)
+2024-12-11 20:07:38.224 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 37 blink(s): 27278105   (27'278'105)
+2024-12-11 20:07:38.227 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 38 blink(s): 41535881   (41'535'881)
+2024-12-11 20:07:38.229 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 39 blink(s): 63083615   (63'083'615)
+2024-12-11 20:07:38.232 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 40 blink(s): 95665503   (95'665'503)
+2024-12-11 20:07:38.236 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 41 blink(s): 145765473   (145'765'473)
+2024-12-11 20:07:38.239 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 42 blink(s): 220651024   (220'651'024)
+2024-12-11 20:07:38.242 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 43 blink(s): 335672938   (335'672'938)
+2024-12-11 20:07:38.250 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 44 blink(s): 510419017   (510'419'017)
+2024-12-11 20:07:38.254 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 45 blink(s): 773324028   (773'324'028)
+2024-12-11 20:07:38.257 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 46 blink(s): 1177345751   (1'177'345'751)
+2024-12-11 20:07:38.261 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 47 blink(s): 1786196766   (1'786'196'766)
+2024-12-11 20:07:38.265 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 48 blink(s): 2712820361   (2'712'820'361)
+2024-12-11 20:07:38.268 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 49 blink(s): 4125149793   (4'125'149'793)
+2024-12-11 20:07:38.272 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 50 blink(s): 6255737488   (6'255'737'488)
+2024-12-11 20:07:38.276 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 51 blink(s): 9515168423   (9'515'168'423)
+2024-12-11 20:07:38.279 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 52 blink(s): 14446004972   (14'446'004'972)
+2024-12-11 20:07:38.283 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 53 blink(s): 21928920439   (21'928'920'439)
+2024-12-11 20:07:38.287 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 54 blink(s): 33348352475   (33'348'352'475)
+2024-12-11 20:07:38.290 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 55 blink(s): 50600283209   (50'600'283'209)
+2024-12-11 20:07:38.295 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 56 blink(s): 76894908690   (76'894'908'690)
+2024-12-11 20:07:38.297 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 57 blink(s): 116815644488   (116'815'644'488)
+2024-12-11 20:07:38.299 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 58 blink(s): 177324257359   (177'324'257'359)
+2024-12-11 20:07:38.301 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 59 blink(s): 269552455041   (269'552'455'041)
+2024-12-11 20:07:38.303 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 60 blink(s): 409196359744   (409'196'359'744)
+2024-12-11 20:07:38.304 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 61 blink(s): 621607113408   (621'607'113'408)
+2024-12-11 20:07:38.306 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 62 blink(s): 944503324028   (944'503'324'028)
+2024-12-11 20:07:38.308 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 63 blink(s): 1433823048177   (1'433'823'048'177)
+2024-12-11 20:07:38.310 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 64 blink(s): 2178897079502   (2'178'897'079'502)
+2024-12-11 20:07:38.312 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 65 blink(s): 3308977441633   (3'308'977'441'633)
+2024-12-11 20:07:38.314 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 66 blink(s): 5025455705810   (5'025'455'705'810)
+2024-12-11 20:07:38.316 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 67 blink(s): 7635806901291   (7'635'806'901'291)
+2024-12-11 20:07:38.319 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 68 blink(s): 11594015940597   (11'594'015'940'597)
+2024-12-11 20:07:38.320 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 69 blink(s): 17614519929988   (17'614'519'929'988)
+2024-12-11 20:07:38.322 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 70 blink(s): 26754975842067   (26'754'975'842'067)
+2024-12-11 20:07:38.325 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 71 blink(s): 40631094579790   (40'631'094'579'790)
+2024-12-11 20:07:38.326 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 72 blink(s): 61732026132808   (61'732'026'132'808)
+2024-12-11 20:07:38.329 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 73 blink(s): 93747198439487   (93'747'198'439'487)
+2024-12-11 20:07:38.331 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 74 blink(s): 142403871951216   (142'403'871'951'216)
+2024-12-11 20:07:38.333 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,55 :After 75 blink(s): 216318908621637   (216'318'908'621'637)
+2024-12-11 20:07:38.333 [main]: INFO  vtpaoc.y2024.day11.PlutonianPebblesV3,70 :Part 2 solution:
+ How many stones would you have after blinking a total of 75 times?
+ = [216318908621637] (216'318'908'621'637)
+2024-12-11 20:07:38.333 [main]: DEBUG vtpaoc.y2024.day11.PlutonianPebblesV3,75 :Integer.MAX_VALUE= 2147483647, (2'147'483'647)
+2024-12-11 20:07:38.333 [main]: DEBUG vtpaoc.y2024.day11.PlutonianPebblesV3,76 :   Long.MAX_VALUE= 9223372036854775807, (9'223'372'036'854'775'807)
+2024-12-11 20:07:38.333 [main]: INFO  vtpaoc.base.BaseDay,43 :P1 Duration: 172ms (0s)
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,45 :=========================================================================================
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,46 :    ---=== Part 2 ===---
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,51 :P2 Duration: 1ms (0s)
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,52 :==========
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,53 :Total Duration: 173ms (0s)
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,55 ::::END = 1733940458334
+2024-12-11 20:07:38.334 [main]: INFO  vtpaoc.base.BaseDay,56 ::::END = 2024-12-11T20:07:38

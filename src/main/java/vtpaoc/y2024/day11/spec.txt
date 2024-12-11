@@ -1,89 +1,67 @@
---- Day 9: Disk Fragmenter ---
-Another push of the button leaves you in the familiar hallways of some friendly amphipods! Good thing you each somehow got your own personal mini submarine. The Historians jet away in search of the Chief, mostly by driving directly into walls.
+--- Day 11: Plutonian Pebbles ---
+The ancient civilization on Pluto was known for its ability to manipulate spacetime, and while The Historians explore their infinite corridors, you've noticed a strange set of physics-defying stones.
 
-While The Historians quickly figure out how to pilot these things, you notice an amphipod in the corner struggling with his computer. He's trying to make more contiguous free space by compacting all of the files, but his program isn't working; you offer to help.
+At first glance, they seem like normal stones: they're arranged in a perfectly straight line, and each stone has a number engraved on it.
 
-He shows you the disk map (your puzzle input) he's already generated. For example:
+The strange part is that every time you blink, the stones change.
 
-2333133121414131402
-The disk map uses a dense format to represent the layout of files and free space on the disk. The digits alternate between indicating the length of a file and the length of free space.
+Sometimes, the number engraved on a stone changes. Other times, a stone might split in two, causing all the other stones to shift over a bit to make room in their perfectly straight line.
 
-So, a disk map like 12345 would represent a one-block file, two blocks of free space, a three-block file, four blocks of free space, and then a five-block file. A disk map like 90909 would represent three nine-block files in a row (with no free space between them).
+As you observe them for a while, you find that the stones have a consistent behavior. Every time you blink, the stones each simultaneously change according to the first applicable rule in this list:
 
-Each file on disk also has an ID number based on the order of the files as they appear before they are rearranged, starting with ID 0. So, the disk map 12345 has three files: a one-block file with ID 0, a three-block file with ID 1, and a five-block file with ID 2. Using one character for each block where digits are the file ID and . is free space, the disk map 12345 represents these individual blocks:
+If the stone is engraved with the number 0, it is replaced by a stone engraved with the number 1.
+If the stone is engraved with a number that has an even number of digits, it is replaced by two stones. The left half of the digits are engraved on the new left stone, and the right half of the digits are engraved on the new right stone. (The new numbers don't keep extra leading zeroes: 1000 would become stones 10 and 0.)
+If none of the other rules apply, the stone is replaced by a new stone; the old stone's number multiplied by 2024 is engraved on the new stone.
+No matter how the stones change, their order is preserved, and they stay on their perfectly straight line.
 
-0..111....22222
-The first example above, 2333133121414131402, represents these individual blocks:
+How will the stones evolve if you keep blinking at them? You take a note of the number engraved on each stone in the line (your puzzle input).
 
-00...111...2...333.44.5555.6666.777.888899
-The amphipod would like to move file blocks one at a time from the end of the disk to the leftmost free space block (until there are no gaps remaining between file blocks). For the disk map 12345, the process looks like this:
+If you have an arrangement of five stones engraved with the numbers 0 1 10 99 999 and you blink once, the stones transform as follows:
 
-0..111....22222
-02.111....2222.
-022111....222..
-0221112...22...
-02211122..2....
-022111222......
-The first example requires a few more steps:
+The first stone, 0, becomes a stone marked 1.
+The second stone, 1, is multiplied by 2024 to become 2024.
+The third stone, 10, is split into a stone marked 1 followed by a stone marked 0.
+The fourth stone, 99, is split into two stones marked 9.
+The fifth stone, 999, is replaced by a stone marked 2021976.
+So, after blinking once, your five stones would become an arrangement of seven stones engraved with the numbers 1 2024 1 0 9 9 2021976.
 
-00...111...2...333.44.5555.6666.777.888899
-009..111...2...333.44.5555.6666.777.88889.
-0099.111...2...333.44.5555.6666.777.8888..
-00998111...2...333.44.5555.6666.777.888...
-009981118..2...333.44.5555.6666.777.88....
-0099811188.2...333.44.5555.6666.777.8.....
-009981118882...333.44.5555.6666.777.......
-0099811188827..333.44.5555.6666.77........
-00998111888277.333.44.5555.6666.7.........
-009981118882777333.44.5555.6666...........
-009981118882777333644.5555.666............
-00998111888277733364465555.66.............
-0099811188827773336446555566..............
-The final step of this file-compacting process is to update the filesystem checksum. To calculate the checksum, add up the result of multiplying each of these blocks' position with the file ID number it contains. The leftmost block is in position 0. If a block contains free space, skip it instead.
+Here is a longer example:
 
-Continuing the first example, the first few blocks' position multiplied by its file ID number are 0 * 0 = 0, 1 * 0 = 0, 2 * 9 = 18, 3 * 9 = 27, 4 * 8 = 32, and so on. In this example, the checksum is the sum of these, 1928.
+Initial arrangement:
+125 17
 
-Compact the amphipod's hard drive using the process he requested. What is the resulting filesystem checksum? (Be careful copy/pasting the input for this puzzle; it is a single, very long line.)
+After 1 blink:
+253000 1 7
 
-Your puzzle answer was 6353658451014.
+After 2 blinks:
+253 0 2024 14168
 
-The first half of this puzzle is complete! It provides one gold star: *
+After 3 blinks:
+512072 1 20 24 28676032
 
-                                                                                     .-'''-.
-                                                                                    '   _    \
-_________   _...._                                                                /   /` '.   \
-\        |.'      '-.                                                     _     _.   |     \  '
- \        .'```'.    '.          .-,.--.      .|                 .| /\    \\   //|   '      |  '
-  \      |       \     \   __    |  .-. |   .' |_              .' |_`\\  //\\ // \    \     / /
-   |     |        |    |.:--.'.  | |  | | .'     |           .'     | \`//  \'/   `.   ` ..' /
-   |      \      /    ./ |   \ | | |  | |'--.  .-'          '--.  .-'  \|   |/       '-...-'`
-   |     |\`'-.-'   .' `" __ | | | |  '-    |  |               |  |     '
-   |     | '-....-'`    .'.''| | | |        |  |               |  |
-  .'     '.            / /   | |_| |        |  '.'             |  '.'
-'-----------'          \ \._,\ '/|_|        |   /              |   /
-                        `--'  `"            `'-'               `'-'
+After 4 blinks:
+512 72 2024 2 0 2 4 2867 6032
 
+After 5 blinks:
+1036288 7 2 20 24 4048 1 4048 8096 28 67 60 32
+
+After 6 blinks:
+2097446912 14168 4048 2 0 2 4 40 48 2024 40 48 80 96 2 8 6 7 6 0 3 2
+In this example, after blinking six times, you would have 22 stones. After blinking 25 times, you would have 55312 stones!
+
+Consider the arrangement of stones in front of you. How many stones will you have after blinking 25 times?
+
+Your puzzle answer was 182081.
 
 --- Part Two ---
-Upon completion, two things immediately become clear. First, the disk definitely has a lot more contiguous free space, just like the amphipod hoped. Second, the computer is running much more slowly! Maybe introducing all of that file system fragmentation was a bad idea?
+The Historians sure are taking a long time. To be fair, the infinite corridors are very large.
 
-The eager amphipod already has a new plan: rather than move individual blocks, he'd like to try compacting the files on his disk by moving whole files instead.
+How many stones would you have after blinking a total of 75 times?
 
-This time, attempt to move whole files to the leftmost span of free space blocks that could fit the file. Attempt to move each file exactly once in order of decreasing file ID number starting with the file with the highest file ID number. If there is no span of free space to the left of a file that is large enough to fit the file, the file does not move.
-
-The first example from above now proceeds differently:
-
-00...111...2...333.44.5555.6666.777.888899
-0099.111...2...333.44.5555.6666.777.8888..
-0099.1117772...333.44.5555.6666.....8888..
-0099.111777244.333....5555.6666.....8888..
-00992111777.44.333....5555.6666.....8888..
-The process of updating the filesystem checksum is the same; now, this example's checksum would be 2858.
-
-Start over, now compacting the amphipod's hard drive using this new method instead. What is the resulting filesystem checksum?
-
-Render the image given by your program. What eight capital letters appear on your CRT?
-
-Your puzzle answer was BZPAJELK.
+Your puzzle answer was 216318908621637.
 
 Both parts of this puzzle are complete! They provide two gold stars: **
+
+At this point, you should return to your Advent calendar and try another puzzle.
+
+If you still want to see it, you can get your puzzle input.

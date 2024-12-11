@@ -16,7 +16,7 @@
 
 <!--    </appender>-->
 
-    <logger name="vtpaoc" level="TRACE" />
+    <logger name="vtpaoc" level="DEBUG" />
     <!-- All other logs (from 3rd party libs) will be using the INFO level and thus will reduce noise in logs: -->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
