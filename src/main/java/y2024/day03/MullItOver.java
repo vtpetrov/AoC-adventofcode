@@ -69,10 +69,12 @@ public class MullItOver extends BaseDay {
     private static void solvePartTwo() {
 
         List<String> enabledParts = new ArrayList<>();
+        List<String> newLines = new ArrayList<>();
         log.info("How many inputLines: '{}'", inputLines.size());
 
         for (int i = 0, inputLinesSize = inputLines.size(); i < inputLinesSize; i++) {
             String processingLine = inputLines.get(i);
+            String newLine = "";
             boolean inEnabledMode = true;
             int p = 1;
             while (!processingLine.isEmpty()) {
@@ -83,12 +85,14 @@ public class MullItOver extends BaseDay {
                 if (inEnabledMode) { // if enabled, search from DON'T
                     // start from beginning until the first DONT or until the end of the string if there is no DONT
                     int until = processingLine.contains(DONT) ? processingLine.indexOf(DONT) : processingLine.length();
-                    enabledParts.add(format("l%d p%d: %s", i, p, processingLine.substring(0, until)));
+                    String eligiblePart = processingLine.substring(0, until);
+                    enabledParts.add(format("l%d p%d: %s", i, p, eligiblePart));
+                    newLine = newLine.concat(eligiblePart);
 
                     // REMOVE the processed part:
                     processingLine = processingLine.substring(until);
                     // flip the mode boolean
-                    inEnabledMode = false;
+//                    inEnabledMode = false;
                 } else { // if disabled, search from DO
                     // start from beginning until the first DO or until the end of the string if there is no DO
                     // mark this part as DISABLED
@@ -96,17 +100,22 @@ public class MullItOver extends BaseDay {
                     // REMOVE it:
                     processingLine = processingLine.substring(until);
                     // flip the mode boolean
-                    inEnabledMode = true;
+//                    inEnabledMode = true;
                 }
+                inEnabledMode = !inEnabledMode;
                 p++;
-                log.debug("enabledParts so far: '{}'", prettyPrintList(enabledParts));
+                log.info("enabledParts so far: '{}'", prettyPrintList(enabledParts));
+                log.info("newLine= {}", newLine);
             }
             log.debug("enabledParts after line {}: '{}'", i, prettyPrintList(enabledParts));
+            newLines.add(newLine);
         }
 
         log.info("TOTAL enabledParts: '{}'", prettyPrintList(enabledParts));
+        log.info("TOTAL newLines: '{}'", prettyPrintList(newLines));
 
-        solutionP2 = calcSumOfMultiplications(enabledParts);
+//        solutionP2 = calcSumOfMultiplications(enabledParts);
+        solutionP2 = calcSumOfMultiplications(newLines);
 
         log.info("""
                 Part 2 solution:
