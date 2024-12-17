@@ -59,7 +59,8 @@ public class CeresSearch extends BaseDay {
 
         log.info("""
                 Part 1 solution:
-                 Take a look at the little Elf's word search. How many times does XMAS appear?
+                 Take a look at the little Elf's word search.
+                 How many times does XMAS appear?
                  = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1));
     }
 
@@ -99,12 +100,58 @@ public class CeresSearch extends BaseDay {
     }
 
     private static void solvePartTwo() {
+        int totalXCount = 0;
+
+        for (int i = 0; i < schemaSize; i++) {
+            for (int j = 0; j < schemaSize; j++) {
+                // Look for an 'A' and check all possible ways two "MAS" cross around it
+                if (inputSchema[i][j].equals('A')) {
+                    totalXCount += countMASXPattern(i, j);
+                }
+            }
+        }
+
+        solutionP2 = totalXCount;
 
         log.info("""
                 Part 2 solution:
-                 XXXXXX
+                 Flip the word search from the instructions back over to the word search side and try again.
+                 How many times does an X-MAS appear?
                  = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2));
 
+    }
+
+    private static int countMASXPattern(int row, int col) {
+        int matches = 0;
+
+        // Check all possible diagonals for "MAS" crossing at 'A'
+        matches += checkDiagonalForMas(row, col, -1, 1, 1, -1); // Top-Right ↔ Bottom-Left
+        matches += checkDiagonalForMas(row, col, -1, -1, 1, 1); // Top-Left ↔ Bottom-Right
+        matches += checkDiagonalForMas(row, col, 1, -1, -1, 1); // Bottom-Left ↔ Top-Right
+        matches += checkDiagonalForMas(row, col, 1, 1, -1, -1); // Bottom-Right ↔ Top-Left
+
+        // Every valid X pattern must have two valid diags => count 1 match per valid pair of diagonals
+        return matches >= 2 ? 1 : 0;
+    }
+
+    private static int checkDiagonalForMas(int row, int col, int dir1Row, int dir1Col, int dir2Row, int dir2Col) {
+        try {
+            // Check the first diagonal direction
+            int mRow = row + dir1Row;
+            int mCol = col + dir1Col;
+
+            // Check the second diagonal direction
+            int sRow = row + dir2Row;
+            int sCol = col + dir2Col;
+
+            // Ensure "MAS" pattern is valid in this direction
+            if ((inputSchema[mRow][mCol].equals('M') && inputSchema[sRow][sCol].equals('S'))) {
+                return 1;
+            }
+        } catch (IndexOutOfBoundsException e) {
+            // If out of bounds, ignore and return 0
+        }
+        return 0;
     }
 
     private static void drawInputSchema(boolean printSchema) {
