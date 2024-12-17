@@ -101,7 +101,7 @@ public class HydrothermalVenture {
     private static int[][] drawMap(final List<Line> lines) {
         int[][] generatedMap = new int[MAP_SIZE][MAP_SIZE];
         for (Line line : lines) {
-            logger.info("drawing line {}", line);
+            logger.debug("drawing line {}", line);
             int lineLength;
             if (Line.horizontalLine.or(Line.verticalLine).test(line)) {
                 //horizontal or vertical line
@@ -117,7 +117,7 @@ public class HydrothermalVenture {
 //                    logger.info("map state after line <{}::{}> being drawn: \n {}", line, i, prettyPrintMapOfLines(generatedMap));
                 }
             } else {
-                logger.info("Drawing diagonal line...");
+                logger.debug("Drawing diagonal line...");
                 //diagonal line:
                 lineLength = 1 + Math.abs(line.getX1() - line.getX2());
                 int hStart, vStart, vMultiplier;

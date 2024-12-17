@@ -10,9 +10,9 @@ public class ChronalCoordinates {
         private static final String INPUT_FILE_NAME = "year_2018/day6_input.txt";
 //    private static final String INPUT_FILE_NAME = "debug.txt";
 
-    private static Map<Integer, Grid.Location> allLocations;
+    private static Map<Integer, Location> allLocations;
     private static Grid myGrid = new Grid();
-    private static Map<Integer, Grid.Location> finiteLocations;
+    private static Map<Integer, Location> finiteLocations;
 
     public static void main(String[] args) throws Throwable {
         System.out.println("----   ADVENT Of code   2018    ----");

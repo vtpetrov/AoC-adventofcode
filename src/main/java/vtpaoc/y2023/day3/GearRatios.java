@@ -30,7 +30,7 @@ public class GearRatios extends BaseDay {
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
-        loadDayInput();
+        loadDayInputLines();
 
         drawEngineSchematic();
 

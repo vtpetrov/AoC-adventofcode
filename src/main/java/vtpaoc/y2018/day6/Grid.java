@@ -2,7 +2,6 @@ package vtpaoc.y2018.day6;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -53,11 +52,11 @@ public class Grid {
 
                     // call distance to each vtpaoc.base location:
                     for (Location location : originalLocations.values()) {
-                        currDist = calcDistance(i, j, location.x, location.y);
+                        currDist = calcDistance(i, j, location.getX(), location.getY());
 
                         if (currDist < minDist) {
                             minDist = currDist;
-                            val = String.valueOf(location.index);
+                            val = String.valueOf(location.getIndex());
                         } else if (currDist == minDist) { // distance to this location is same as to some other location and it is, mark with "."
                             val = ".";
                         }
@@ -67,7 +66,8 @@ public class Grid {
 
                     // increase given location area:
                     if (!val.equals(".")) {
-                        originalLocations.get(Integer.valueOf(val)).area++;
+                        int area = originalLocations.get(Integer.valueOf(val)).getArea();
+                        originalLocations.get(Integer.valueOf(val)).setArea(area + 1);
 
                         // mark infinite if touches border:
                         if (i == 0 || j == 0 || i == Grid.GRID_SIZE - 1 || j == Grid.GRID_SIZE - 1) {
@@ -120,7 +120,7 @@ public class Grid {
 
                 // calc distance to each vtpaoc.base location AND sum it:
                 for (Location location : originalLocations.values()) {
-                    distance = calcDistance(i, j, location.x, location.y);
+                    distance = calcDistance(i, j, location.getX(), location.getY());
                     if (distance == 0) wasZero = true;
                     totalDistance += distance;
 
@@ -137,9 +137,7 @@ public class Grid {
 
                 }
             }
-
         }
-
     }
 
     @Override
@@ -171,29 +169,5 @@ public class Grid {
         sb.append("\n").append(originalLocations);
 
         return sb.toString();
-    }
-
-    @Getter
-    @ToString
-    class Location {
-
-        private int index;
-        private int y;
-        private int x;
-        private int area;
-        boolean isFinite = true;
-
-
-        Location(int ind, int eks, int why) {
-            this.index = ind;
-            this.y = why;
-            this.x = eks;
-            this.area = 1;
-        }
-
-        void calcFinite() {
-
-        }
-
     }
 }
