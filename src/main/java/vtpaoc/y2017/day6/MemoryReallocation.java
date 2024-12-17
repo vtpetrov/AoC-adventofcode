@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import static vtpaoc.helper.InputLoader.getMainIn;
-import static vtpaoc.helper.InputLoader.loadInput;
+import static vtpaoc.helper.InputUtils.getMainIn;
+import static vtpaoc.helper.InputUtils.loadInput;
 
 public class MemoryReallocation {
 

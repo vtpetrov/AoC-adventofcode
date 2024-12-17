@@ -2,7 +2,7 @@ package vtpaoc.base;
 
 import lombok.extern.slf4j.Slf4j;
 
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 
 @Slf4j
@@ -34,7 +34,7 @@ public class DayTemplate extends BaseDay {
         log.info("""
                 Part 1 solution:
                  XXXXXX
-                 = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1, '\''));
+                 = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1));
     }
 
     private static void solvePartTwo() {
@@ -42,7 +42,7 @@ public class DayTemplate extends BaseDay {
         log.info("""
                 Part 2 solution:
                  XXXXXX
-                 = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2, '\''));
+                 = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2));
 
     }
 }

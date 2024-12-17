@@ -3,7 +3,7 @@ package vtpaoc.y2018.day6;
 import java.util.Date;
 import java.util.Map;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class ChronalCoordinates {
 

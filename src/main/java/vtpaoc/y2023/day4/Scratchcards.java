@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 import static java.lang.Math.*;
 import static java.util.Arrays.stream;
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 
 @Slf4j

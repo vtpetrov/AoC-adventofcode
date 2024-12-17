@@ -1,11 +1,17 @@
 package vtpaoc.helper;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
+import java.util.List;
 import java.util.Scanner;
 
-public class InputLoader {
+import static vtpaoc.helper.Misc.prettyPrintTwoDimensArray;
+
+@Slf4j
+public class InputUtils {
 
     private static Scanner mainIn;
 
@@ -30,4 +36,15 @@ public class InputLoader {
         mainIn.close();
     }
 
+    public static Character[][] convertInputToTowDimmensArrOfChars(List<String> inputLines, int schemaSize, boolean printSchema) {
+        Character[][] inputSchema = new Character[schemaSize][schemaSize];
+        for (int i = 0; i < schemaSize; i++) {
+            inputSchema[i] = inputLines.get(i).chars().mapToObj(elem -> (char) elem).toArray(Character[]::new);
+        }
+        if (printSchema) {
+            log.info("input schema loaded:\n{}", prettyPrintTwoDimensArray(inputSchema, true, " "));
+        }
+
+        return inputSchema;
+    }
 }

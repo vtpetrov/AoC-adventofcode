@@ -1,6 +1,6 @@
 package vtpaoc.y2017.day2;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class CorruptionChecksum {
 

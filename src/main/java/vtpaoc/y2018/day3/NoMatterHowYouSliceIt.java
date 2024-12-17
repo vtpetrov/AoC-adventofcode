@@ -3,7 +3,7 @@ package vtpaoc.y2018.day3;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class NoMatterHowYouSliceIt {
 

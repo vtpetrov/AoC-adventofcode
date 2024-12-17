@@ -6,7 +6,7 @@ import vtpaoc.common.enums.Operator;
 
 import java.util.*;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class ILikeRegisters {
 

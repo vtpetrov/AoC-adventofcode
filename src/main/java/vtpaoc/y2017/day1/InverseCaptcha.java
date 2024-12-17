@@ -1,6 +1,6 @@
 package vtpaoc.y2017.day1;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class InverseCaptcha {
 

@@ -2,7 +2,7 @@ package vtpaoc.y2018.day7;
 
 import java.util.*;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class TheSumOfItsParts {
 

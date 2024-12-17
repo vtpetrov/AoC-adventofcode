@@ -2,7 +2,7 @@ package vtpaoc.y2017.day5;
 
 import java.util.Arrays;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class TwistyTrampolines {
 
