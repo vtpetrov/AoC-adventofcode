@@ -32,7 +32,7 @@ public class PlutonianPebblesV3 extends BaseDay {
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
-        loadDayInput();
+        loadDayInputLines();
         solvePartOneAndTwo();
         logStartP2();
         closeInput();

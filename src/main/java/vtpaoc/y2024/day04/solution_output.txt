@@ -1,0 +1,21 @@
+2024-12-17 23:21:57.950 [main]: INFO  vtpaoc.base.BaseDay,44 :----   ADVENT Of code   2024    ----
+2024-12-17 23:21:57.977 [main]: INFO  vtpaoc.base.BaseDay,46 ::::START = 2024-12-17T23:21:57
+2024-12-17 23:21:57.977 [main]: INFO  vtpaoc.base.BaseDay,47 :                ---=== Day 04 ===---
+2024-12-17 23:21:57.977 [main]: INFO  vtpaoc.base.BaseDay,48 :                  - Ceres Search -
+2024-12-17 23:21:57.977 [main]: INFO  vtpaoc.base.BaseDay,50 :    ---=== Part 1 ===---
+2024-12-17 23:21:58.009 [main]: INFO  vtpaoc.y2024.day04.CeresSearch,60 :Part 1 solution:
+ Take a look at the little Elf's word search.
+ How many times does XMAS appear?
+ = [2654] (2'654)
+2024-12-17 23:21:58.009 [main]: INFO  vtpaoc.base.BaseDay,55 :P1 Duration: 32ms (0s)
+2024-12-17 23:21:58.009 [main]: INFO  vtpaoc.base.BaseDay,57 :=========================================================================================
+2024-12-17 23:21:58.010 [main]: INFO  vtpaoc.base.BaseDay,58 :    ---=== Part 2 ===---
+2024-12-17 23:21:58.013 [main]: INFO  vtpaoc.y2024.day04.CeresSearch,116:Part 2 solution:
+ Flip the word search from the instructions back over to the word search side and try again.
+ How many times does an X-MAS appear?
+ = [1990] (1'990)
+2024-12-17 23:21:58.013 [main]: INFO  vtpaoc.base.BaseDay,63 :P2 Duration: 4ms (0s)
+2024-12-17 23:21:58.013 [main]: INFO  vtpaoc.base.BaseDay,64 :==========
+2024-12-17 23:21:58.014 [main]: INFO  vtpaoc.base.BaseDay,65 :Total Duration: 36ms (0s)
+2024-12-17 23:21:58.014 [main]: INFO  vtpaoc.base.BaseDay,67 ::::END = 1734470518013
+2024-12-17 23:21:58.014 [main]: INFO  vtpaoc.base.BaseDay,68 ::::END = 2024-12-17T23:21:58

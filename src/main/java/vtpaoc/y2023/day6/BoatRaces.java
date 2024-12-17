@@ -25,7 +25,7 @@ public class BoatRaces extends BaseDay {
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
-        loadDayInput();
+        loadDayInputLines();
         solvePartOne();
         logStartP2();
         solvePartTwo();

@@ -26,7 +26,7 @@ public class DiskFragmenter extends BaseDay {
 
     public static void main(String[] args) {
         logStartP1(year, day, puzzleTitle);
-        loadDayInput();
+        loadDayInputLines();
         List<Integer> rawDiskMap = Stream.of(inputLines.getFirst().split("")).map(Integer::parseInt).toList();
         log.debug("raw              :{}", rawDiskMap);
         fileMapWithIDs = convertRawToFileIdMap(rawDiskMap);

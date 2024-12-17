@@ -52,6 +52,15 @@ public class Misc {
         return sb.toString();
     }
 
+    /**
+     * Formats a given collection into a human-readable string representation. If the collection
+     * is null or empty, it returns "[null or empty]". Otherwise, the elements of the collection
+     * are converted into a map with each element assigned a unique index, and the map is formatted
+     * using the prettyPrintMap method.
+     *
+     * @param listToPrint the collection to format
+     * @return a formatted string representation of the collection
+     */
     public static String prettyPrintList(final Collection<?> listToPrint) {
         if (listToPrint == null || listToPrint.isEmpty()) {
             return "[null or empty]";
@@ -64,6 +73,14 @@ public class Misc {
         return prettyPrintMap(map);
     }
 
+    /**
+     * Converts an object into a map and formats it into a human-readable string representation.
+     * The object is transformed into a map using Jackson's ObjectMapper and then formatted
+     * using the prettyPrintMap method.
+     *
+     * @param obj the object to be converted and formatted
+     * @return a formatted string representation of the object
+     */
     public static String prettyPrintObject(final Object obj) {
         ObjectMapper oMapper = new ObjectMapper();
 
@@ -71,7 +88,17 @@ public class Misc {
         return prettyPrintMap(map);
     }
 
-    public static <T> String prettyPrintTwoDimensArray(T[][] arrayToPrint, Boolean useDelimiter, String delimiter) {
+    /**
+     * Converts a two-dimensional array into a formatted string representation.
+     * Each element in the array is appended to the output, optionally separated by a specified delimiter.
+     * Rows are separated by a newline character.
+     *
+     * @param arrayToPrint the two-dimensional array to format
+     * @param useDelimiter a boolean flag indicating whether to use the specified delimiter between elements
+     * @param delimiter the string to use as a delimiter between elements if useDelimiter is true
+     * @return a string representation of the two-dimensional array
+     */
+    public static <T> String prettyPrintTwoDimensArray(T[][] arrayToPrint, boolean useDelimiter, String delimiter) {
         StringBuilder result = new StringBuilder();
         for (T[] objects : arrayToPrint) {
             for(Object elem : objects) {
@@ -85,6 +112,14 @@ public class Misc {
         return result.toString();
     }
 
+    /**
+     * Formats a given number into a human-readable string representation, using a specified
+     * character as the thousand separator.
+     *
+     * @param num the number to format; can be of any type extending Number
+     * @param thousandSeparator the character to use as the separator for thousands
+     * @return a string representation of the number with the specified thousand separator
+     */
     public static String prettyPrintNumber(Number num, char thousandSeparator) {
         DecimalFormat numberFormat = (DecimalFormat) NumberFormat.getInstance();
         DecimalFormatSymbols decimalFormatSymbols = numberFormat.getDecimalFormatSymbols();
@@ -92,5 +127,15 @@ public class Misc {
         numberFormat.setDecimalFormatSymbols(decimalFormatSymbols);
 
         return numberFormat.format(num);
+    }
+
+    /**
+     * Formats a number into a human-readable string with a default separator ('\'') for thousands.
+     *
+     * @param num the number to format
+     * @return a string representation of the number with thousands indicated by the default separator
+     */
+    public static String prettyPrintNumber(Number num) {
+        return prettyPrintNumber(num, '\'');
     }
 }

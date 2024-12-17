@@ -15,17 +15,29 @@ import static vtpaoc.helper.InputLoader.loadInput;
 public class BaseDay {
     protected static String inputFileName;
     protected static List<String> inputLines = new ArrayList<>();
+    protected static String inputWhole;
     protected static Object solutionP1 = 0;
     protected static Object solutionP2 = 0;
     private static long startTime;
     private static long p2Start;
 
-    protected static void loadDayInput() {
+    protected static void loadDayInputLines() {
         loadInput(inputFileName, "");
         while (InputLoader.getMainIn().hasNextLine()) {
             String line = InputLoader.getMainIn().nextLine();
             inputLines.add(line);
         }
+    }
+
+    protected static void loadDayInputWhole() {
+        loadInput(inputFileName, "");
+        StringBuilder sb = new StringBuilder();
+        while (InputLoader.getMainIn().hasNextLine()) {
+            String line = InputLoader.getMainIn().nextLine();
+            sb.append(line);
+            sb.append("\n");
+        }
+        inputWhole = sb.toString();
     }
 
     protected static void logStartP1(String year, String day, String title) {
