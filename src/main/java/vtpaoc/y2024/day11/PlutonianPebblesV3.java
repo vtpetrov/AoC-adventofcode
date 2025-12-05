@@ -9,7 +9,7 @@ import java.util.TreeMap;
 
 import static java.lang.Long.parseLong;
 import static java.lang.String.valueOf;
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 import static vtpaoc.helper.NumberUtilsVtp.findNumberLength;
 

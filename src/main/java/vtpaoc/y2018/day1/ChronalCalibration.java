@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class ChronalCalibration {
 

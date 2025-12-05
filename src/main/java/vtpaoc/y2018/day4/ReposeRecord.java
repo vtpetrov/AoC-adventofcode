@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class ReposeRecord {
 

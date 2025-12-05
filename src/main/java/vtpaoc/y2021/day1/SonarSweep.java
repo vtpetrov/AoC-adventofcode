@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Date;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class SonarSweep {
 

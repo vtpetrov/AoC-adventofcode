@@ -1,7 +1,7 @@
 package vtpaoc.base;
 
 import lombok.extern.slf4j.Slf4j;
-import vtpaoc.helper.InputLoader;
+import vtpaoc.helper.InputUtils;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static vtpaoc.helper.InputLoader.loadInput;
+import static vtpaoc.helper.InputUtils.loadInput;
 
 @Slf4j
 public class BaseDay {
@@ -23,8 +23,8 @@ public class BaseDay {
 
     protected static void loadDayInputLines() {
         loadInput(inputFileName, "");
-        while (InputLoader.getMainIn().hasNextLine()) {
-            String line = InputLoader.getMainIn().nextLine();
+        while (InputUtils.getMainIn().hasNextLine()) {
+            String line = InputUtils.getMainIn().nextLine();
             inputLines.add(line);
         }
     }
@@ -32,8 +32,8 @@ public class BaseDay {
     protected static void loadDayInputWhole() {
         loadInput(inputFileName, "");
         StringBuilder sb = new StringBuilder();
-        while (InputLoader.getMainIn().hasNextLine()) {
-            String line = InputLoader.getMainIn().nextLine();
+        while (InputUtils.getMainIn().hasNextLine()) {
+            String line = InputUtils.getMainIn().nextLine();
             sb.append(line);
             sb.append("\n");
         }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class StreamProcessing {
     private static final String INPUT_FILE_NAME = "year_2017/day9_input.txt";

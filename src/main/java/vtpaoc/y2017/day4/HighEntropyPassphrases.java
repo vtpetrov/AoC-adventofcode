@@ -2,7 +2,7 @@ package vtpaoc.y2017.day4;
 
 import java.util.*;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class HighEntropyPassphrases {
 

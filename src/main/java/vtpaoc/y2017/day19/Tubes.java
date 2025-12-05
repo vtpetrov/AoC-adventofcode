@@ -1,14 +1,17 @@
 package vtpaoc.y2017.day19;
 
+import vtpaoc.common.enums.Direction;
+import vtpaoc.common.enums.Turn;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static vtpaoc.helper.InputLoader.getMainIn;
-import static vtpaoc.helper.InputLoader.loadInput;
+import static vtpaoc.helper.InputUtils.getMainIn;
+import static vtpaoc.helper.InputUtils.loadInput;
 
 public class Tubes {
     private static final String INPUT_FILE_NAME = "year_2017/day19_input.txt";
-    //        private static final String INPUT_FILE_NAME = "debug.txt";
+//            private static final String INPUT_FILE_NAME = "debug.txt";
     private static final int MAP_SIZE = 201;
     private static final String H_PATH = "-";
     private static final String V_PATH = "|";
@@ -237,16 +240,6 @@ public class Tubes {
         currentDirection = Direction.DOWN;
     }
 
-    enum Direction {
-
-        UP, LEFT, DOWN, RIGHT
-
-    }
-
-    enum Turn {
-
-        RIGHT, LEFT
-    }
 }
 
 

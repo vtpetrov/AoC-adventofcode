@@ -3,7 +3,7 @@ package vtpaoc.y2024.day04;
 import lombok.extern.slf4j.Slf4j;
 import vtpaoc.base.BaseDay;
 
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 import static vtpaoc.helper.Misc.prettyPrintTwoDimensArray;
 

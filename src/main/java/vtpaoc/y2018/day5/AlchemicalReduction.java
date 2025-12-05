@@ -2,7 +2,7 @@ package vtpaoc.y2018.day5;
 
 import java.util.Date;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class AlchemicalReduction {
     private static final String INPUT_FILE_NAME = "year_2018/day5_input.txt";

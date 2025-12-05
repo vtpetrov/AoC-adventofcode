@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 
 @Slf4j

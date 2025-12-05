@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.function.Predicate;
 
-import static vtpaoc.helper.InputLoader.*;
+import static vtpaoc.helper.InputUtils.*;
 
 public class SevenSegmentSearch {
 

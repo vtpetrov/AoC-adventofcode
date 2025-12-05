@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static java.lang.Integer.parseInt;
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintList;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 

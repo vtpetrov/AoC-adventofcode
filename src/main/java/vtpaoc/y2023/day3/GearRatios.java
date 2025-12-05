@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static vtpaoc.helper.InputLoader.closeInput;
+import static vtpaoc.helper.InputUtils.closeInput;
 import static vtpaoc.helper.Misc.prettyPrintNumber;
 
 @Slf4j
