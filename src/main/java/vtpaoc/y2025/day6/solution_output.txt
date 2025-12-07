@@ -1,0 +1,17 @@
+2025-12-08 01:06:05.470 [main]: DEBUG vtpaoc.y2025.day6.TrashCompactor,79 :totalResult = 4719804927602
+2025-12-08 01:06:05.471 [main]: INFO  vtpaoc.y2025.day6.TrashCompactor,46 :Part 1 solution:
+ What is the grand total found by adding together all of the answers to the individual problems?
+ = [4719804927602] (4'719'804'927'602)
+2025-12-08 01:06:05.471 [main]: INFO  vtpaoc.base.BaseDay,55 :P1 Duration: 225ms (0s)
+2025-12-08 01:06:05.471 [main]: INFO  vtpaoc.base.BaseDay,57 :=========================================================================================
+
+2025-12-08 01:03:08.772 [main]: DEBUG vtpaoc.y2025.day6.TrashCompactor,135:totalResult = 9608327000261
+2025-12-08 01:03:08.772 [main]: INFO  vtpaoc.y2025.day6.TrashCompactor,98 :Part 2 solution:
+ What is the grand total found by adding together all of the answers to the individual problems v2?
+ = [9608327000261] (9'608'327'000'261)
+2025-12-08 01:03:08.773 [main]: INFO  vtpaoc.base.BaseDay,63 :P2 Duration: 570ms (0s)
+2025-12-08 01:03:08.773 [main]: INFO  vtpaoc.base.BaseDay,64 :***====================================================***
+2025-12-08 01:03:08.773 [main]: INFO  vtpaoc.base.BaseDay,65 :Total Duration: 786ms (0s)
+
+2025-12-08 01:03:08.773 [main]: INFO  vtpaoc.base.BaseDay,67 ::::END = 1765148588773
+2025-12-08 01:03:08.773 [main]: INFO  vtpaoc.base.BaseDay,68 ::::END = 2025-12-08T01:03:08

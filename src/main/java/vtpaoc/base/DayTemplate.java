@@ -8,7 +8,7 @@ import static vtpaoc.helper.Misc.prettyPrintNumber;
 @Slf4j
 public class DayTemplate extends BaseDay {
 
-    static String year = "2024";
+    static String year = "2025";
     static String day = "XX";
     static String puzzleTitle = "<PuzzleTitle_here>";
 
