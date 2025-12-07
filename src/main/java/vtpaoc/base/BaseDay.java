@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static java.lang.Integer.parseInt;
 import static vtpaoc.helper.InputUtils.loadInput;
 
 @Slf4j
@@ -43,9 +44,8 @@ public class BaseDay {
     protected static void logStartP1(String year, String day, String title) {
         log.info("----   ADVENT Of code   {}    ----", year);
         startTime = new Date().getTime();
-        log.info(":::START = {}", LocalDateTime.ofEpochSecond(startTime / 1000, 0, ZoneOffset.ofHours(2)));
-        log.info("                ---=== Day {} ===---     ", day);
-        log.info("                  - {} -     ", title);
+        log.info(":::START = {}\n", LocalDateTime.ofEpochSecond(startTime / 1000, 0, ZoneOffset.ofHours(2)));
+        logDayHeader(parseInt(day), title);
 
         log.info("    ---=== Part 1 ===---     ");
     }
@@ -61,11 +61,29 @@ public class BaseDay {
     protected static void logEndP2() {
         long end = new Date().getTime();
         log.info("P2 Duration: {}ms ({}s)", end - p2Start, (end - p2Start) / 1000);
-        log.info("==========");
-        log.info("Total Duration: {}ms ({}s)", end - startTime, (end - startTime) / 1000);
+        log.info("***====================================================***");
+        log.info("Total Duration: {}ms ({}s)\n", end - startTime, (end - startTime) / 1000);
 
         log.info(":::END = {}", end);
         log.info(":::END = {}", LocalDateTime.ofEpochSecond(end / 1000, 0, ZoneOffset.ofHours(2)));
     }
+
+    public static void logDayHeader(int day, String title) {
+        final String indent = "                ";  // your original left indent
+
+        String headerRaw = String.format("---=== Day %02d ===---", day);
+        String header = indent + headerRaw;
+
+        String titleDecorated = String.format("- %s -", title);
+
+        // Compute centered padding (relative to the non-indented header width)
+        int padding = Math.max(0, (headerRaw.length() - titleDecorated.length()) / 2);
+
+        String paddedTitle = indent + " ".repeat(padding) + titleDecorated;
+
+        log.info("{}", header);
+        log.info("{}\n", paddedTitle);
+    }
+
 
 }
