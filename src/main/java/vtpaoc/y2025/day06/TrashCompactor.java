@@ -1,4 +1,4 @@
-package vtpaoc.y2025.day6;
+package vtpaoc.y2025.day06;
 
 import lombok.extern.slf4j.Slf4j;
 import vtpaoc.base.BaseDay;
