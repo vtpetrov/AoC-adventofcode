@@ -1,0 +1,13 @@
+2025-12-07 16:47:57.815 [main]: INFO  vtpaoc.y2025.day01.SecretEntrance,93 :endZeros= 969, transZeros= 4918
+2025-12-07 16:47:57.815 [main]: DEBUG vtpaoc.y2025.day01.SecretEntrance,67 :============= 4042 =================
+2025-12-07 16:47:57.815 [main]: DEBUG vtpaoc.y2025.day01.SecretEntrance,91 :Start position: 67, end position: 50, direction: LEFT, moves: 17, hundreds: 0, tens: 17
+2025-12-07 16:47:57.815 [main]: INFO  vtpaoc.y2025.day01.SecretEntrance,93 :endZeros= 969, transZeros= 4918
+2025-12-07 16:47:57.816 [main]: INFO  vtpaoc.y2025.day01.SecretEntrance,51 :Part 2 solution:
+ Using password method 0x434C49434B, what is the password to open the door?
+ = [5887] (5'887)
+2025-12-07 16:47:57.817 [main]: INFO  vtpaoc.base.BaseDay,64 :P2 Duration: 529ms (0s)
+2025-12-07 16:47:57.817 [main]: INFO  vtpaoc.base.BaseDay,65 :***====================================================***
+2025-12-07 16:47:57.817 [main]: INFO  vtpaoc.base.BaseDay,66 :Total Duration: 559ms (0s)
+
+2025-12-07 16:47:57.817 [main]: INFO  vtpaoc.base.BaseDay,68 ::::END = 1765118877817
+2025-12-07 16:47:57.817 [main]: INFO  vtpaoc.base.BaseDay,69 ::::END = 2025-12-07T16:47:57
