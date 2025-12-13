@@ -3,6 +3,7 @@ package vtpaoc.y2025.day03;
 import lombok.extern.slf4j.Slf4j;
 import vtpaoc.base.BaseDay;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import static java.util.Arrays.stream;
@@ -17,8 +18,8 @@ public class Lobby extends BaseDay {
     static String puzzleTitle = "Lobby";
 
     static {
-//        inputFileName = "year_" + year + "/day" + day + "_input.txt";
-        inputFileName = "debug.txt";
+        inputFileName = "year_" + year + "/day" + day + "_input.txt";
+//        inputFileName = "debug.txt";
     }
 
     public static void main(String[] args) {
@@ -54,14 +55,11 @@ public class Lobby extends BaseDay {
 
     }
 
-    static int calcJoltage(List<String> partInput, int base) {
-        int totalJoltage = 0; // TODO make this BigInteger
-
-//        List<List<Integer>> digitCollections = new ArrayList<>();
-
+    static BigInteger calcJoltage(List<String> partInput, int base) {
+        BigInteger totalJoltage = BigInteger.ZERO;
         for (String bank : partInput) {
             log.debug("-------- {} --------", bank);
-            int bankJoltage; // TODO make this BigInteger
+            BigInteger bankJoltage;
             StringBuilder digitsSb = new StringBuilder();
             List<Integer> batteriesList = stream(bank.split("")).mapToInt(Integer::parseInt).boxed().toList();
             // use collections, find MAX in each. that would be our first and second digit.
@@ -73,17 +71,19 @@ public class Lobby extends BaseDay {
                 currentNthColl = batteriesList.subList(startIdx, endIdx);
                 maxDigitForThatPosition = currentNthColl.stream().max(Integer::compareTo).orElse(0);
                 digitsSb.append(maxDigitForThatPosition);
-                int maxDigitIndex = batteriesList.indexOf(maxDigitForThatPosition);
+                int maxDigitIndex = batteriesList.indexOf(maxDigitForThatPosition) <= startIdx
+                        ? currentNthColl.indexOf(maxDigitForThatPosition) + startIdx
+                        : batteriesList.indexOf(maxDigitForThatPosition);
                 startIdx = maxDigitIndex + 1;
                 endIdx = Math.min(endIdx + 1, batteriesList.size());
             }
 
             // second collection is the remaing of the bank to the right of 1st digit
 
-            bankJoltage = Integer.parseInt(digitsSb.toString());
+            bankJoltage = new BigInteger(digitsSb.toString());
             log.debug("digits = {} => {}", digitsSb, bankJoltage);
 
-            totalJoltage += bankJoltage;
+            totalJoltage = totalJoltage.add(bankJoltage);
         }
 
         return totalJoltage;

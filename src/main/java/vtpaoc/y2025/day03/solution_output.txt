@@ -1,0 +1,25 @@
+2025-12-13 23:56:40.606 [main]: DEBUG vtpaoc.y2025.day03.Lobby,61 :-------- 2232216322232322212222222222222122241222232113253222322221221322522224222222552222222221222322232222 --------
+2025-12-13 23:56:40.606 [main]: DEBUG vtpaoc.y2025.day03.Lobby,84 :digits = 65 => 65
+2025-12-13 23:56:40.607 [main]: INFO  vtpaoc.y2025.day03.Lobby,41 :Part 1 solution:
+ for 2 batteries, what is the total output joltage?
+ = [16854] (16'854)
+ 
+ 2025-12-13 23:56:40.608 [main]: INFO  vtpaoc.base.BaseDay,55 :P1 Duration: 176ms (0s)
+ 2025-12-13 23:56:40.608 [main]: INFO  vtpaoc.base.BaseDay,57 :=========================================================================================
+ 2025-12-13 23:56:40.608 [main]: INFO  vtpaoc.base.BaseDay,58 :    ---=== Part 2 ===---     
+ 2025-12-13 23:56:40.608 [main]: DEBUG vtpaoc.y2025.day03.Lobby,61 :-------- 
+ 
+ ......
+ 
+ 2025-12-13 23:56:40.684 [main]: DEBUG vtpaoc.y2025.day03.Lobby,61 :-------- 2232216322232322212222222222222122241222232113253222322221221322522224222222552222222221222322232222 --------
+ 2025-12-13 23:56:40.684 [main]: DEBUG vtpaoc.y2025.day03.Lobby,84 :digits = 655553232222 => 655553232222
+ 2025-12-13 23:56:40.684 [main]: INFO  vtpaoc.y2025.day03.Lobby,51 :Part 2 solution:
+  for 12 batteries, What is the new total output joltage?
+  = [167526011932478] (167'526'011'932'478)
+ 2025-12-13 23:56:40.684 [main]: INFO  vtpaoc.base.BaseDay,63 :P2 Duration: 76ms (0s)
+ 2025-12-13 23:56:40.684 [main]: INFO  vtpaoc.base.BaseDay,64 :***====================================================***
+ 2025-12-13 23:56:40.684 [main]: INFO  vtpaoc.base.BaseDay,65 :Total Duration: 252ms (0s)
+ 
+ 2025-12-13 23:56:40.684 [main]: INFO  vtpaoc.base.BaseDay,67 ::::END = 1765663000684
+ 2025-12-13 23:56:40.686 [main]: INFO  vtpaoc.base.BaseDay,68 ::::END = 2025-12-13T23:56:40
+ 
