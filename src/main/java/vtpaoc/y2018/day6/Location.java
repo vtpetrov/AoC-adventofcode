@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import static java.lang.Integer.parseInt;
+
 @Getter
 @ToString
 @Setter
@@ -25,6 +27,11 @@ public class Location {
     public Location(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Location(String xy, String delimiter) {
+        this.x = parseInt(xy.split(delimiter)[0].trim());
+        this.y = parseInt(xy.split(delimiter)[1].trim());
     }
 
     public String toStringXY() {
