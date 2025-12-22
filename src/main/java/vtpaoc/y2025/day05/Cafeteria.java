@@ -6,10 +6,7 @@ import vtpaoc.base.BaseDay;
 import vtpaoc.helper.Ranges;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.LongStream;
 
 import static vtpaoc.helper.InputUtils.closeInput;
@@ -81,16 +78,11 @@ public class Cafeteria extends BaseDay {
                  = [{}] ({})""", solutionP1, prettyPrintNumber((Number) solutionP1));
     }
 
+    static List<Range<Long>> uniqueRanges = new ArrayList<>();
+
     private static void solvePartTwo() {
-
         // just count elems in ranges. account for overlapping ranges:
-        Set<Long> uniqueElems = new HashSet<>();
-        List<Range<Long>> uniqueRanges = new ArrayList<>();
         uniqueRanges.add(ranges.getFirst());
-
-//        for (Range<Long> range : ranges) {
-//            List<Long> rangeElems = LongStream.range(range.getMinimum(), range.getMaximum() + 1L).boxed().toList();
-//            uniqueElems.addAll(rangeElems);
 
         for (int i = 1; i < ranges.size(); i++) {
             Range<Long> currentProcessing = ranges.get(i);
@@ -99,25 +91,15 @@ public class Cafeteria extends BaseDay {
             for (int j = 0; j < uniqueRanges.size(); j++) {
                 Range<Long> currentUnique = uniqueRanges.get(j);
                 //[1..5][7..9][14..40] => [3..8]
-                // check overlapping, if not check LeftOf
+                // check for overlapping and merge till the end of th unique list
                 boolean overlap = currentUnique.isOverlappedBy(currentProcessing);
                 if (overlap) { // if they overlap, construct new range and substitute the previous one:
-                    Range<Long> newRange = Ranges.merge(currentUnique, currentProcessing);
-                    uniqueRanges.set(j, newRange);
-                    // also check for the next elem (if any). if it overlaps the new J, merge them
-                    if (j < uniqueRanges.size() - 1) {
-                        boolean nextOverlap = uniqueRanges.get(j + 1).isOverlappedBy(uniqueRanges.get(j));
-                        if (nextOverlap) {
-                            Range<Long> newNextRange = Ranges.merge(uniqueRanges.get(j), uniqueRanges.get(j + 1));
-                            uniqueRanges.set(j, newNextRange);
-                            uniqueRanges.remove(j + 1);
-                        }
-                    }
+                    mergeOverlappedTillTheEndOfIfAny(uniqueRanges, j, currentProcessing);
                 }
                 //[1..5][7..9][14..40] => [10..12]
-                else if (currentUnique.isBeforeRange(currentProcessing)) { // if they don't overlap, add the currentProcessing to the left of the currentUnique
+                else if (currentUnique.isBeforeRange(currentProcessing)) { // if they don't overlap
                     //if there is another range to the right, check it's between
-                    if (j < uniqueRanges.size() - 1) {
+                    if (uniqueHasNext(j)) {
                         if (uniqueRanges.get(j + 1).isAfterRange(currentProcessing)) {
                             //if it is, fit it between j and j + 1
                             uniqueRanges.set(j + 1, currentProcessing);
@@ -132,29 +114,90 @@ public class Cafeteria extends BaseDay {
                 }
             }
         }
-        log.debug("Unique ranges: {}", prettyPrintList(uniqueRanges));
+        log.debug("Unique ranges 1: {}", prettyPrintList(uniqueRanges));
 
         // count elems in uniqueRanges:
-        long totalFreshProducts = 0;
-        for (Range<Long> range : uniqueRanges) {
-            totalFreshProducts += LongStream.rangeClosed(range.getMinimum(), range.getMaximum()).count();
-        }
-
-        long totalFreshProduct2 = 0;
-        AtomicInteger cnt = new AtomicInteger(0);
-        for (Range<Long> uniqueRange : uniqueRanges) {
-            long rangeCount = uniqueRange.getMaximum() - uniqueRange.getMinimum() + 1;
-            log.debug("[{}] rangeCount= {}", cnt.incrementAndGet(), rangeCount);
-            totalFreshProduct2 += rangeCount;
-        }
-        log.debug("totalFreshProduct2= {}", totalFreshProduct2);
-
-        solutionP2 = totalFreshProducts;
+        solutionP2 = countElementsInRanges(uniqueRanges);
 
         log.info("""
                 Part 2 solution:
                  How many ingredient IDs are considered to be fresh according to the fresh ingredient ID ranges?
                  = [{}] ({})""", solutionP2, prettyPrintNumber((Number) solutionP2));
 
+
+        // solution 2A
+        mergeOverlappedTillTheEndOfIfAny(uniqueRanges, 1, uniqueRanges.getFirst());
+        log.debug("\n\nUnique ranges 2a: {}", prettyPrintList(uniqueRanges));
+
+        log.debug("Solution 2A: {}", countElementsInRanges(uniqueRanges));
+
+        // solution 2b
+        List<Range<Long>> ranges2b = removeDuplicateRanges(uniqueRanges);
+        log.debug("\n\nUnique ranges 2b: {}", prettyPrintList(ranges2b));
+        log.debug("Solution 2b: {}", countElementsInRanges(ranges2b));
+
+    }
+
+    private static long countElementsInRanges(List<Range<Long>> rangesToCount) {
+        long totalElemCount = 0;
+        for (Range<Long> range : rangesToCount) {
+            totalElemCount += LongStream.rangeClosed(range.getMinimum(), range.getMaximum()).count();
+        }
+        return totalElemCount;
+    }
+
+    /**
+     * Merges a given range with overlapping ranges in the list from the specified starting index until
+     * no more overlapping ranges are found.
+     *
+     * @param parentListOfRanges the list of ranges to check for overlaps and perform merging
+     * @param startAtIdx         the index in the list where overlapping check and merging should begin
+     * @param currentToMerge     the range to merge with overlapping ranges in the list
+     */
+    private static void mergeOverlappedTillTheEndOfIfAny(List<Range<Long>> parentListOfRanges, int startAtIdx, Range<Long> currentToMerge) {
+        boolean initial = true;
+        for (int m = startAtIdx; m < parentListOfRanges.size(); m++) {
+            Range<Long> parentToMerge = parentListOfRanges.get(m);
+            if (parentToMerge.isOverlappedBy(currentToMerge)) {
+                Range<Long> newRange = Ranges.merge(parentToMerge, currentToMerge);
+                int idxToPut = Math.min(parentListOfRanges.indexOf(parentToMerge),
+                        parentListOfRanges.indexOf(currentToMerge) > 0 ? parentListOfRanges.indexOf(currentToMerge) : Integer.MAX_VALUE);
+                parentListOfRanges.set(idxToPut, newRange);
+                log.debug("merged {} with {} at idx {} => {}", parentToMerge, currentToMerge, m, newRange);
+                currentToMerge = newRange;
+                if (initial) {
+                    initial = false;
+                } else {
+                    // remove the range to the right.
+                    parentListOfRanges.remove(m);
+                }
+                log.debug("new range to check with next one => {}", currentToMerge);
+            } else {
+                log.debug("no more overlapping, finish merging. Started at: {} , ended at: {}", startAtIdx, m);
+                break;
+            }
+        }
+    }
+
+    private static List<Range<Long>> removeDuplicateRanges(List<Range<Long>> rangesWithDuplicates) {
+        List<Range<Long>> noDupes = new ArrayList<>();
+
+        //check any two ranges, merge them if they overlap, add new range back to list, remove right.
+        for (int d = 0; d < rangesWithDuplicates.size() - 1; ) {// make sure there is always d + 1
+            if (rangesWithDuplicates.get(d).isOverlappedBy(rangesWithDuplicates.get(d + 1))) {
+                Range<Long> merged = Ranges.merge(rangesWithDuplicates.get(d), rangesWithDuplicates.get(d + 1));
+                rangesWithDuplicates.set(d, merged);
+                rangesWithDuplicates.remove(d + 1);
+            } else {
+                noDupes.add(rangesWithDuplicates.get(d));
+                d++;
+            }
+        }
+
+        return noDupes;
+    }
+
+    private static boolean uniqueHasNext(int currIdx) {
+        return currIdx < uniqueRanges.size() - 1;
     }
 }

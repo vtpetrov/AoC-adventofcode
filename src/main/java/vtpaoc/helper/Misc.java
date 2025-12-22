@@ -48,7 +48,14 @@ public class Misc {
             return "none";
         }
         StringBuilder sb = new StringBuilder();
-        mapToPrint.forEach((key, value) -> sb.append(String.format("%n%s: %s", key, value)));
+        int maxKeyLength = mapToPrint.keySet().stream()
+                .map(String::valueOf)
+                .mapToInt(String::length)
+                .max()
+                .orElse(0);
+
+        String format = "%n%" + maxKeyLength + "s: %s";
+        mapToPrint.forEach((key, value) -> sb.append(String.format(format, key, value)));
         return sb.toString();
     }
 

@@ -21,6 +21,13 @@ public class Ranges {
         return current.getMaximum() < of.getMinimum();
     }
 
+    /**
+     * Merges two ranges into one.
+     *
+     * @param rangeOne 1st range to merge
+     * @param rangeTwo 2nd range to merge
+     * @return the resulting merged range
+     */
     public static Range<Long> merge(Range<Long> rangeOne, Range<Long> rangeTwo) {
         long newNextRangeMin = Math.min(rangeOne.getMinimum(), rangeTwo.getMinimum());
         long newNextRangeMax = Math.max(rangeOne.getMaximum(), rangeTwo.getMaximum());
